@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42eaefe1cd65a417b906a393b05de26e, type: 3}
+  m_Name: Sword Moveset
+  m_EditorClassIdentifier: Assembly-CSharp::MovesetSO
+  Slots:
+  - Name: Primary
+    Abilities:
+    - {fileID: 11400000, guid: 8fd41daf0c4554c88a5081946a29a54f, type: 2}
+    - {fileID: 11400000, guid: 630fd9bbcc9864ef6bb05ed08387c60f, type: 2}
+  - Name: Secondary
+    Abilities:
+    - {fileID: 11400000, guid: 06f6d7b7900ff4f0d9580dfa927c8a52, type: 2}
+  - Name: Cast
+    Abilities:
+    - {fileID: 11400000, guid: ca3097e2fedb64a738af75dadc4a4536, type: 2}
+  - Name: Ultimate
+    Abilities:
+    - {fileID: 11400000, guid: baa2cff8d8fcb4a0d96ac8ba5d353b31, type: 2}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Loadout : MonoBehaviour
@@ -10,6 +11,8 @@ public class Loadout : MonoBehaviour
 
 	private WeaponSO _currentWeaponData;
 	private GameObject _currentWeaponInstance;
+
+	public event Action<WeaponSO> OnWeaponEquipped;
 
 	private void Start()
 	{
@@ -38,5 +41,6 @@ public class Loadout : MonoBehaviour
 			_currentWeaponInstance = Instantiate(_currentWeaponData.Prefab, weaponSocket);
 			_currentWeaponInstance.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 		}
+		OnWeaponEquipped?.Invoke(_currentWeaponData);
 	}
 }

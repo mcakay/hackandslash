@@ -1,8 +1,10 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Weapon", menuName = "Equipment/Weapon")]
+[CreateAssetMenu(fileName = "Weapon", menuName = "Data/Equipments/Weapon")]
 public class WeaponSO : ScriptableObject
 {
 	public string Name;
 	public GameObject Prefab;
+
+	public MovesetSO Moveset;
 }

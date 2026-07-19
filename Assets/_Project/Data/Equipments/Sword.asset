@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
   Name: Sword
   Prefab: {fileID: 6300596434656413120, guid: 010f026ca80fa41a796b0ca7cdacb42e, type: 3}
+  Moveset: {fileID: 11400000, guid: 5f438eae1fdd442399e2fa6f057b1b1b, type: 2}

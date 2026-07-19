@@ -365,8 +365,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.08370419, g: 0.08417144, b: 0.084905684, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -721,6 +721,7 @@ GameObject:
   - component: {fileID: 933816550}
   - component: {fileID: 933816553}
   - component: {fileID: 933816554}
+  - component: {fileID: 933816555}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -845,6 +846,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Loadout
   weaponSocket: {fileID: 314470912}
   startingWeapon: {fileID: 11400000, guid: f04cf26713fdf4f5597e7e767bb6ffb0, type: 2}
+--- !u!114 &933816555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933816547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1913734a7072c4e8ebfbbd1bdece92e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityRunner
+  config: {fileID: 11400000, guid: 04bf2f116f3c94e98972c378ac58b2dc, type: 2}
+  moveset: {fileID: 0}
 --- !u!1 &1429299150
 GameObject:
   m_ObjectHideFlags: 0
