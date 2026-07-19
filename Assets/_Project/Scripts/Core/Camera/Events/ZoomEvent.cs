@@ -15,7 +15,7 @@ public struct ZoomPayload
 	}
 }
 
-[CreateAssetMenu(fileName = "New Zoom Channel", menuName = "Camera/Zoom Channel")]
+[CreateAssetMenu(fileName = "New Zoom Channel", menuName = "Data/Events/Camera/Zoom Event")]
 public class ZoomEventSO : BaseGameEventSO<ZoomPayload> { }
 [System.Serializable]
 public class ZoomUnityEvent : UnityEvent<ZoomPayload> { }

@@ -10,6 +10,7 @@ public class Timer
 	public bool IsRunning { get; private set; }
 
 	public float Progress => _duration > 0f ? 1f - (_remainingTime / _duration) : 0f;
+	public float ElapsedTime => _duration - _remainingTime;
 
 	public void Start(float duration)
 	{

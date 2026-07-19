@@ -11,7 +11,7 @@ public struct SFXPayload
 	public Vector3 Position;
 }
 
-[CreateAssetMenu(fileName = "New SFX Channel", menuName = "Audio/SFX Channel")]
+[CreateAssetMenu(fileName = "New SFX Channel", menuName = "Data/Events/Audio/SFX Event")]
 public class SFXEventSO : BaseGameEventSO<SFXPayload> { }
 [Serializable] public class SFXUnityEvent : UnityEvent<SFXPayload> { }
 public class SFXEventListener : BaseGameEventListener<SFXPayload, SFXEventSO, SFXUnityEvent> { }

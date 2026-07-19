@@ -15,7 +15,7 @@ public struct FocusPayload
 	}
 }
 
-[CreateAssetMenu(fileName = "New Focus Channel", menuName = "Camera/Focus Channel")]
+[CreateAssetMenu(fileName = "New Focus Channel", menuName = "Data/Events/Camera/Focus Event")]
 public class FocusEventSO : BaseGameEventSO<FocusPayload> { }
 [Serializable]
 public class FocusUnityEvent : UnityEvent<FocusPayload> { }

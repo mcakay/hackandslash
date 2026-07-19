@@ -15,7 +15,7 @@ public struct ShakePayload
 	}
 }
 
-[CreateAssetMenu(fileName = "New Shake Channel", menuName = "Camera/Shake Channel")]
+[CreateAssetMenu(fileName = "New Shake Channel", menuName = "Data/Events/Camera/Shake Event")]
 public class ShakeEventSO : BaseGameEventSO<ShakePayload> { }
 [Serializable]
 public class ShakeUnityEvent : UnityEvent<ShakePayload> { }
