@@ -7,7 +7,8 @@ public class InputReaderSO : ScriptableObject, InputActions.IPlayerActions
 {
 	private InputActions _inputActions;
 
-	public event Action<Vector2> MovementUpdated;
+	public Vector2 MovementInput { get; private set; }
+
 	public event Action PrimaryPerformed;
 	public event Action SecondaryPerformed;
 	public event Action DashPerformed;
@@ -36,7 +37,7 @@ public class InputReaderSO : ScriptableObject, InputActions.IPlayerActions
 
 	public void OnMovement(InputAction.CallbackContext context)
 	{
-		MovementUpdated?.Invoke(context.ReadValue<Vector2>());
+		MovementInput = context.ReadValue<Vector2>();
 	}
 
 	public void OnPrimary(InputAction.CallbackContext context)

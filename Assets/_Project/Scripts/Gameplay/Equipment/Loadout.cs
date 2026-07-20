@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 
+[RequireComponent(typeof(LocalEventChannel))]
 public class Loadout : MonoBehaviour
 {
 	[Header("Sockets")]
@@ -12,7 +12,12 @@ public class Loadout : MonoBehaviour
 	private WeaponSO _currentWeaponData;
 	private GameObject _currentWeaponInstance;
 
-	public event Action<WeaponSO> OnWeaponEquipped;
+	private LocalEventChannel _channel;
+
+	private void Awake()
+	{
+		_channel = GetComponent<LocalEventChannel>();
+	}
 
 	private void Start()
 	{
@@ -41,6 +46,6 @@ public class Loadout : MonoBehaviour
 			_currentWeaponInstance = Instantiate(_currentWeaponData.Prefab, weaponSocket);
 			_currentWeaponInstance.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 		}
-		OnWeaponEquipped?.Invoke(_currentWeaponData);
+		_channel.Publish(new MovesetUpdateRequestedEvent(_currentWeaponData.Moveset));
 	}
 }

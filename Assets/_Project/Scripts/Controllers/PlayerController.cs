@@ -1,114 +1,102 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Loadout))]
-[RequireComponent(typeof(AbilityRunner))]
-public class PlayerController : MonoBehaviour, IInputProvider
+[RequireComponent(typeof(LocalEventChannel))]
+public class PlayerController : MonoBehaviour
 {
-	[SerializeField] private InputReaderSO inputReader;
+	[SerializeField] private Movement movement;
+	[SerializeField] private MovementRotation movementRotation;
 
-	private Vector2 _movementDirection;
+	[SerializeField] private InputReaderSO _inputReader;
 
-	private int _primaryAbilityId;
-	private int _secondaryAbilityId;
-	private int _dashAbilityId;
-	private int _castAbilityId;
-	private int _ultimateAbilityId;
+	private LocalEventChannel _channel;
 
-	private Loadout _loadout;
-	private AbilityRunner _abilityRunner;
+	private int _primaryHash;
+	private int _secondaryHash;
+	private int _dashHash;
+	private int _castHash;
+	private int _ultimateHash;
 
 	private void Awake()
 	{
-		_loadout = GetComponent<Loadout>();
-		_abilityRunner = GetComponent<AbilityRunner>();
+		_channel = GetComponent<LocalEventChannel>();
 
-		_primaryAbilityId = Animator.StringToHash("Primary");
-		_secondaryAbilityId = Animator.StringToHash("Secondary");
-		_dashAbilityId = Animator.StringToHash("Dash");
-		_castAbilityId = Animator.StringToHash("Cast");
-		_ultimateAbilityId = Animator.StringToHash("Ultimate");
+		_primaryHash = Animator.StringToHash("Primary");
+		_secondaryHash = Animator.StringToHash("Secondary");
+		_dashHash = Animator.StringToHash("Dash");
+		_castHash = Animator.StringToHash("Cast");
+		_ultimateHash = Animator.StringToHash("Ultimate");
 	}
 
 	private void OnEnable()
 	{
-		if (inputReader != null)
+		if (_inputReader != null)
 		{
-			inputReader.EnableInput();
+			_inputReader.EnableInput();
 
-			inputReader.MovementUpdated += OnMovementUpdated;
-			inputReader.PrimaryPerformed += OnPrimaryPerformed;
-			inputReader.SecondaryPerformed += OnSecondaryPerformed;
-			inputReader.DashPerformed += OnDashPerformed;
-			inputReader.CastPerformed += OnCastPerformed;
-			inputReader.UltimatePerformed += OnUltimatePerformed;
-		}
-
-		if (_loadout != null)
-		{
-			_loadout.OnWeaponEquipped += OnWeaponEquipped;
+			_inputReader.PrimaryPerformed += OnPrimary;
+			_inputReader.SecondaryPerformed += OnSecondary;
+			_inputReader.DashPerformed += OnDash;
+			_inputReader.CastPerformed += OnCast;
+			_inputReader.UltimatePerformed += OnUltimate;
 		}
 	}
 
 	private void OnDisable()
 	{
-		if (inputReader != null)
+		if (_inputReader != null)
 		{
+			_inputReader.DisableInput();
 
-			inputReader.DisableInput();
-
-			inputReader.MovementUpdated -= OnMovementUpdated;
-			inputReader.PrimaryPerformed -= OnPrimaryPerformed;
-			inputReader.SecondaryPerformed -= OnSecondaryPerformed;
-			inputReader.DashPerformed -= OnDashPerformed;
-			inputReader.CastPerformed -= OnCastPerformed;
-			inputReader.UltimatePerformed -= OnUltimatePerformed;
-		}
-
-		if (_loadout != null)
-		{
-			_loadout.OnWeaponEquipped -= OnWeaponEquipped;
+			_inputReader.PrimaryPerformed -= OnPrimary;
+			_inputReader.SecondaryPerformed -= OnSecondary;
+			_inputReader.DashPerformed -= OnDash;
+			_inputReader.CastPerformed -= OnCast;
+			_inputReader.UltimatePerformed -= OnUltimate;
 		}
 	}
 
-	public Vector2 GetMovementDirection()
+	private void Update()
 	{
-		return _movementDirection;
+		if (_inputReader == null)
+		{
+			return;
+		}
+
+		Vector2 movementInput = _inputReader.MovementInput;
+
+		if (movement)
+		{
+			movement.SetDirection(movementInput);
+		}
+
+		if (movementRotation)
+		{
+			movementRotation.SetDirection(movementInput);
+		}
 	}
 
-	private void OnMovementUpdated(Vector2 movement)
+	private void OnPrimary()
 	{
-		_movementDirection = movement;
+		_channel.Publish(new AbilityCastRequestedEvent(_primaryHash));
 	}
 
-	private void OnPrimaryPerformed()
+	private void OnSecondary()
 	{
-		_abilityRunner.BufferAbility(_primaryAbilityId);
+		_channel.Publish(new AbilityCastRequestedEvent(_secondaryHash));
 	}
 
-	private void OnSecondaryPerformed()
+	private void OnDash()
 	{
-		_abilityRunner.BufferAbility(_secondaryAbilityId);
+		_channel.Publish(new AbilityCastRequestedEvent(_dashHash));
 	}
 
-	private void OnDashPerformed()
+	private void OnCast()
 	{
-		_abilityRunner.BufferAbility(_dashAbilityId);
+		_channel.Publish(new AbilityCastRequestedEvent(_castHash));
 	}
 
-	private void OnCastPerformed()
+	private void OnUltimate()
 	{
-		_abilityRunner.BufferAbility(_castAbilityId);
-	}
-
-	private void OnUltimatePerformed()
-	{
-		_abilityRunner.BufferAbility(_ultimateAbilityId);
-	}
-
-	private void OnWeaponEquipped(WeaponSO weapon)
-	{
-		_abilityRunner.SetMoveset(weapon.Moveset);
-
+		_channel.Publish(new AbilityCastRequestedEvent(_ultimateHash));
 	}
 }
-

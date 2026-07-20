@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(LocalEventChannel))]
 public class AbilityRunner : MonoBehaviour
 {
 	[SerializeField] private AbilityConfig config;
@@ -8,6 +9,8 @@ public class AbilityRunner : MonoBehaviour
 	private AbilityBuffer _buffer;
 	public AbilityTracker Tracker { get; private set; }
 	public StateMachine StateMachine { get; private set; }
+
+	private LocalEventChannel _channel;
 
 	public bool CanEarlyCancel { get; set; } = false;
 
@@ -20,6 +23,20 @@ public class AbilityRunner : MonoBehaviour
 		StateMachine.AddState(new WindupState(this));
 		StateMachine.AddState(new ExecutionState(this));
 		StateMachine.AddState(new RecoveryState(this));
+
+		_channel = GetComponent<LocalEventChannel>();
+	}
+
+	private void OnEnable()
+	{
+		_channel.Subscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
+		_channel.Subscribe<AbilityCastRequestedEvent>(OnCastRequested);
+	}
+
+	private void OnDisable()
+	{
+		_channel.Unsubscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
+		_channel.Unsubscribe<AbilityCastRequestedEvent>(OnCastRequested);
 	}
 
 	private void Update()
@@ -31,20 +48,24 @@ public class AbilityRunner : MonoBehaviour
 		StateMachine.Tick(Time.deltaTime);
 	}
 
-	public void SetMoveset(MovesetSO newMoveset)
+	private void OnMovesetUpdateRequested(MovesetUpdateRequestedEvent e)
 	{
-		if (newMoveset == null || newMoveset == moveset)
+		if (e.moveset == null || e.moveset == moveset)
 		{
 			return;
 		}
-		moveset = newMoveset;
+		moveset = e.moveset;
 		moveset.Initialize();
 		Tracker.Reset();
 	}
 
-	public void BufferAbility(int id)
+	private void OnCastRequested(AbilityCastRequestedEvent e)
 	{
-		_buffer.Add(id);
+		if (moveset == null)
+		{
+			return;
+		}
+		_buffer.Add(e.Id);
 	}
 
 	private bool CanExecuteNextAbility()

@@ -1,24 +1,27 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(IInputProvider))]
 public class Movement : MonoBehaviour
 {
 	private Rigidbody _rigidbody;
-	private IInputProvider _inputProvider;
 	private Matrix4x4 _isometricMatrix;
+
+	private Vector2 _direction;
 
 	private void Awake()
 	{
 		_rigidbody = GetComponent<Rigidbody>();
-		_inputProvider = GetComponent<IInputProvider>();
 		_isometricMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45f, 0));
 	}
 
 	private void FixedUpdate()
 	{
-		Vector2 direction = _inputProvider.GetMovementDirection();
-		Move(direction);
+		Move(_direction);
+	}
+
+	public void SetDirection(Vector2 input)
+	{
+		_direction = input;
 	}
 
 	private void Move(Vector2 input)

@@ -11,7 +11,7 @@ public class RecoveryState : AbilityState
 	public override void OnEnter()
 	{
 		_timer.Start(_runner.Tracker.CurrentAbility.RecoveryDuration);
-		_earlyCancelTime = _runner.Tracker.CurrentAbility.EarlyCancelWindow;
+		_earlyCancelTime = _runner.Tracker.CurrentAbility.CancelDuration;
 
 		Debug.Log($"RecoveryState: {_runner.Tracker.CurrentAbility.name} for {_runner.Tracker.CurrentAbility.RecoveryDuration} seconds");
 	}
