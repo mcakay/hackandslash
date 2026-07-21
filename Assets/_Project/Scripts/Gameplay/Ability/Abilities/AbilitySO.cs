@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AbilitySO : ScriptableObject
+public abstract class AbilitySO : ScriptableObject
 {
 	[Header("Identity")]
 	public string Name;
@@ -26,4 +26,7 @@ public class AbilitySO : ScriptableObject
 	public float WindupDuration => Duration * WindupPercentage;
 	public float ExecutionDuration => Duration * ExecutionPercentage;
 	public float RecoveryDuration => Duration * RecoveryPercentage;
+
+	public abstract void StartExecute(GameObject caster, LocalEventChannel channel);
+	public abstract void EndExecute(GameObject caster, LocalEventChannel channel);
 }

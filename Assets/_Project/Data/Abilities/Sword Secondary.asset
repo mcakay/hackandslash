@@ -20,4 +20,3 @@ MonoBehaviour:
   WindupPercentage: 0.3
   ExecutionPercentage: 0.3
   RecoveryPercentage: 0.5
-  CancelPercentage: 0.2

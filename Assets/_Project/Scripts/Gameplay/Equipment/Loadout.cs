@@ -46,6 +46,9 @@ public class Loadout : MonoBehaviour
 			_currentWeaponInstance = Instantiate(_currentWeaponData.Prefab, weaponSocket);
 			_currentWeaponInstance.transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 		}
+		var hitbox = _currentWeaponInstance.GetComponent<Hitbox>();
+
 		_channel.Publish(new MovesetUpdateRequestedEvent(_currentWeaponData.Moveset));
+		_channel.Publish(new HitboxUpdateRequestedEvent(hitbox));
 	}
 }
