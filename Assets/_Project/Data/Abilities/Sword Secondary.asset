@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Sword Secondary
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAbilitySO
   Name: Sword Secondary
-  Duration: 1
+  AnimationTriggerName: Secondary
+  Clip: {fileID: 9111558908952476143, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
+  AnimationSpeed: 1.5
   ComboWindow: 1
-  WindupPercentage: 0.2
+  WindupPercentage: 0.3
   ExecutionPercentage: 0.3
   RecoveryPercentage: 0.5
   CancelPercentage: 0.2

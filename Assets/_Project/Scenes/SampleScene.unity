@@ -808,6 +808,7 @@ GameObject:
   - component: {fileID: 933816551}
   - component: {fileID: 933816552}
   - component: {fileID: 933816549}
+  - component: {fileID: 933816557}
   - component: {fileID: 933816550}
   - component: {fileID: 933816553}
   - component: {fileID: 933816554}
@@ -848,8 +849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974bd8f2c7f904f72b8b9d11e7e8110b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  movement: {fileID: 933816550}
-  movementRotation: {fileID: 933816553}
+  velocityMovement: {fileID: 933816550}
+  velocityRotation: {fileID: 933816553}
   _inputReader: {fileID: 11400000, guid: 5746b7eeed6b24a699f5a008ac75bd7d, type: 2}
 --- !u!114 &933816550
 MonoBehaviour:
@@ -965,6 +966,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a95ca24fa54e428fb5cabfec075cc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalEventChannel
+--- !u!114 &933816557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933816547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c612c425a0c564e498e84b12a3ff3685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationController
+  dampTime: 0.1
+  animator: {fileID: 5866666021894666612}
 --- !u!1 &1051505787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1378,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7622561786805696539, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
   m_PrefabInstance: {fileID: 2750727920638393318}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &919132149174450612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 725197306588418515, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+  m_PrefabInstance: {fileID: 2750727920638393318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2750727920638393318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1379,6 +1399,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9491c62d82aab468fbf061d471f88bab, type: 2}
+    - target: {fileID: 1460503369445163009, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+      propertyPath: m_AnimatePhysics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460503369445163009, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2661707556408206837, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -1475,10 +1503,31 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 725197306588418515, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5866666021894666613}
     - targetCorrespondingSourceObject: {fileID: 5063094560065878057, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1247448982}
   m_SourcePrefab: {fileID: 100100000, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+--- !u!95 &5866666021894666612 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1460503369445163009, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+  m_PrefabInstance: {fileID: 2750727920638393318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5866666021894666613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149174450612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e873827b108d4b61a2948354b82acf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RootMotionAdapter
+  rb: {fileID: 933816551}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Sword Primary 1
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAbilitySO
   Name: Sword Primary 1
-  Duration: 1
+  AnimationTriggerName: Primary 1
+  Clip: {fileID: -203655887218126122, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
+  AnimationSpeed: 1.5
   ComboWindow: 1
-  WindupPercentage: 0.2
-  ExecutionPercentage: 0.3
-  RecoveryPercentage: 0.5
+  WindupPercentage: 0.4
+  ExecutionPercentage: 0.4
+  RecoveryPercentage: 0.2
   CancelPercentage: 0.2

@@ -42,26 +42,41 @@ public class InputReaderSO : ScriptableObject, InputActions.IPlayerActions
 
 	public void OnPrimary(InputAction.CallbackContext context)
 	{
-		PrimaryPerformed?.Invoke();
+		if (context.performed)
+		{
+			PrimaryPerformed?.Invoke();
+		}
 	}
 
 	public void OnSecondary(InputAction.CallbackContext context)
 	{
-		SecondaryPerformed?.Invoke();
+		if (context.performed)
+		{
+			SecondaryPerformed?.Invoke();
+		}
 	}
 
 	public void OnDash(InputAction.CallbackContext context)
 	{
-		DashPerformed?.Invoke();
+		if (context.performed)
+		{
+			DashPerformed?.Invoke();
+		}
 	}
 
 	public void OnCast(InputAction.CallbackContext context)
 	{
-		CastPerformed?.Invoke();
+		if (context.performed)
+		{
+			CastPerformed?.Invoke();
+		}
 	}
 
 	public void OnUltimate(InputAction.CallbackContext context)
 	{
-		UltimatePerformed?.Invoke();
+		if (context.performed)
+		{
+			UltimatePerformed?.Invoke();
+		}
 	}
 }

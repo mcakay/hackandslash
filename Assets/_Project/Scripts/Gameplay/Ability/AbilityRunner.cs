@@ -10,7 +10,7 @@ public class AbilityRunner : MonoBehaviour
 	public AbilityTracker Tracker { get; private set; }
 	public StateMachine StateMachine { get; private set; }
 
-	private LocalEventChannel _channel;
+	public LocalEventChannel Channel { get; private set;}
 
 	public bool CanEarlyCancel { get; set; } = false;
 
@@ -24,19 +24,19 @@ public class AbilityRunner : MonoBehaviour
 		StateMachine.AddState(new ExecutionState(this));
 		StateMachine.AddState(new RecoveryState(this));
 
-		_channel = GetComponent<LocalEventChannel>();
+		Channel = GetComponent<LocalEventChannel>();
 	}
 
 	private void OnEnable()
 	{
-		_channel.Subscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
-		_channel.Subscribe<AbilityCastRequestedEvent>(OnCastRequested);
+		Channel.Subscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
+		Channel.Subscribe<AbilityCastRequestedEvent>(OnCastRequested);
 	}
 
 	private void OnDisable()
 	{
-		_channel.Unsubscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
-		_channel.Unsubscribe<AbilityCastRequestedEvent>(OnCastRequested);
+		Channel.Unsubscribe<MovesetUpdateRequestedEvent>(OnMovesetUpdateRequested);
+		Channel.Unsubscribe<AbilityCastRequestedEvent>(OnCastRequested);
 	}
 
 	private void Update()
