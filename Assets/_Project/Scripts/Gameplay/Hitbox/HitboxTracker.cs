@@ -36,7 +36,7 @@ public class HitboxTracker : MonoBehaviour
 		if (e.IsActive)
 		{
 			_activeHitbox.EnableHitbox(e.Damage, e.KnockbackForce, e.HitSFX);
-			SFXEvent.Raise(new SFXPayload(e.SwingSFX, 1f, Random.Range(0.9f, 1.1f), transform.position));
+			SFXEvent.Raise(new SFXEventPayload(e.SwingSFX, 1f, Random.Range(0.9f, 1.1f), transform.position));
 		}
 		else
 		{

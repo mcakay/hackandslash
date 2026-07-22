@@ -29,4 +29,6 @@ MonoBehaviour:
   FovZoomDuration: 0
   ScreenShakeIntensity: 0
   ScreenShakeDuration: 0
+  swingSFX: {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
+  hitSFX: {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
   Damage: 10

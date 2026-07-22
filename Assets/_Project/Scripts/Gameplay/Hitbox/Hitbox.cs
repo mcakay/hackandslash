@@ -62,7 +62,7 @@ public class Hitbox : MonoBehaviour
 				if (_hitHurtboxes.Count == 1 && _channel != null)
 				{
 					_channel.Publish(new FirstHitRegisteredEvent());
-					SFXEvent.Raise(new SFXPayload(_hitSFX, 1f, Random.Range(0.9f, 1.1f), transform.position));
+					SFXEvent.Raise(new SFXEventPayload(_hitSFX, 1f, Random.Range(0.9f, 1.1f), transform.position));
 				}
 			}
 		}

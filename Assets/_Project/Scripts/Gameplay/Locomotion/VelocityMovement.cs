@@ -35,7 +35,7 @@ public class VelocityMovement : MonoBehaviour
 		Vector3 inputDirection = new(input.x, 0, input.y);
 		Vector3 skewedDirection = _isometricMatrix.MultiplyPoint3x4(inputDirection);
 
-		Vector3 targetVelocity = skewedDirection * 5f;
+		Vector3 targetVelocity = skewedDirection * 6f;
 		targetVelocity.y = _rigidbody.linearVelocity.y;
 
 		_rigidbody.linearVelocity = targetVelocity;

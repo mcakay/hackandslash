@@ -33,7 +33,7 @@ public class AudioSystem : MonoBehaviour
 		}
 	}
 
-	public void PlaySFX(SFXPayload payload)
+	public void PlaySFX(SFXEventPayload payload)
 	{
 		if (payload.Clip == null) return;
 
@@ -44,7 +44,7 @@ public class AudioSystem : MonoBehaviour
 		source.Play();
 	}
 
-	public void PlayMusic(MusicPayload payload)
+	public void PlayMusic(MusicEventPayload payload)
 	{
 		if (payload.Clip == null) return;
 		if (musicSource.clip == payload.Clip && musicSource.isPlaying) return;

@@ -35,12 +35,12 @@ public class PlayerFeedbackController : MonoBehaviour
 		}
 		if (_currentAbility.IsScreenShake)
 		{
-			shakeEvent.Raise(new ShakePayload(_currentAbility.ScreenShakeIntensity, _currentAbility.ScreenShakeDuration));
+			shakeEvent.Raise(new ShakeEventPayload(_currentAbility.ScreenShakeIntensity, _currentAbility.ScreenShakeDuration));
 		}
 
 		if (_currentAbility.IsFovZoom)
 		{
-			zoomEvent.Raise(new ZoomPayload(_currentAbility.FovZoomAmount, _currentAbility.FovZoomDuration));
+			zoomEvent.Raise(new ZoomEventPayload(_currentAbility.FovZoomAmount, _currentAbility.FovZoomDuration));
 		}
 	}
 

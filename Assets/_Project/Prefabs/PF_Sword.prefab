@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe01fc16bd447a3895c8a84fb2865e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  SFXEvent: {fileID: 11400000, guid: 4a09c6f7f03c940d08f536b495765d15, type: 2}
+  SFXEvent: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}

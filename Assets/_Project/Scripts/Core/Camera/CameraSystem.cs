@@ -62,7 +62,7 @@ public class CameraSystem : MonoBehaviour
 		}
 	}
 
-	public void OnCameraShake(ShakePayload payload)
+	public void OnCameraShake(ShakeEventPayload payload)
 	{
 		if (impulseSource == null) return;
 
@@ -72,7 +72,7 @@ public class CameraSystem : MonoBehaviour
 		impulseSource.GenerateImpulse(payload.Intensity);
 	}
 
-	public void OnCameraZoom(ZoomPayload payload)
+	public void OnCameraZoom(ZoomEventPayload payload)
 	{
 		_startFOV = vCam.Lens.FieldOfView;
 
@@ -81,7 +81,7 @@ public class CameraSystem : MonoBehaviour
 		_zoomTimer.Start(payload.Duration);
 	}
 
-	public void OnCameraFocus(FocusPayload payload)
+	public void OnCameraFocus(FocusEventPayload payload)
 	{
 		if (!_focusTimer.IsRunning)
 		{
