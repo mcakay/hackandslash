@@ -5,12 +5,12 @@ using UnityEngine.Events;
 [Serializable]
 public struct ZoomPayload
 {
-	public float TargetFOV;
+	public float Amount;
 	public float Duration;
 
-	public ZoomPayload(float targetFOV, float duration)
+	public ZoomPayload(float amount, float duration)
 	{
-		TargetFOV = targetFOV;
+		Amount = amount;
 		Duration = duration;
 	}
 }
@@ -19,4 +19,3 @@ public struct ZoomPayload
 public class ZoomEventSO : BaseGameEventSO<ZoomPayload> { }
 [System.Serializable]
 public class ZoomUnityEvent : UnityEvent<ZoomPayload> { }
-public class ZoomEventListener : BaseGameEventListener<ZoomPayload, ZoomEventSO, ZoomUnityEvent> { }

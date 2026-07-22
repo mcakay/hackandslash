@@ -19,4 +19,3 @@ public struct ShakePayload
 public class ShakeEventSO : BaseGameEventSO<ShakePayload> { }
 [Serializable]
 public class ShakeUnityEvent : UnityEvent<ShakePayload> { }
-public class ShakeEventListener : BaseGameEventListener<ShakePayload, ShakeEventSO, ShakeUnityEvent> { }

@@ -3,15 +3,13 @@ using UnityEngine;
 
 public class CameraSystem : MonoBehaviour
 {
-	[Header("Settings")]
+	[Header("References")]
 	[SerializeField] private CinemachineCamera vCam;
-
-	private CinemachineBasicMultiChannelPerlin _noiseProfile;
+	[SerializeField] private CinemachineImpulseSource impulseSource;
 
 	private Transform _defaultFollowTarget;
 	private Transform _defaultLookAtTarget;
 
-	private readonly Timer _shakeTimer = new();
 	private readonly Timer _zoomTimer = new();
 	private readonly Timer _focusTimer = new();
 
@@ -22,36 +20,26 @@ public class CameraSystem : MonoBehaviour
 	{
 		if (vCam != null)
 		{
-			_noiseProfile = vCam.GetComponent<CinemachineBasicMultiChannelPerlin>();
 			_defaultFollowTarget = vCam.Follow;
 			_defaultLookAtTarget = vCam.LookAt;
-
-			if (_noiseProfile != null) _noiseProfile.AmplitudeGain = 0f;
 		}
 	}
 
 	private void OnEnable()
 	{
-		_shakeTimer.TimerEnded += OnShakeTimerEnded;
 		_zoomTimer.TimerEnded += OnZoomTimerEnded;
 		_focusTimer.TimerEnded += OnFocusTimerEnded;
 	}
 
 	private void OnDisable()
 	{
-		_shakeTimer.TimerEnded -= OnShakeTimerEnded;
 		_zoomTimer.TimerEnded -= OnZoomTimerEnded;
 		_focusTimer.TimerEnded -= OnFocusTimerEnded;
 	}
 
-	private void OnShakeTimerEnded()
-	{
-		if (_noiseProfile != null) _noiseProfile.AmplitudeGain = 0f;
-	}
-
 	private void OnZoomTimerEnded()
 	{
-		vCam.Lens.OrthographicSize = _targetFOV;
+		vCam.Lens.FieldOfView = _startFOV;
 	}
 
 	private void OnFocusTimerEnded()
@@ -64,27 +52,32 @@ public class CameraSystem : MonoBehaviour
 	{
 		float dt = Time.deltaTime;
 
-		_shakeTimer.Tick(dt);
 		_zoomTimer.Tick(dt);
 		_focusTimer.Tick(dt);
 
 		if (_zoomTimer.IsRunning)
 		{
-			vCam.Lens.OrthographicSize = Mathf.Lerp(_startFOV, _targetFOV, _zoomTimer.Progress);
+			float t = Mathf.PingPong(_zoomTimer.Progress * 2f, 1f);
+			vCam.Lens.FieldOfView = Mathf.Lerp(_startFOV, _targetFOV, t);
 		}
 	}
 
 	public void OnCameraShake(ShakePayload payload)
 	{
-		if (_noiseProfile == null) return;
-		_noiseProfile.AmplitudeGain = payload.Intensity;
-		_shakeTimer.Start(payload.Duration);
+		if (impulseSource == null) return;
+
+		impulseSource.ImpulseDefinition.TimeEnvelope.SustainTime = payload.Duration * 0.2f;
+		impulseSource.ImpulseDefinition.TimeEnvelope.DecayTime = payload.Duration * 0.8f;
+
+		impulseSource.GenerateImpulse(payload.Intensity);
 	}
 
 	public void OnCameraZoom(ZoomPayload payload)
 	{
-		_startFOV = vCam.Lens.OrthographicSize;
-		_targetFOV = payload.TargetFOV;
+		_startFOV = vCam.Lens.FieldOfView;
+
+		_targetFOV = _startFOV - payload.Amount;
+
 		_zoomTimer.Start(payload.Duration);
 	}
 

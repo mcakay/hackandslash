@@ -20,3 +20,13 @@ MonoBehaviour:
   WindupPercentage: 0.5
   ExecutionPercentage: 0.3
   RecoveryPercentage: 0.2
+  IsHitStop: 0
+  IsFovZoom: 0
+  IsScreenShake: 0
+  KnockbackForce: 3
+  HitStopDuration: 0
+  FovZoomAmount: 0
+  FovZoomDuration: 0
+  ScreenShakeIntensity: 0
+  ScreenShakeDuration: 0
+  Damage: 10

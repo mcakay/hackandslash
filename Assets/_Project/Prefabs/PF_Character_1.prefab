@@ -174,6 +174,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7622561786805696539}
   - component: {fileID: 1460503369445163009}
+  - component: {fileID: 7448829967748830566}
+  - component: {fileID: 5874098906006051874}
   m_Layer: 0
   m_Name: PF_Character_1
   m_TagString: Untagged
@@ -222,6 +224,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7448829967748830566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725197306588418515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e873827b108d4b61a2948354b82acf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RootMotionAdapter
+  rb: {fileID: 0}
+--- !u!114 &5874098906006051874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725197306588418515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f944cd1001024d31a84af73d75a684e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaterialPropertyHandler
+  _channel: {fileID: 0}
+  _renderers:
+  - {fileID: 8749664232310488815}
+  _colorPropertyName: _BaseColor
+  _baseColor: {r: 1, g: 1, b: 1, a: 1}
+  _emissionPropertyName: _EmissionColor
 --- !u!1 &954772636184761267
 GameObject:
   m_ObjectHideFlags: 0

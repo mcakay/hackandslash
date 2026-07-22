@@ -19,4 +19,3 @@ public struct FocusPayload
 public class FocusEventSO : BaseGameEventSO<FocusPayload> { }
 [Serializable]
 public class FocusUnityEvent : UnityEvent<FocusPayload> { }
-public class FocusEventListener : BaseGameEventListener<FocusPayload, FocusEventSO, FocusUnityEvent> { }

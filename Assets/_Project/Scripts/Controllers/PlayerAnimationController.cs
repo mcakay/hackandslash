@@ -24,6 +24,8 @@ public class PlayerAnimationController : MonoBehaviour
 		_velocityXHash = Animator.StringToHash("VelocityX");
 		_velocityZHash = Animator.StringToHash("VelocityZ");
 		_animSpeedHash = Animator.StringToHash("AnimationSpeed");
+
+		animator.applyRootMotion = true;
 	}
 
 	private void OnEnable()
@@ -58,8 +60,7 @@ public class PlayerAnimationController : MonoBehaviour
 
 	private void OnAbilityCastStarted(AbilityCastStartedEvent e)
 	{
-		animator.applyRootMotion = true;
 		animator.SetFloat(_animSpeedHash, e.Speed);
-		animator.SetTrigger(e.Hash);
+		animator.SetTrigger(e.Ability.AnimationHash);
 	}
 }

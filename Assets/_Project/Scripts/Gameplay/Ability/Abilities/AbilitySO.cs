@@ -23,6 +23,17 @@ public abstract class AbilitySO : ScriptableObject
 	[Range(0f, 1f)] public float ExecutionPercentage = 0.3f;
 	[Range(0f, 1f)] public float RecoveryPercentage = 0.5f;
 
+	[Header("Effects")]
+	public bool IsHitStop = false;
+	public bool IsFovZoom = false;
+	public bool IsScreenShake = false;
+	public float KnockbackForce = 0f;
+	public float HitStopDuration = 0f;
+	public float FovZoomAmount = 0f;
+	public float FovZoomDuration = 0f;
+	public float ScreenShakeIntensity = 0f;
+	public float ScreenShakeDuration = 0f;
+
 	public float WindupDuration => Duration * WindupPercentage;
 	public float ExecutionDuration => Duration * ExecutionPercentage;
 	public float RecoveryDuration => Duration * RecoveryPercentage;

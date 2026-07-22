@@ -1,11 +1,11 @@
 public readonly struct AbilityCastStartedEvent : ILocalEvent
 {
-	public readonly int Hash;
 	public readonly float Speed;
+	public readonly AbilitySO Ability;
 
-	public AbilityCastStartedEvent(int hash, float speed)
+	public AbilityCastStartedEvent(AbilitySO ability, float speed)
 	{
-		Hash = hash;
+		Ability = ability;
 		Speed = speed;
 	}
 }
