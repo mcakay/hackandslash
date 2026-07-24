@@ -5,6 +5,7 @@ public class PlayerFeedbackController : MonoBehaviour
 {
 	[SerializeField] private ShakeEventSO shakeEvent;
 	[SerializeField] private ZoomEventSO zoomEvent;
+	[SerializeField] private TimeStopEventSO timeStopEvent;
 
 	private LocalEventChannel _channel;
 
@@ -41,6 +42,11 @@ public class PlayerFeedbackController : MonoBehaviour
 		if (_currentAbility.IsFovZoom)
 		{
 			zoomEvent.Raise(new ZoomEventPayload(_currentAbility.FovZoomAmount, _currentAbility.FovZoomDuration));
+		}
+
+		if (_currentAbility.IsTimeStop)
+		{
+			timeStopEvent.Raise(new TimeStopEventPayload(_currentAbility.TimeStopDuration, _currentAbility.TimeStopScale));
 		}
 	}
 

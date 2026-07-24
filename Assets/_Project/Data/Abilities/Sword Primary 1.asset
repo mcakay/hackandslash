@@ -20,8 +20,8 @@ MonoBehaviour:
   WindupPercentage: 0.5
   ExecutionPercentage: 0.3
   RecoveryPercentage: 0.2
-  IsHitStop: 0
-  HitStopDuration: 0
+  IsTimeStop: 0
+  TimeStopDuration: 0
   IsFovZoom: 0
   FovZoomAmount: 0
   FovZoomDuration: 0
@@ -33,8 +33,8 @@ MonoBehaviour:
   - Clips:
     - {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
     Volume: 0.3
-    MinPitch: 0.5
-    MaxPitch: 1
+    MinPitch: 0.8
+    MaxPitch: 1.2
   ImpactSFX:
   - Clips:
     - {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}

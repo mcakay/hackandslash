@@ -32,12 +32,16 @@ public abstract class AbilitySO : ScriptableObject
     [Range(0f, 1f)] public float RecoveryPercentage = 0.5f;
 
     [FoldoutGroup("Combat Effects")]
-    [OnValueChanged(nameof(ResetHitStopValues))]
-    public bool IsHitStop;
+    [OnValueChanged(nameof(ResetTimeStopValues))]
+    public bool IsTimeStop;
 
     [FoldoutGroup("Combat Effects")]
-    [ShowIf(nameof(IsHitStop))] [Min(0f)]
-    public float HitStopDuration;
+    [ShowIf(nameof(IsTimeStop))] [Min(0f)]
+    public float TimeStopDuration;
+
+	[FoldoutGroup("Combat Effects")]
+	[ShowIf(nameof(IsTimeStop))] [Min(0f)]
+	public float TimeStopScale = 0f;
 
     [FoldoutGroup("Combat Effects")]
     [OnValueChanged(nameof(ResetFovValues))]
@@ -81,7 +85,7 @@ public abstract class AbilitySO : ScriptableObject
     public abstract void StartExecute(GameObject caster, LocalEventChannel channel);
     public abstract void EndExecute(GameObject caster, LocalEventChannel channel);
 
-    private void ResetHitStopValues() { if (!IsHitStop) HitStopDuration = 0f; }
+    private void ResetTimeStopValues() { if (!IsTimeStop) TimeStopDuration = 0f; }
     private void ResetFovValues() { if (!IsFovZoom) { FovZoomAmount = 0f; FovZoomDuration = 0f; } }
     private void ResetShakeValues() { if (!IsScreenShake) { ScreenShakeIntensity = 0f; ScreenShakeDuration = 0f; } }
 }
