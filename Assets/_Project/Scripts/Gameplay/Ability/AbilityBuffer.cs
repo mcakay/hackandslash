@@ -16,13 +16,13 @@ internal readonly struct BufferedInput
 
 public class AbilityBuffer
 {
-	private readonly AbilityConfig _config;
+	private readonly AbilityConfigSO _config;
 	private readonly Queue<BufferedInput> _inputBuffer = new();
 
 	private readonly Func<bool> _checkCanExecute;
 	private readonly Action<int> _executeAbility;
 
-	public AbilityBuffer(AbilityConfig config, Func<bool> checkCanExecute, Action<int> executeAbility)
+	public AbilityBuffer(AbilityConfigSO config, Func<bool> checkCanExecute, Action<int> executeAbility)
 	{
 		_config = config;
 		_checkCanExecute = checkCanExecute;

@@ -15,20 +15,30 @@ MonoBehaviour:
   Name: Sword Primary 2
   AnimationTriggerName: Primary 2
   Clip: {fileID: -4469183485442372851, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
-  AnimationSpeed: 2
+  AnimationSpeed: 1.5
   ComboWindow: 1
-  WindupPercentage: 0.5
-  ExecutionPercentage: 0.3
+  WindupPercentage: 0.3
+  ExecutionPercentage: 0.5
   RecoveryPercentage: 0.2
   IsHitStop: 0
-  IsFovZoom: 0
-  IsScreenShake: 0
-  KnockbackForce: 3
   HitStopDuration: 0
+  IsFovZoom: 0
   FovZoomAmount: 0
   FovZoomDuration: 0
+  IsScreenShake: 0
   ScreenShakeIntensity: 0
   ScreenShakeDuration: 0
-  swingSFX: {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
-  hitSFX: {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
+  KnockbackForce: 3
+  CastSFX:
+  - Clips:
+    - {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
+    Volume: 0.3
+    MinPitch: 0.5
+    MaxPitch: 1
+  ImpactSFX:
+  - Clips:
+    - {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
+    Volume: 1
+    MinPitch: 0.8
+    MaxPitch: 1.2
   Damage: 10

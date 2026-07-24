@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(LocalEventChannel))]
 public class AbilityRunner : MonoBehaviour
 {
-	[SerializeField] private AbilityConfig config;
+	[SerializeField] private AbilityConfigSO config;
 	[SerializeField] private MovesetSO moveset;
 
 	private AbilityBuffer _buffer;

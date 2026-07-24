@@ -1,43 +1,87 @@
+using System.Collections.Generic;
 using UnityEngine;
+using Alchemy.Inspector;
 
 public abstract class AbilitySO : ScriptableObject
 {
-	[Header("Identity")]
-	public string Name;
+    [FoldoutGroup("Identity")]
+    public string Name;
 
-	[Header("Animation")]
-	public string AnimationTriggerName;
-	public int AnimationHash => Animator.StringToHash(AnimationTriggerName);
+    [FoldoutGroup("Animation")]
+    public string AnimationTriggerName;
+    public int AnimationHash => Animator.StringToHash(AnimationTriggerName);
 
-	public AnimationClip Clip;
+    [FoldoutGroup("Animation")]
+    public AnimationClip Clip;
 
-	[Min(0.1f)]
-	public float AnimationSpeed = 1f;
+    [FoldoutGroup("Animation")]
+    [Min(0.1f)]
+    public float AnimationSpeed = 1f;
 
-	[Header("Timing")]
-	public float ComboWindow = 1.0f;
-	public float Duration => (Clip != null ? Clip.length : 0f) / AnimationSpeed;
+    [FoldoutGroup("Timing")]
+    public float ComboWindow = 1.0f;
+    public float Duration => (Clip != null ? Clip.length : 0f) / AnimationSpeed;
 
-	[Header("Phase Durations")]
-	[Range(0f, 1f)] public float WindupPercentage = 0.2f;
-	[Range(0f, 1f)] public float ExecutionPercentage = 0.3f;
-	[Range(0f, 1f)] public float RecoveryPercentage = 0.5f;
+    [FoldoutGroup("Phase Durations")]
+    [Range(0f, 1f)] public float WindupPercentage = 0.2f;
 
-	[Header("Effects")]
-	public bool IsHitStop = false;
-	public bool IsFovZoom = false;
-	public bool IsScreenShake = false;
-	public float KnockbackForce = 0f;
-	public float HitStopDuration = 0f;
-	public float FovZoomAmount = 0f;
-	public float FovZoomDuration = 0f;
-	public float ScreenShakeIntensity = 0f;
-	public float ScreenShakeDuration = 0f;
+    [FoldoutGroup("Phase Durations")]
+    [Range(0f, 1f)] public float ExecutionPercentage = 0.3f;
 
-	public float WindupDuration => Duration * WindupPercentage;
-	public float ExecutionDuration => Duration * ExecutionPercentage;
-	public float RecoveryDuration => Duration * RecoveryPercentage;
+    [FoldoutGroup("Phase Durations")]
+    [Range(0f, 1f)] public float RecoveryPercentage = 0.5f;
 
-	public abstract void StartExecute(GameObject caster, LocalEventChannel channel);
-	public abstract void EndExecute(GameObject caster, LocalEventChannel channel);
+    [FoldoutGroup("Combat Effects")]
+    [OnValueChanged(nameof(ResetHitStopValues))]
+    public bool IsHitStop;
+
+    [FoldoutGroup("Combat Effects")]
+    [ShowIf(nameof(IsHitStop))] [Min(0f)]
+    public float HitStopDuration;
+
+    [FoldoutGroup("Combat Effects")]
+    [OnValueChanged(nameof(ResetFovValues))]
+    public bool IsFovZoom;
+
+    [FoldoutGroup("Combat Effects")]
+    [ShowIf(nameof(IsFovZoom))]
+    public float FovZoomAmount;
+
+    [FoldoutGroup("Combat Effects")]
+    [ShowIf(nameof(IsFovZoom))] [Min(0f)]
+    public float FovZoomDuration;
+
+    [FoldoutGroup("Combat Effects")]
+    [OnValueChanged(nameof(ResetShakeValues))]
+    public bool IsScreenShake;
+
+    [FoldoutGroup("Combat Effects")]
+    [ShowIf(nameof(IsScreenShake))]
+    public float ScreenShakeIntensity;
+
+    [FoldoutGroup("Combat Effects")]
+    [ShowIf(nameof(IsScreenShake))] [Min(0f)]
+    public float ScreenShakeDuration;
+
+    [FoldoutGroup("Physics")]
+    public float KnockbackForce = 0f;
+
+    [FoldoutGroup("Audio")]
+    [LabelText("Cast SFX Layers")]
+    public List<SFXConfig> CastSFX;
+
+    [FoldoutGroup("Audio")]
+    [LabelText("Impact SFX Layers")]
+    public List<SFXConfig> ImpactSFX;
+
+    public float WindupDuration => Duration * WindupPercentage;
+    public float ExecutionDuration => Duration * ExecutionPercentage;
+    public float RecoveryDuration => Duration * RecoveryPercentage;
+
+    public abstract void StartExecute(GameObject caster, LocalEventChannel channel);
+    public abstract void EndExecute(GameObject caster, LocalEventChannel channel);
+
+    private void ResetHitStopValues() { if (!IsHitStop) HitStopDuration = 0f; }
+    private void ResetFovValues() { if (!IsFovZoom) { FovZoomAmount = 0f; FovZoomDuration = 0f; } }
+    private void ResetShakeValues() { if (!IsScreenShake) { ScreenShakeIntensity = 0f; ScreenShakeDuration = 0f; } }
 }

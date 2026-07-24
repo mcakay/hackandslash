@@ -951,6 +951,8 @@ GameObject:
   - component: {fileID: 849720470}
   - component: {fileID: 849720471}
   - component: {fileID: 849720468}
+  - component: {fileID: 849720473}
+  - component: {fileID: 849720472}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -986,8 +988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dda492e5ee54af691aacd38c8e267a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurtbox
-  knockbackDuration: 0.15
-  animator: {fileID: 1983192268}
 --- !u!136 &849720469
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1050,6 +1050,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a95ca24fa54e428fb5cabfec075cc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocalEventChannel
+--- !u!114 &849720472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849720466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c612c425a0c564e498e84b12a3ff3685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimator
+  dampTime: 0.1
+  animator: {fileID: 1983192268}
+--- !u!114 &849720473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849720466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232ecd5874fba4c20aa572dd8ec15aea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KnockbackReceiver
+  _combatConfig: {fileID: 11400000, guid: 07f95d9b750c24f1abc90469ee12c15a, type: 2}
+  animator: {fileID: 1983192268}
 --- !u!1 &933816547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,8 +1090,8 @@ GameObject:
   - component: {fileID: 933816551}
   - component: {fileID: 933816552}
   - component: {fileID: 933816549}
-  - component: {fileID: 933816557}
   - component: {fileID: 933816560}
+  - component: {fileID: 933816557}
   - component: {fileID: 933816550}
   - component: {fileID: 933816553}
   - component: {fileID: 933816554}
@@ -1071,6 +1099,7 @@ GameObject:
   - component: {fileID: 933816556}
   - component: {fileID: 933816559}
   - component: {fileID: 933816558}
+  - component: {fileID: 933816561}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1249,7 +1278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ae9a4db980a4c9f90e01d52f114299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitboxTracker
-  SFXEvent: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}
 --- !u!114 &933816559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1262,8 +1290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dda492e5ee54af691aacd38c8e267a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurtbox
-  knockbackDuration: 0.15
-  animator: {fileID: 0}
 --- !u!114 &933816560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,6 +1304,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFeedbackController
   shakeEvent: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
   zoomEvent: {fileID: 11400000, guid: 6077485fa665648d6bda31f614202727, type: 2}
+--- !u!114 &933816561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933816547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af4398534c2749508fc7cbd1ac63e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityAudioPlayer
+  sfxEvent: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}
 --- !u!1 &1051505787
 GameObject:
   m_ObjectHideFlags: 0

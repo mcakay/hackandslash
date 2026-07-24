@@ -9,6 +9,7 @@ public class ExecutionState : AbilityState
 	public override void OnEnter()
 	{
 		_timer.Start(_runner.Tracker.CurrentAbility.ExecutionDuration);
+		_runner.Channel.Publish(new AbilityExecutionStartedEvent(_runner.Tracker.CurrentAbility));
 		_runner.Tracker.CurrentAbility.StartExecute(_runner.gameObject, _runner.Channel);
 		Debug.Log($"ExecutionState: {_runner.Tracker.CurrentAbility.name} for {_runner.Tracker.CurrentAbility.ExecutionDuration} seconds");
 	}

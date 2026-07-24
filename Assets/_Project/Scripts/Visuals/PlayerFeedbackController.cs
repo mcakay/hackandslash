@@ -17,17 +17,17 @@ public class PlayerFeedbackController : MonoBehaviour
 
 	private void OnEnable()
 	{
-		_channel.Subscribe<FirstHitRegisteredEvent>(OnFirstHitRegistered);
+		_channel.Subscribe<FirstImpactRegisteredEvent>(OnFirstImpactRegistered);
 		_channel.Subscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 	}
 
 	private void OnDisable()
 	{
-		_channel.Unsubscribe<FirstHitRegisteredEvent>(OnFirstHitRegistered);
+		_channel.Unsubscribe<FirstImpactRegisteredEvent>(OnFirstImpactRegistered);
 		_channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 	}
 
-	private void OnFirstHitRegistered(FirstHitRegisteredEvent e)
+	private void OnFirstImpactRegistered(FirstImpactRegisteredEvent e)
 	{
 		if (_currentAbility == null)
 		{

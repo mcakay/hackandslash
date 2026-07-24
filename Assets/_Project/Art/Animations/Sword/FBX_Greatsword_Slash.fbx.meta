@@ -34,7 +34,7 @@ ModelImporter:
       name: Anim_Greatsword_Slash_1
       takeName: mixamo.com
       internalID: -203655887218126122
-      firstFrame: 0
+      firstFrame: 25
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
@@ -63,7 +63,7 @@ ModelImporter:
       name: Anim_Greatsword_Slash_2
       takeName: mixamo.com
       internalID: -4469183485442372851
-      firstFrame: 60
+      firstFrame: 90
       lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0

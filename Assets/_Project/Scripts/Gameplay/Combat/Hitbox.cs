@@ -7,13 +7,10 @@ public class Hitbox : MonoBehaviour
 	[SerializeField] private SFXEventSO SFXEvent;
 
 	private Collider _collider;
-
 	private LocalEventChannel _channel;
 	private readonly HashSet<Hurtbox> _hitHurtboxes = new();
 
-	private float _damage;
-	private float _knockbackForce;
-	private AudioClip _hitSFX;
+	private HitPayload _payload;
 
 	private void Awake()
 	{
@@ -30,11 +27,9 @@ public class Hitbox : MonoBehaviour
 		_channel = channel;
 	}
 
-	public void EnableHitbox(float damage, float knockbackForce, AudioClip hitSFX)
+	public void EnableHitbox(HitPayload payload)
 	{
-		_damage = damage;
-		_knockbackForce = knockbackForce;
-		_hitSFX = hitSFX;
+		_payload = payload;
 
 		_hitHurtboxes.Clear();
 		if (_collider != null)
@@ -55,15 +50,16 @@ public class Hitbox : MonoBehaviour
 	{
 		if (other.TryGetComponent(out Hurtbox hurtbox))
 		{
-			if (_hitHurtboxes.Add(hurtbox))
+			if (!_hitHurtboxes.Add(hurtbox))
 			{
-				hurtbox.Damage(_damage, _knockbackForce, transform.position);
+				return;
+			}
 
-				if (_hitHurtboxes.Count == 1 && _channel != null)
-				{
-					_channel.Publish(new FirstHitRegisteredEvent());
-					SFXEvent.Raise(new SFXEventPayload(_hitSFX, 1f, Random.Range(0.9f, 1.1f), transform.position));
-				}
+			hurtbox.ReceiveHit(_payload, transform.position);
+
+			if (_hitHurtboxes.Count == 1 && _channel != null)
+			{
+				_channel.Publish(new FirstImpactRegisteredEvent(_payload.ImpactSFX, transform.position));
 			}
 		}
 	}
