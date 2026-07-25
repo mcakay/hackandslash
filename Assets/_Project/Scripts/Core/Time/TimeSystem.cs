@@ -29,7 +29,7 @@ public class TimeSystem : MonoBehaviour
 		}
 	}
 
-	public void TriggerTimeStop(TimeStopEventPayload payload)
+	public void OnTimeScaleEvent(TimeScaleEventPayload payload)
 	{
 		if (!_isHitStopping)
 		{

@@ -15,11 +15,11 @@ MonoBehaviour:
   Slots:
   - Name: Primary
     Abilities:
-    - {fileID: 11400000, guid: 8fd41daf0c4554c88a5081946a29a54f, type: 2}
-    - {fileID: 11400000, guid: 630fd9bbcc9864ef6bb05ed08387c60f, type: 2}
+    - {fileID: 11400000, guid: 5dd5bb8c28f8b4e809a083637d876b7f, type: 2}
+    - {fileID: 11400000, guid: 6a5f1458c5e154113aa8fb110087daa1, type: 2}
   - Name: Secondary
     Abilities:
-    - {fileID: 11400000, guid: ba7da210fc71d47ec8d366920432740a, type: 2}
+    - {fileID: 11400000, guid: e0287ec87b9de414cb03645359368c1f, type: 2}
   - Name: Cast
     Abilities:
     - {fileID: 11400000, guid: ca3097e2fedb64a738af75dadc4a4536, type: 2}

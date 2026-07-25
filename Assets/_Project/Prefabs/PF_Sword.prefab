@@ -111,7 +111,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8, y: 2, z: 0.5}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: -0.000000029802322, y: 0.47532117, z: 0.0000024363399}
 --- !u!114 &8560401643751107858
 MonoBehaviour:
@@ -125,4 +125,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe01fc16bd447a3895c8a84fb2865e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  SFXEvent: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}

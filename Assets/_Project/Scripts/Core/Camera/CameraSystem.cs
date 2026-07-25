@@ -11,7 +11,6 @@ public class CameraSystem : MonoBehaviour
 	private Transform _defaultLookAtTarget;
 
 	private readonly Timer _zoomTimer = new();
-	private readonly Timer _focusTimer = new();
 
 	private float _startFOV;
 	private float _targetFOV;
@@ -28,13 +27,11 @@ public class CameraSystem : MonoBehaviour
 	private void OnEnable()
 	{
 		_zoomTimer.TimerEnded += OnZoomTimerEnded;
-		_focusTimer.TimerEnded += OnFocusTimerEnded;
 	}
 
 	private void OnDisable()
 	{
 		_zoomTimer.TimerEnded -= OnZoomTimerEnded;
-		_focusTimer.TimerEnded -= OnFocusTimerEnded;
 	}
 
 	private void OnZoomTimerEnded()
@@ -53,7 +50,6 @@ public class CameraSystem : MonoBehaviour
 		float dt = Time.deltaTime;
 
 		_zoomTimer.Tick(dt);
-		_focusTimer.Tick(dt);
 
 		if (_zoomTimer.IsRunning)
 		{
@@ -62,7 +58,7 @@ public class CameraSystem : MonoBehaviour
 		}
 	}
 
-	public void OnCameraShake(ShakeEventPayload payload)
+	public void OnCameraImpulseEvent(CameraImpulseEventPayload payload)
 	{
 		if (impulseSource == null) return;
 
@@ -72,25 +68,12 @@ public class CameraSystem : MonoBehaviour
 		impulseSource.GenerateImpulse(payload.Intensity);
 	}
 
-	public void OnCameraZoom(ZoomEventPayload payload)
+	public void OnCameraZoomEvent(CameraZoomEventPayload payload)
 	{
 		_startFOV = vCam.Lens.FieldOfView;
 
 		_targetFOV = _startFOV - payload.Amount;
 
 		_zoomTimer.Start(payload.Duration);
-	}
-
-	public void OnCameraFocus(FocusEventPayload payload)
-	{
-		if (!_focusTimer.IsRunning)
-		{
-			_defaultFollowTarget = vCam.Follow;
-			_defaultLookAtTarget = vCam.LookAt;
-		}
-
-		vCam.Follow = payload.Target;
-		vCam.LookAt = payload.Target;
-		_focusTimer.Start(payload.Duration);
 	}
 }
