@@ -410,6 +410,7 @@ Transform:
   - {fileID: 226093748}
   - {fileID: 1290901154}
   - {fileID: 936303509}
+  - {fileID: 1270440983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262021611
@@ -1741,6 +1742,7 @@ GameObject:
   - component: {fileID: 933816556}
   - component: {fileID: 933816559}
   - component: {fileID: 933816558}
+  - component: {fileID: 933816560}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1931,6 +1933,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89dda492e5ee54af691aacd38c8e267a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurtbox
+--- !u!114 &933816560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933816547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd3daa5ebe864307965779da8557977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileController
+  _initialSpawnPoints:
+  - PointId: lefthand
+    Transform: {fileID: 1048237790}
 --- !u!1 &936303508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,6 +2022,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &1048237790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4239094020461182564, guid: e6eed78ac6bd4434aa324e2ce6432ef6, type: 3}
+  m_PrefabInstance: {fileID: 2750727920638393318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1051505787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2421,6 +2443,79 @@ Transform:
   - {fileID: 2038077451}
   m_Father: {fileID: 594854316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1270440982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270440983}
+  - component: {fileID: 1270440985}
+  - component: {fileID: 1270440984}
+  m_Layer: 0
+  m_Name: Controller System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270440983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270440982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255982149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270440984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270440982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817191bf6f41c4688a8b0eee8623af4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControllerHapticEventListener
+  _gameEvent: {fileID: 11400000, guid: a241104796db645c0977a66e1f470d8c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1270440985}
+        m_TargetAssemblyTypeName: ControllerFeedbackSystem, Assembly-CSharp
+        m_MethodName: OnControllerHapticEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1270440985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270440982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b44c50811889414da42e3d977442364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControllerFeedbackSystem
 --- !u!1 &1290901153
 GameObject:
   m_ObjectHideFlags: 0

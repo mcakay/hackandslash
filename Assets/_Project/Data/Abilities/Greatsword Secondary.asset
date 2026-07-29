@@ -14,94 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   Name: Greatsword Secondary
   AnimationTriggerName: Secondary
-  Clip: {fileID: 9111558908952476143, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
-  AnimationSpeed: 2.5
+  Clip: {fileID: -203655887218126122, guid: 4a1c4cc1084424b9aa5b397bf8a671c9, type: 3}
+  AnimationSpeed: 3
   ComboWindow: 1
-  WindupPercentage: 0.3
-  ExecutionPercentage: 0.3
-  RecoveryPercentage: 0.4
-  StartActions:
-  - rid: 4727006622480072984
-  StartFeedbacks:
-  - rid: 4727006622480072969
-  HasImpact: 1
+  WindupPercentage: 0.8
+  ExecutionPercentage: 0.1
+  RecoveryPercentage: 0.1
+  StartActions: []
+  StartFeedbacks: []
+  HasImpact: 0
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
-  - rid: 4727006622480072982
-  - rid: 4727006622480072997
-  - rid: 4727006622480073001
+  - rid: 4727006622480073003
   EveryImpactMechanics:
   - rid: 4727006622480072978
-  EveryImpactFeedbacks:
-  - rid: 4727006622480072972
-  EndActions:
-  - rid: 4727006622480072973
+  EveryImpactFeedbacks: []
+  EndActions: []
   EndFeedbacks: []
+  Execution:
+    rid: 4727006752951763019
   references:
     version: 2
     RefIds:
-    - rid: 4727006622480072969
-      type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Clip: {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
-        Volume: 0.3
-        Pitch: 1
-        RandomizePitch: 1
-        Channel: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}
     - rid: 4727006622480072970
       type: {class: TimeScaleEffect, ns: , asm: Assembly-CSharp}
       data:
         Payload:
           Duration: 0.05
-          TimeScale: 0.05
+          TimeScale: 0.2
         Channel: {fileID: 11400000, guid: 0544aec6da6ee4effae223f33c070cdb, type: 2}
-    - rid: 4727006622480072972
-      type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Clip: {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
-        Volume: 0.5
-        Pitch: 1
-        RandomizePitch: 1
-        Channel: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}
-    - rid: 4727006622480072973
-      type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
-      data:
-        IsActive: 0
     - rid: 4727006622480072978
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
-        Force: 5
+        Force: 3
         Duration: 0.2
         FlattenY: 1
-    - rid: 4727006622480072982
+    - rid: 4727006622480073003
       type: {class: CameraImpulseEffect, ns: , asm: Assembly-CSharp}
       data:
         Payload:
-          Intensity: 1
+          Intensity: 0.3
           Duration: 0.2
         Channel: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
-    - rid: 4727006622480072984
-      type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
-      data:
-        IsActive: 1
-    - rid: 4727006622480072997
-      type: {class: CameraZoomEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Payload:
-          Amount: 3
-          Duration: 0.2
-        Channel: {fileID: 11400000, guid: 6077485fa665648d6bda31f614202727, type: 2}
-    - rid: 4727006622480073001
-      type: {class: PostProcessEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Payload:
-          UseChromaticAberration: 1
-          CAIntensity: 1
-          CADuration: 0.2
-          UseLensDistortion: 1
-          LDIntensity: 0.5
-          LDDuration: 0.2
-          UseVignette: 1
-          VigIntensity: 0.4
-          VigDuration: 0.2
-        Channel: {fileID: 11400000, guid: b07b2d37114f54662b07c24297aa8349, type: 2}
+    - rid: 4727006752951763019
+      type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
+      data: 

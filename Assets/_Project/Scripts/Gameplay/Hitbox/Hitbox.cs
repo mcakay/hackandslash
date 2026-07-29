@@ -4,6 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class Hitbox : MonoBehaviour
 {
+	[SerializeField] private string id;
+
+	public string Id => id;
+
 	private Collider _collider;
 	private readonly HashSet<Hurtbox> _hitHurtboxes = new();
 

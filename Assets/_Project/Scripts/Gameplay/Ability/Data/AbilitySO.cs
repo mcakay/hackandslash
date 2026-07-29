@@ -41,7 +41,7 @@ public class AbilitySO : ScriptableObject
 	[SerializeReference] public List<FeedbackEffect> StartFeedbacks = new();
 
 	[FoldoutGroup("2. Impact Phase")]
-	[LabelText("Spawns Payload?")]
+	[LabelText("Spawns Payload")]
 	public bool HasImpact;
 
 	[FoldoutGroup("2. Impact Phase")]
@@ -66,6 +66,10 @@ public class AbilitySO : ScriptableObject
 	[FoldoutGroup("3. End Phase")]
 	[LabelText("End Feedbacks")]
 	[SerializeReference] public List<FeedbackEffect> EndFeedbacks = new();
+
+	[FoldoutGroup("Execution")]
+	[LabelText("Execution Strategy")]
+	[SerializeReference] public AbilityExecution Execution;
 
 	public float WindupDuration => Duration * WindupPercentage;
 	public float ExecutionDuration => Duration * ExecutionPercentage;

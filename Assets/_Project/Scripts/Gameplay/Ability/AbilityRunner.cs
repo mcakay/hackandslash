@@ -81,7 +81,7 @@ public class AbilityRunner : MonoBehaviour
 
 		if (Tracker.CurrentAbility != null)
 		{
-			StateMachine.ChangeState<WindupState>();
+			Tracker.CurrentAbility.Execution.OnInputStarted(this, Tracker.CurrentAbility);
 		}
 	}
 

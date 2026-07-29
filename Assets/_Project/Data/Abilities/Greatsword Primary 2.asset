@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Greatsword Primary 2
   AnimationTriggerName: Primary 2
   Clip: {fileID: -4469183485442372851, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
-  AnimationSpeed: 2.5
+  AnimationSpeed: 2
   ComboWindow: 1
   WindupPercentage: 0.3
   ExecutionPercentage: 0.5
@@ -27,13 +27,17 @@ MonoBehaviour:
   HasImpact: 1
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
+  - rid: 4727006622480073003
+  - rid: 4727006622480073012
+  - rid: 4727006752951763021
   EveryImpactMechanics:
   - rid: 4727006622480072978
-  EveryImpactFeedbacks:
-  - rid: 4727006622480072972
+  EveryImpactFeedbacks: []
   EndActions:
   - rid: 4727006622480072973
   EndFeedbacks: []
+  Execution:
+    rid: 4727006752951763017
   references:
     version: 2
     RefIds:
@@ -41,6 +45,7 @@ MonoBehaviour:
       type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
       data:
         IsActive: 1
+        HitboxId: greatsword
     - rid: 4727006622480072969
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
@@ -56,7 +61,36 @@ MonoBehaviour:
           Duration: 0.05
           TimeScale: 0.2
         Channel: {fileID: 11400000, guid: 0544aec6da6ee4effae223f33c070cdb, type: 2}
-    - rid: 4727006622480072972
+    - rid: 4727006622480072973
+      type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
+      data:
+        IsActive: 0
+        HitboxId: greatsword
+    - rid: 4727006622480072978
+      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Force: 3
+        Duration: 0.2
+        FlattenY: 1
+    - rid: 4727006622480073003
+      type: {class: CameraImpulseEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Intensity: 0.3
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
+    - rid: 4727006622480073012
+      type: {class: ControllerHapticEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          LowFrequency: 0.1
+          HighFrequency: 0.4
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: a241104796db645c0977a66e1f470d8c, type: 2}
+    - rid: 4727006752951763017
+      type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 4727006752951763021
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
         Clip: {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
@@ -64,13 +98,3 @@ MonoBehaviour:
         Pitch: 1
         RandomizePitch: 1
         Channel: {fileID: 11400000, guid: f2b5e0c6ffd3042c9abeebc1f59ffa3a, type: 2}
-    - rid: 4727006622480072973
-      type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
-      data:
-        IsActive: 0
-    - rid: 4727006622480072978
-      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Force: 3
-        Duration: 0.2
-        FlattenY: 1

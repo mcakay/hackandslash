@@ -1,8 +1,8 @@
-public readonly struct HitboxUpdateRequestedEvent : ILocalEvent
+public readonly struct HitboxRegisterRequestedEvent : ILocalEvent
 {
 	public readonly Hitbox hitbox;
 
-	public HitboxUpdateRequestedEvent(Hitbox hitbox)
+	public HitboxRegisterRequestedEvent(Hitbox hitbox)
 	{
 		this.hitbox = hitbox;
 	}

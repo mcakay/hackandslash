@@ -7,22 +7,10 @@ public class CameraSystem : MonoBehaviour
 	[SerializeField] private CinemachineCamera vCam;
 	[SerializeField] private CinemachineImpulseSource impulseSource;
 
-	private Transform _defaultFollowTarget;
-	private Transform _defaultLookAtTarget;
-
 	private readonly Timer _zoomTimer = new();
 
 	private float _startFOV;
 	private float _targetFOV;
-
-	private void Awake()
-	{
-		if (vCam != null)
-		{
-			_defaultFollowTarget = vCam.Follow;
-			_defaultLookAtTarget = vCam.LookAt;
-		}
-	}
 
 	private void OnEnable()
 	{
@@ -37,12 +25,6 @@ public class CameraSystem : MonoBehaviour
 	private void OnZoomTimerEnded()
 	{
 		vCam.Lens.FieldOfView = _startFOV;
-	}
-
-	private void OnFocusTimerEnded()
-	{
-		vCam.Follow = _defaultFollowTarget;
-		vCam.LookAt = _defaultLookAtTarget;
 	}
 
 	private void Update()

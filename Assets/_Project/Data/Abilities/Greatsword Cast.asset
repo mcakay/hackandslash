@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60ab70c7fbd040a086c8e08e970d02a, type: 3}
+  m_Name: Greatsword Cast
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  Name: Greatsword Cast
+  AnimationTriggerName: Cast
+  Clip: {fileID: -203655887218126122, guid: b4ea8c6cc43c1421db6b86a69c4cead9, type: 3}
+  AnimationSpeed: 2.5
+  ComboWindow: 1
+  WindupPercentage: 0.5
+  ExecutionPercentage: 0.4
+  RecoveryPercentage: 0.1
+  StartActions:
+  - rid: 4727006752951763030
+  StartFeedbacks: []
+  HasImpact: 1
+  FirstImpactFeedbacks:
+  - rid: 4727006622480072970
+  EveryImpactMechanics:
+  - rid: 4727006622480072978
+  EveryImpactFeedbacks: []
+  EndActions: []
+  EndFeedbacks: []
+  Execution:
+    rid: 4727006752951763029
+  references:
+    version: 2
+    RefIds:
+    - rid: 4727006622480072970
+      type: {class: TimeScaleEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Duration: 0.05
+          TimeScale: 0.2
+        Channel: {fileID: 11400000, guid: 0544aec6da6ee4effae223f33c070cdb, type: 2}
+    - rid: 4727006622480072978
+      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Force: 3
+        Duration: 0.2
+        FlattenY: 1
+    - rid: 4727006752951763029
+      type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 4727006752951763030
+      type: {class: SpawnProjectileAction, ns: , asm: Assembly-CSharp}
+      data:
+        Id: lefthand
+        Prefab: {fileID: 7975263770502067281, guid: 214b82e16fb604b37a82abe05104a711, type: 3}
+        Speed: 20
