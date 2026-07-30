@@ -17,17 +17,19 @@ MonoBehaviour:
   Clip: {fileID: -203655887218126122, guid: b4ea8c6cc43c1421db6b86a69c4cead9, type: 3}
   AnimationSpeed: 2.5
   ComboWindow: 1
-  WindupPercentage: 0.5
-  ExecutionPercentage: 0.4
-  RecoveryPercentage: 0.1
+  WindupPercentage: 0.66
+  ExecutionPercentage: 0.34
+  RecoveryPercentage: 0
   StartActions:
   - rid: 4727006752951763030
   StartFeedbacks: []
   HasImpact: 1
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
+  - rid: 4727006752951763262
+  - rid: 4727006752951763263
   EveryImpactMechanics:
-  - rid: 4727006622480072978
+  - rid: 4727006752951763252
   EveryImpactFeedbacks: []
   EndActions: []
   EndFeedbacks: []
@@ -41,14 +43,8 @@ MonoBehaviour:
       data:
         Payload:
           Duration: 0.05
-          TimeScale: 0.2
+          TimeScale: 0.05
         Channel: {fileID: 11400000, guid: 0544aec6da6ee4effae223f33c070cdb, type: 2}
-    - rid: 4727006622480072978
-      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Force: 3
-        Duration: 0.2
-        FlattenY: 1
     - rid: 4727006752951763029
       type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
       data: 
@@ -57,4 +53,43 @@ MonoBehaviour:
       data:
         Id: lefthand
         Prefab: {fileID: 7975263770502067281, guid: 214b82e16fb604b37a82abe05104a711, type: 3}
-        Speed: 20
+        ProjectileFactory: {fileID: 11400000, guid: 6abe87eee92b44da787c120a796ed6d5, type: 2}
+    - rid: 4727006752951763252
+      type: {class: AreaEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Shape:
+          rid: 4727006752951763254
+        Mechanics:
+        - rid: 4727006752951763258
+        Feedbacks: []
+    - rid: 4727006752951763254
+      type: {class: SphereShape, ns: , asm: Assembly-CSharp}
+      data:
+        Radius: 3
+    - rid: 4727006752951763258
+      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Force: 3
+        Duration: 0.2
+        FlattenY: 1
+    - rid: 4727006752951763262
+      type: {class: CameraImpulseEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Intensity: 1
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
+    - rid: 4727006752951763263
+      type: {class: PostProcessEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          UseChromaticAberration: 1
+          CAIntensity: 1
+          CADuration: 0.2
+          UseLensDistortion: 1
+          LDIntensity: 0.5
+          LDDuration: 0.2
+          UseVignette: 1
+          VigIntensity: 0.4
+          VigDuration: 0.2
+        Channel: {fileID: 11400000, guid: b07b2d37114f54662b07c24297aa8349, type: 2}

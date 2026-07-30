@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7721524511046974450}
   - component: {fileID: 7975263770502067281}
   m_Layer: 0
-  m_Name: PF_Projectile
+  m_Name: PF_Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,3 +153,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ef3fb68982c4fb6b91106f158d8a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  _data: {fileID: 11400000, guid: cf9bed8ac11374ce19460a5eef785927, type: 2}
