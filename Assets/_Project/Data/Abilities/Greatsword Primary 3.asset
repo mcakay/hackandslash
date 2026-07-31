@@ -44,7 +44,8 @@ MonoBehaviour:
     - rid: 4727006622480072969
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
-        Clip: {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
+        Clips:
+        - {fileID: 8300000, guid: db1ec2f9018df4ad899780d458a78d2a, type: 3}
         Volume: 0.3
         Pitch: 1
         RandomizePitch: 1
@@ -93,7 +94,8 @@ MonoBehaviour:
     - rid: 4727006752951763022
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
-        Clip: {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
+        Clips:
+        - {fileID: 8300000, guid: 8ebe50b94057f407a835dd7c03988221, type: 3}
         Volume: 0.5
         Pitch: 1
         RandomizePitch: 1

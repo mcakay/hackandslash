@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 386c823dbeb5d41e6a66d48d8c93c977, type: 3}
+  m_Name: VFX Factory
+  m_EditorClassIdentifier: Assembly-CSharp::VFXFactorySO
+  _prefab: {fileID: 8844044134216117076, guid: 222e1a803a2c34dda854d06cb5aaf5d9, type: 3}
+  _defaultCapacity: 10
+  _maxSize: 100

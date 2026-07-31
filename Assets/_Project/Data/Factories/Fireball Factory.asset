@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c0a3c70295ce46ef9ccc933bbd5ee2c, type: 3}
   m_Name: Fireball Factory
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileFactorySO
-  _prefab: {fileID: 7975263770502067281, guid: 214b82e16fb604b37a82abe05104a711, type: 3}
+  _prefab: {fileID: 6488285642810695183, guid: 214b82e16fb604b37a82abe05104a711, type: 3}
   _defaultCapacity: 20
   _maxSize: 100
