@@ -35,6 +35,7 @@ MonoBehaviour:
   - rid: 2362426244141940813
   EveryImpactMechanics:
   - rid: 4727006752951763252
+  - rid: 2362426251831935055
   EveryImpactFeedbacks: []
   EndActions: []
   EndFeedbacks: []
@@ -64,6 +65,20 @@ MonoBehaviour:
           Intensity: 0.4
           Duration: 0.2
         Channel: {fileID: 11400000, guid: 945ae227bed8947e7a23f24e0e308177, type: 2}
+    - rid: 2362426251831935055
+      type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
+        Damage: 20
+    - rid: 2362426251831935056
+      type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
+        Damage: 10
     - rid: 4727006622480072970
       type: {class: TimeScaleEffect, ns: , asm: Assembly-CSharp}
       data:
@@ -82,9 +97,12 @@ MonoBehaviour:
     - rid: 4727006752951763252
       type: {class: AreaEffect, ns: , asm: Assembly-CSharp}
       data:
+        ExcludeTags: []
+        IncludeTags: []
         Shape:
           rid: 4727006752951763254
-        Mechanics: []
+        Mechanics:
+        - rid: 2362426251831935056
         Feedbacks: []
     - rid: 4727006752951763254
       type: {class: SphereShape, ns: , asm: Assembly-CSharp}

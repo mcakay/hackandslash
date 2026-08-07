@@ -31,6 +31,7 @@ MonoBehaviour:
   - rid: 4727006752951763022
   EveryImpactMechanics:
   - rid: 4727006622480072978
+  - rid: 2362426251831935054
   EveryImpactFeedbacks: []
   EndActions:
   - rid: 4727006622480072973
@@ -40,6 +41,13 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2362426251831935054
+      type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
+        Damage: 20
     - rid: 4727006622480072969
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
@@ -64,6 +72,9 @@ MonoBehaviour:
     - rid: 4727006622480072978
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
         Force: 5
         Duration: 0.2
         FlattenY: 1

@@ -31,6 +31,7 @@ MonoBehaviour:
   - rid: 4727006752951763021
   EveryImpactMechanics:
   - rid: 4727006622480072978
+  - rid: 2362426251831935053
   EveryImpactFeedbacks: []
   EndActions:
   - rid: 4727006622480072973
@@ -40,6 +41,13 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2362426251831935053
+      type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
+        Damage: 10
     - rid: 4727006622480072968
       type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
       data:
@@ -69,6 +77,9 @@ MonoBehaviour:
     - rid: 4727006622480072978
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
+        ExcludeTags:
+        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        IncludeTags: []
         Force: 3
         Duration: 0.2
         FlattenY: 1

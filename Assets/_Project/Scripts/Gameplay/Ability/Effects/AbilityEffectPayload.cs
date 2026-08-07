@@ -30,7 +30,15 @@ public readonly struct AbilityEffectPayload
 	public void OnImpact(GameObject target, Vector3 hitPosition)
 	{
 		if (_everyImpactMechanics != null)
-			foreach (var effect in _everyImpactMechanics) effect.Execute(Caster, target, hitPosition);
+		{
+			foreach (var effect in _everyImpactMechanics)
+			{
+				if (effect.CanApplyTo(target))
+				{
+					effect.Execute(Caster, target, hitPosition);
+				}
+			}
+		}
 
 		if (_everyImpactFeedbacks != null)
 			foreach (var effect in _everyImpactFeedbacks) effect.Execute(Caster, target, hitPosition);

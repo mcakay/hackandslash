@@ -4,70 +4,82 @@ using UnityEngine;
 [RequireComponent(typeof(LocalEventChannel))]
 public class CharacterAnimator : MonoBehaviour
 {
-    [SerializeField] private float dampTime = 0.1f;
-    [SerializeField] private Animator animator;
+	[SerializeField] private float dampTime = 0.1f;
+	[SerializeField] private Animator animator;
 
-    private int _animSpeedHash;
-    private int _velocityXHash;
-    private int _velocityZHash;
-    private int _hitHash;
+	private int _animSpeedHash;
+	private int _velocityXHash;
+	private int _velocityZHash;
+	private int _hitHash;
+	private int _deathHash;
 
-    private Rigidbody _rigidbody;
-    private LocalEventChannel _channel;
+	private Rigidbody _rigidbody;
+	private LocalEventChannel _channel;
 
-    private void Awake()
-    {
-        _rigidbody = GetComponent<Rigidbody>();
-        _channel = GetComponent<LocalEventChannel>();
+	private void Awake()
+	{
+		_rigidbody = GetComponent<Rigidbody>();
+		_channel = GetComponent<LocalEventChannel>();
 
-        _velocityXHash = Animator.StringToHash("VelocityX");
-        _velocityZHash = Animator.StringToHash("VelocityZ");
-        _animSpeedHash = Animator.StringToHash("AnimationSpeed");
-        _hitHash = Animator.StringToHash("Hit");
+		_velocityXHash = Animator.StringToHash("VelocityX");
+		_velocityZHash = Animator.StringToHash("VelocityZ");
+		_animSpeedHash = Animator.StringToHash("AnimationSpeed");
+		_hitHash = Animator.StringToHash("Hit");
+		_deathHash = Animator.StringToHash("Death");
 
-        animator.applyRootMotion = true;
-    }
+		animator.applyRootMotion = true;
+	}
 
-    private void OnEnable()
-    {
-        _channel.Subscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
-        _channel.Subscribe<HitReceivedEvent>(OnHitReceived);
-    }
+	private void OnEnable()
+	{
+		_channel.Subscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
+		_channel.Subscribe<HitReceivedEvent>(OnHitReceived);
+		_channel.Subscribe<DeathEvent>(OnDeath);
+	}
 
-    private void OnDisable()
-    {
-        _channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
-        _channel.Unsubscribe<HitReceivedEvent>(OnHitReceived);
-    }
+	private void OnDisable()
+	{
+		_channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
+		_channel.Unsubscribe<HitReceivedEvent>(OnHitReceived);
+		_channel.Unsubscribe<DeathEvent>(OnDeath);
+	}
 
-    private void Update()
-    {
-        Vector3 worldVelocity = _rigidbody.linearVelocity;
-        Vector3 localVelocity = transform.InverseTransformDirection(worldVelocity);
+	private void Update()
+	{
+		Vector3 worldVelocity = _rigidbody.linearVelocity;
+		Vector3 localVelocity = transform.InverseTransformDirection(worldVelocity);
 
-        Vector2 planarVelocity = new(localVelocity.x, localVelocity.z);
+		Vector2 planarVelocity = new(localVelocity.x, localVelocity.z);
 
-        if (planarVelocity.magnitude > 0.1f)
-        {
-            Vector2 normalizedDir = planarVelocity.normalized;
-            animator.SetFloat(_velocityXHash, normalizedDir.x, dampTime, Time.deltaTime);
-            animator.SetFloat(_velocityZHash, normalizedDir.y, dampTime, Time.deltaTime);
-        }
-        else
-        {
-            animator.SetFloat(_velocityXHash, 0f, dampTime, Time.deltaTime);
-            animator.SetFloat(_velocityZHash, 0f, dampTime, Time.deltaTime);
-        }
-    }
+		if (planarVelocity.magnitude > 0.1f)
+		{
+			Vector2 normalizedDir = planarVelocity.normalized;
+			animator.SetFloat(_velocityXHash, normalizedDir.x, dampTime, Time.deltaTime);
+			animator.SetFloat(_velocityZHash, normalizedDir.y, dampTime, Time.deltaTime);
+		}
+		else
+		{
+			animator.SetFloat(_velocityXHash, 0f, dampTime, Time.deltaTime);
+			animator.SetFloat(_velocityZHash, 0f, dampTime, Time.deltaTime);
+		}
+	}
 
-    private void OnAbilityCastStarted(AbilityCastStartedEvent e)
-    {
-        animator.SetFloat(_animSpeedHash, e.Speed);
-        animator.SetTrigger(e.Ability.AnimationHash);
-    }
+	private void OnAbilityCastStarted(AbilityCastStartedEvent e)
+	{
+		animator.SetFloat(_animSpeedHash, e.Speed);
+		animator.SetTrigger(e.Ability.AnimationHash);
+	}
 
-    private void OnHitReceived(HitReceivedEvent e)
-    {
-        animator.SetTrigger(_hitHash);
-    }
+	private void OnHitReceived(HitReceivedEvent e)
+	{
+		animator.SetTrigger(_hitHash);
+	}
+
+	private void OnDeath(DeathEvent e)
+	{
+		animator.SetTrigger(_deathHash);
+		_rigidbody.linearVelocity = Vector3.zero;
+		_rigidbody.isKinematic = true;
+		this.enabled = false;
+	}
 }
