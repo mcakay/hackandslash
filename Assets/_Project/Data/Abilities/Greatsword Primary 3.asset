@@ -28,7 +28,6 @@ MonoBehaviour:
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
   - rid: 4727006622480072982
-  - rid: 4727006622480073013
   - rid: 4727006752951763022
   EveryImpactMechanics:
   - rid: 4727006622480072978
@@ -74,20 +73,12 @@ MonoBehaviour:
         Payload:
           Intensity: 1
           Duration: 0.2
-        Channel: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
+        Channel: {fileID: 11400000, guid: 51a265d674af642048beb04af1b2f0ca, type: 2}
     - rid: 4727006622480072984
       type: {class: ToggleHitboxAction, ns: , asm: Assembly-CSharp}
       data:
         IsActive: 1
         HitboxId: greatsword
-    - rid: 4727006622480073013
-      type: {class: ControllerHapticEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Payload:
-          LowFrequency: 0.5
-          HighFrequency: 0.6
-          Duration: 0.2
-        Channel: {fileID: 11400000, guid: a241104796db645c0977a66e1f470d8c, type: 2}
     - rid: 4727006752951763018
       type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
       data: 

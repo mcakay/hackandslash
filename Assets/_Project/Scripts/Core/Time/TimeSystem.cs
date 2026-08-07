@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class TimeSystem : MonoBehaviour
 {
+	[SerializeField] private TimeScaleEventChannel timeScaleEventChannel;
+
 	private Timer _hitStopTimer;
 	private float _originalTimeScale = 1f;
 	private bool _isHitStopping;
@@ -13,11 +15,13 @@ public class TimeSystem : MonoBehaviour
 
 	private void OnEnable()
 	{
+		timeScaleEventChannel.Subscribe(OnTimeScaleEvent);
 		_hitStopTimer.TimerEnded += OnHitStopFinished;
 	}
 
 	private void OnDisable()
 	{
+		timeScaleEventChannel.Unsubscribe(OnTimeScaleEvent);
 		_hitStopTimer.TimerEnded -= OnHitStopFinished;
 	}
 

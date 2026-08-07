@@ -7,7 +7,7 @@ public class CameraImpulseEffect : FeedbackEffect
 	public CameraImpulseEventPayload Payload;
 
 	[Header("Channel")]
-	public CameraImpulseEventSO Channel;
+	public CameraImpulseEventChannel Channel;
 
 	public override void Execute(GameObject caster, GameObject target, Vector3 position)
 	{

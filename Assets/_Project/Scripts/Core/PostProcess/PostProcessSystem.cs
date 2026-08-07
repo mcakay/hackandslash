@@ -7,6 +7,11 @@ public class PostProcessSystem : MonoBehaviour
 	[Header("Global Volume Settings")]
 	[SerializeField] private Volume _globalVolume;
 
+	[Header("Events (Listening)")]
+	[SerializeField] private ChromaticAberrationEventChannel _chromaticAberrationEventChannel;
+	[SerializeField] private LensDistortionEventChannel _lensDistortionEventChannel;
+	[SerializeField] private VignetteEventChannel _vignetteEventChannel;
+
 	private ChromaticAberration _chromaticAberration;
 	private LensDistortion _lensDistortion;
 	private Vignette _vignette;
@@ -33,6 +38,42 @@ public class PostProcessSystem : MonoBehaviour
 		{
 			_vignette = v;
 			_defaultVignette = v.intensity.value;
+		}
+	}
+
+	private void OnEnable()
+	{
+		if (_chromaticAberrationEventChannel != null)
+		{
+			_chromaticAberrationEventChannel.Subscribe(OnChromaticAberrationEvent);
+		}
+
+		if (_lensDistortionEventChannel != null)
+		{
+			_lensDistortionEventChannel.Subscribe(OnLensDistortionEvent);
+		}
+
+		if (_vignetteEventChannel != null)
+		{
+			_vignetteEventChannel.Subscribe(OnVignetteEvent);
+		}
+	}
+
+	private void OnDisable()
+	{
+		if (_chromaticAberrationEventChannel != null)
+		{
+			_chromaticAberrationEventChannel.Unsubscribe(OnChromaticAberrationEvent);
+		}
+
+		if (_lensDistortionEventChannel != null)
+		{
+			_lensDistortionEventChannel.Unsubscribe(OnLensDistortionEvent);
+		}
+
+		if (_vignetteEventChannel != null)
+		{
+			_vignetteEventChannel.Unsubscribe(OnVignetteEvent);
 		}
 	}
 
@@ -67,25 +108,21 @@ public class PostProcessSystem : MonoBehaviour
 		}
 	}
 
-	public void OnPostProcessEffectEvent(PostProcessEventPayload payload)
+	public void OnChromaticAberrationEvent(ChromaticAberrationEventPayload payload)
 	{
-		if (payload.UseChromaticAberration && _chromaticAberration != null)
-		{
-			_chromaticAberration.intensity.value = payload.CAIntensity;
-			_caDecayRate = payload.CADuration > 0f ? payload.CAIntensity / payload.CADuration : 1000f;
-		}
+			_chromaticAberration.intensity.value = payload.Intensity;
+			_caDecayRate = payload.Duration > 0f ? payload.Intensity / payload.Duration : 1000f;
+	}
 
-		if (payload.UseLensDistortion && _lensDistortion != null)
-		{
-			_lensDistortion.intensity.value = payload.LDIntensity;
-			_ldDecayRate = payload.LDDuration > 0f ? Mathf.Abs(payload.LDIntensity) / payload.LDDuration : 1000f;
-		}
+	public void OnLensDistortionEvent(LensDistortionEventPayload payload)
+	{
+			_lensDistortion.intensity.value = payload.Intensity;
+			_ldDecayRate = payload.Duration > 0f ? Mathf.Abs(payload.Intensity) / payload.Duration : 1000f;
+	}
 
-		if (payload.UseVignette && _vignette != null)
-		{
-			_vignette.intensity.value = payload.VigIntensity;
-			float diff = payload.VigIntensity - _defaultVignette;
-			_vignetteDecayRate = payload.VigDuration > 0f ? diff / payload.VigDuration : 1000f;
-		}
+	public void OnVignetteEvent(VignetteEventPayload payload)
+	{
+			_vignette.intensity.value = payload.Intensity;
+			_vignetteDecayRate = payload.Duration > 0f ? (payload.Intensity - _defaultVignette) / payload.Duration : 1000f;
 	}
 }

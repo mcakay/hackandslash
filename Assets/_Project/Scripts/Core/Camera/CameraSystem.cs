@@ -7,6 +7,10 @@ public class CameraSystem : MonoBehaviour
 	[SerializeField] private CinemachineCamera vCam;
 	[SerializeField] private CinemachineImpulseSource impulseSource;
 
+	[Header("Events (Listening)")]
+	[SerializeField] private CameraZoomEventChannel zoomEventChannel;
+	[SerializeField] private CameraImpulseEventChannel impulseEventChannel;
+
 	private readonly Timer _zoomTimer = new();
 
 	private float _startFOV;
@@ -15,11 +19,31 @@ public class CameraSystem : MonoBehaviour
 	private void OnEnable()
 	{
 		_zoomTimer.TimerEnded += OnZoomTimerEnded;
+
+		if (zoomEventChannel != null)
+		{
+			zoomEventChannel.Subscribe(OnCameraZoomEvent);
+		}
+
+		if (impulseEventChannel != null)
+		{
+			impulseEventChannel.Subscribe(OnCameraImpulseEvent);
+		}
 	}
 
 	private void OnDisable()
 	{
 		_zoomTimer.TimerEnded -= OnZoomTimerEnded;
+
+		if (zoomEventChannel != null)
+		{
+			zoomEventChannel.Unsubscribe(OnCameraZoomEvent);
+		}
+
+		if (impulseEventChannel != null)
+		{
+			impulseEventChannel.Unsubscribe(OnCameraImpulseEvent);
+		}
 	}
 
 	private void OnZoomTimerEnded()

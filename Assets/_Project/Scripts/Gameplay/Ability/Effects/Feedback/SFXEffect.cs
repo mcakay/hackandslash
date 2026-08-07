@@ -16,7 +16,7 @@ public class SFXEffect : FeedbackEffect
     public bool RandomizePitch = true;
 
     [Header("Channel")]
-    public SFXEventSO Channel;
+    public SFXEventChannel Channel;
 
     public override void Execute(GameObject caster, GameObject target, Vector3 position)
     {

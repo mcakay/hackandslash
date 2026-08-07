@@ -8,7 +8,7 @@ public class VFXEffect : FeedbackEffect
 	public VFXFactorySO Factory;
 
 	[Header("Channel")]
-	public VFXEventSO Channel;
+	public VFXEventChannel Channel;
 
 	public override void Execute(GameObject caster, GameObject target, Vector3 position)
 	{

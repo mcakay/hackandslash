@@ -10,12 +10,29 @@ public class AudioSystem : MonoBehaviour
 	[Header("Music Settings")]
 	[SerializeField] private AudioSource musicSource;
 
+	[Header("Event Channels")]
+	[SerializeField] private SFXEventChannel sfxEventChannel;
+	[SerializeField] private MusicEventChannel musicEventChannel;
+
 	private readonly Queue<AudioSource> _sfxPool = new();
 
 	private void Awake()
 	{
 		InitializeSFXPool();
 	}
+
+	private void OnEnable()
+	{
+		sfxEventChannel.Subscribe(OnSFXEvent);
+		musicEventChannel.Subscribe(OnMusicEvent);
+	}
+
+	private void OnDisable()
+	{
+		sfxEventChannel.Unsubscribe(OnSFXEvent);
+		musicEventChannel.Unsubscribe(OnMusicEvent);
+	}
+
 
 	private void InitializeSFXPool()
 	{

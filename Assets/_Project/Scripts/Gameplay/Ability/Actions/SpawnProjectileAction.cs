@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpawnProjectileAction : AbilityAction
 {
 	public string Id;
-	public Projectile Prefab;
 	public ProjectileFactorySO ProjectileFactory;
 
 	public override void Execute(GameObject caster, AbilitySO context)

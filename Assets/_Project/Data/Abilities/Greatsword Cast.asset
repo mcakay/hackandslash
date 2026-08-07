@@ -28,9 +28,11 @@ MonoBehaviour:
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
   - rid: 4727006752951763262
-  - rid: 4727006752951763263
   - rid: 4727006801609359468
   - rid: 4727006801609359483
+  - rid: 2362426244141940811
+  - rid: 2362426244141940812
+  - rid: 2362426244141940813
   EveryImpactMechanics:
   - rid: 4727006752951763252
   EveryImpactFeedbacks: []
@@ -41,6 +43,27 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2362426244141940811
+      type: {class: ChromaticAberrationEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Intensity: 1
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: e154c967727784c72a2da61eafd02667, type: 2}
+    - rid: 2362426244141940812
+      type: {class: LensDistortionEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Intensity: 0.5
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: 984ab73283acf43bf9de70fb39d65d91, type: 2}
+    - rid: 2362426244141940813
+      type: {class: VignetteEffect, ns: , asm: Assembly-CSharp}
+      data:
+        Payload:
+          Intensity: 0.4
+          Duration: 0.2
+        Channel: {fileID: 11400000, guid: 945ae227bed8947e7a23f24e0e308177, type: 2}
     - rid: 4727006622480072970
       type: {class: TimeScaleEffect, ns: , asm: Assembly-CSharp}
       data:
@@ -55,7 +78,6 @@ MonoBehaviour:
       type: {class: SpawnProjectileAction, ns: , asm: Assembly-CSharp}
       data:
         Id: lefthand
-        Prefab: {fileID: 6488285642810695183, guid: 214b82e16fb604b37a82abe05104a711, type: 3}
         ProjectileFactory: {fileID: 11400000, guid: 6abe87eee92b44da787c120a796ed6d5, type: 2}
     - rid: 4727006752951763252
       type: {class: AreaEffect, ns: , asm: Assembly-CSharp}
@@ -74,26 +96,12 @@ MonoBehaviour:
         Payload:
           Intensity: 1
           Duration: 0.2
-        Channel: {fileID: 11400000, guid: 4fcc0ec91e2b7426089c2bf195bb048e, type: 2}
-    - rid: 4727006752951763263
-      type: {class: PostProcessEffect, ns: , asm: Assembly-CSharp}
-      data:
-        Payload:
-          UseChromaticAberration: 1
-          CAIntensity: 1
-          CADuration: 0.2
-          UseLensDistortion: 1
-          LDIntensity: 0.5
-          LDDuration: 0.2
-          UseVignette: 1
-          VigIntensity: 0.4
-          VigDuration: 0.2
-        Channel: {fileID: 11400000, guid: b07b2d37114f54662b07c24297aa8349, type: 2}
+        Channel: {fileID: 11400000, guid: 51a265d674af642048beb04af1b2f0ca, type: 2}
     - rid: 4727006801609359468
       type: {class: VFXEffect, ns: , asm: Assembly-CSharp}
       data:
         Factory: {fileID: 11400000, guid: 48ca06fc56d2847efb465de28a683d94, type: 2}
-        Channel: {fileID: 11400000, guid: f6a554f3d69044b2d89537960312182e, type: 2}
+        Channel: {fileID: 11400000, guid: 2853ab8b4628047d3852a5f80423ce4d, type: 2}
     - rid: 4727006801609359483
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:

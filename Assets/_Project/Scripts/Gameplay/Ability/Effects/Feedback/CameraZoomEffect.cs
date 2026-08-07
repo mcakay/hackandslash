@@ -7,7 +7,7 @@ public class CameraZoomEffect : FeedbackEffect
 	public CameraZoomEventPayload Payload;
 
 	[Header("Channel")]
-	public CameraZoomEventSO Channel;
+	public CameraZoomEventChannel Channel;
 
 	public override void Execute(GameObject caster, GameObject target, Vector3 position)
 	{
