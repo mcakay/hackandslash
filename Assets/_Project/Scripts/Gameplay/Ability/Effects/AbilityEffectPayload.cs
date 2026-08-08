@@ -21,13 +21,13 @@ public readonly struct AbilityEffectPayload
 		_everyImpactFeedbacks = everyImpactFeedback;
 	}
 
-	public void OnFirstImpact(GameObject firstTarget, Vector3 hitPosition)
+	public void OnFirstImpact(GameObject source, GameObject firstTarget, Vector3 hitPosition)
 	{
 		if (_firstImpactFeedbacks == null) return;
-		foreach (var effect in _firstImpactFeedbacks) effect.Execute(Caster, firstTarget, hitPosition);
+		foreach (var effect in _firstImpactFeedbacks) effect.Execute(Caster, source, firstTarget, hitPosition);
 	}
 
-	public void OnImpact(GameObject target, Vector3 hitPosition)
+	public void OnImpact(GameObject source, GameObject target, Vector3 hitPosition)
 	{
 		if (_everyImpactMechanics != null)
 		{
@@ -35,12 +35,12 @@ public readonly struct AbilityEffectPayload
 			{
 				if (effect.CanApplyTo(target))
 				{
-					effect.Execute(Caster, target, hitPosition);
+					effect.Execute(Caster, source, target, hitPosition);
 				}
 			}
 		}
 
 		if (_everyImpactFeedbacks != null)
-			foreach (var effect in _everyImpactFeedbacks) effect.Execute(Caster, target, hitPosition);
+			foreach (var effect in _everyImpactFeedbacks) effect.Execute(Caster, source, target, hitPosition);
 	}
 }

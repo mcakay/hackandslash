@@ -5,12 +5,10 @@ using UnityEngine;
 public class Hurtbox : MonoBehaviour
 {
 	private LocalEventChannel _channel;
-	private Collider _collider;
 
 	private void Awake()
 	{
 		_channel = GetComponent<LocalEventChannel>();
-		_collider = GetComponent<Collider>();
 	}
 
 	private void OnEnable()
@@ -23,16 +21,15 @@ public class Hurtbox : MonoBehaviour
 		_channel.Unsubscribe<DeathEvent>(OnDeath);
 	}
 
-	public void ReceiveHit(AbilityEffectPayload payload, Vector3 hitPosition)
+	public void ReceiveHit(AbilityEffectPayload payload, Vector3 hitPosition, GameObject source)
 	{
 		_channel.Publish(new EmissionRequestedEvent());
 		_channel.Publish(new HitReceivedEvent());
-		payload.OnImpact(gameObject, hitPosition);
+		payload.OnImpact(source, gameObject, hitPosition);
 	}
 
 	private void OnDeath(DeathEvent e)
 	{
-		_collider.enabled = false;
 		this.enabled = false;
 	}
 }

@@ -17,8 +17,10 @@ public class MaterialPropertyHandler : MonoBehaviour
 	[SerializeField] private float _emissionDuration = 0.1f;
 
 	private MaterialPropertyBlock _propertyBlock;
-
 	private Timer _flashTimer;
+
+	private int _colorPropertyId;
+	private int _emissionPropertyId;
 
 	private void Awake()
 	{
@@ -28,6 +30,9 @@ public class MaterialPropertyHandler : MonoBehaviour
 		{
 			_renderers = GetComponentsInChildren<Renderer>();
 		}
+
+		_colorPropertyId = Shader.PropertyToID(_colorPropertyName);
+		_emissionPropertyId = Shader.PropertyToID(_emissionPropertyName);
 
 		_flashTimer = new Timer();
 	}
@@ -78,8 +83,10 @@ public class MaterialPropertyHandler : MonoBehaviour
 			if (r == null) continue;
 
 			r.GetPropertyBlock(_propertyBlock);
-			_propertyBlock.SetColor(_colorPropertyName, _baseColor);
-			_propertyBlock.SetColor(_emissionPropertyName, Color.black);
+
+			_propertyBlock.SetColor(_colorPropertyId, _baseColor);
+			_propertyBlock.SetColor(_emissionPropertyId, Color.black);
+
 			r.SetPropertyBlock(_propertyBlock);
 		}
 	}
@@ -95,8 +102,9 @@ public class MaterialPropertyHandler : MonoBehaviour
 			if (r == null) continue;
 
 			r.GetPropertyBlock(_propertyBlock);
-			_propertyBlock.SetColor(_colorPropertyName, _baseColor);
-			_propertyBlock.SetColor(_emissionPropertyName, finalEmission);
+			_propertyBlock.SetColor(_colorPropertyId, _baseColor);
+			_propertyBlock.SetColor(_emissionPropertyId, finalEmission);
+
 			r.SetPropertyBlock(_propertyBlock);
 		}
 	}

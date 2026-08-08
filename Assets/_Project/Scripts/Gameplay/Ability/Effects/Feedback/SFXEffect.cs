@@ -18,7 +18,7 @@ public class SFXEffect : FeedbackEffect
     [Header("Channel")]
     public SFXEventChannel Channel;
 
-    public override void Execute(GameObject caster, GameObject target, Vector3 position)
+    public override void Execute(GameObject caster, GameObject source, GameObject target, Vector3 position)
     {
         if (Clips == null || Clips.Length == 0 || Channel == null) return;
 

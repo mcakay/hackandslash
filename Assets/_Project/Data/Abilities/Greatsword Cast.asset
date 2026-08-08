@@ -71,14 +71,14 @@ MonoBehaviour:
         ExcludeTags:
         - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
         IncludeTags: []
-        Damage: 20
+        Damage: 60
     - rid: 2362426251831935056
       type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
       data:
         ExcludeTags:
         - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
         IncludeTags: []
-        Damage: 10
+        Damage: 20
     - rid: 4727006622480072970
       type: {class: TimeScaleEffect, ns: , asm: Assembly-CSharp}
       data:

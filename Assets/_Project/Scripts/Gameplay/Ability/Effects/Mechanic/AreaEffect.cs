@@ -13,7 +13,7 @@ public class AreaEffect : MechanicEffect
 	private static readonly Collider[] _hitResults = new Collider[30];
     private static readonly HashSet<Hurtbox> _hitHurtboxes = new();
 
-	public override void Execute(GameObject caster, GameObject target, Vector3 hitPosition)
+	public override void Execute(GameObject caster, GameObject source, GameObject target, Vector3 position)
     {
         if (Shape == null) return;
 
@@ -26,19 +26,19 @@ public class AreaEffect : MechanicEffect
             Feedbacks
         );
 
-        int hitCount = Shape.GetTargets(hitPosition, caster.transform.forward, _hitResults);
+        int hitCount = Shape.GetTargets(position, caster.transform.forward, _hitResults);
 
         for (int i = 0; i < hitCount; i++)
         {
             Collider hitCol = _hitResults[i];
 
-            if (hitCol.gameObject == caster || hitCol.transform.root.gameObject == caster) continue;
+            if (hitCol.gameObject == caster) continue;
 
             if (hitCol.TryGetComponent(out Hurtbox hurtbox))
             {
                 if (_hitHurtboxes.Add(hurtbox))
                 {
-                    hurtbox.ReceiveHit(effectPayload, hitCol.transform.position);
+                    hurtbox.ReceiveHit(effectPayload, hitCol.transform.position, source);
                 }
             }
         }

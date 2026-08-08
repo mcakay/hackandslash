@@ -29,12 +29,17 @@ public class HealthController : MonoBehaviour, IDamageable
 		_currentHealth = _maxHealth;
 	}
 
-	public void TakeDamage(float damage, Vector3 hitPosition)
+	public void TakeDamage(float damage, Vector3 hitPosition, Vector3 hitDirection)
 	{
 		if (_currentHealth <= 0) return;
 
-		_currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
+		float excessDamage = 0f;
+		if (damage > _currentHealth)
+		{
+			excessDamage = damage - _currentHealth;
+		}
 
+		_currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
 
 		FloatingDamage popup = _floatingDamageFactory.Get(hitPosition + (Vector3.up * 1.5f), Quaternion.identity);
 
@@ -42,11 +47,11 @@ public class HealthController : MonoBehaviour, IDamageable
 
 		if (_currentHealth <= 0)
 		{
-			Die();
+			Die(hitPosition, hitDirection, excessDamage);
 		}
 	}
 
-	private void Die()
+	private void Die(Vector3 hitPosition, Vector3 hitDirection, float excessDamage)
 	{
 		if (_tagController != null && _deadTag != null)
 		{
@@ -55,7 +60,7 @@ public class HealthController : MonoBehaviour, IDamageable
 
 		if (_channel != null)
 		{
-			_channel.Publish(new DeathEvent());
+			_channel.Publish(new DeathEvent(hitPosition, hitDirection, excessDamage));
 		}
 	}
 }

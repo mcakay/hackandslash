@@ -49,11 +49,11 @@ public class Hitbox : MonoBehaviour
 				return;
 			}
 
-			hurtbox.ReceiveHit(_payload, transform.position);
+			hurtbox.ReceiveHit(_payload, transform.position, gameObject);
 
 			if (_hitHurtboxes.Count == 1)
 			{
-				_payload.OnFirstImpact(gameObject, transform.position);
+				_payload.OnFirstImpact(gameObject, hurtbox.gameObject, transform.position);
 			}
 		}
 	}

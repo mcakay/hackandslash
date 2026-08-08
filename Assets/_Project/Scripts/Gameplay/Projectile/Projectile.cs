@@ -65,8 +65,8 @@ public class Projectile : MonoBehaviour, IPooledObject<Projectile>
 
 		if (other.TryGetComponent(out Hurtbox hurtbox))
 		{
-			hurtbox.ReceiveHit(_payload, transform.position);
-			_payload.OnFirstImpact(gameObject, transform.position);
+			hurtbox.ReceiveHit(_payload, transform.position, gameObject);
+			_payload.OnFirstImpact(gameObject, hurtbox.gameObject, transform.position);
 
 			ReturnToPool();
 		}

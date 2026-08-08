@@ -9,7 +9,7 @@ public class KnockbackEffect : MechanicEffect
 
     public bool FlattenY = true;
 
-    public override void Execute(GameObject caster, GameObject target, Vector3 hitPosition)
+    public override void Execute(GameObject caster, GameObject source, GameObject target, Vector3 position)
     {
         if (target != null && target.TryGetComponent(out KnockbackReceiver receiver))
         {
