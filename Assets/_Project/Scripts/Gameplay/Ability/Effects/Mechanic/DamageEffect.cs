@@ -10,7 +10,7 @@ public class DamageEffect : MechanicEffect
 	{
 		if (target != null && target.TryGetComponent(out IDamageable damageable))
 		{
-			damageable.TakeDamage(Damage);
+			damageable.TakeDamage(Damage, hitPosition);
 		}
 	}
 }

@@ -78,7 +78,6 @@ public class CharacterAnimator : MonoBehaviour
 	private void OnDeath(DeathEvent e)
 	{
 		animator.SetTrigger(_deathHash);
-		_rigidbody.linearVelocity = Vector3.zero;
 		_rigidbody.isKinematic = true;
 		this.enabled = false;
 	}

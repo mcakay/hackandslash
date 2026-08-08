@@ -77,8 +77,7 @@ MonoBehaviour:
     - rid: 4727006622480072978
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
-        ExcludeTags:
-        - {fileID: 11400000, guid: 56505976407eb4cb890ed9b722892b37, type: 2}
+        ExcludeTags: []
         IncludeTags: []
         Force: 3
         Duration: 0.2
