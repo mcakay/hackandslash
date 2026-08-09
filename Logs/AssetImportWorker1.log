@@ -7,9 +7,9 @@ Darwin version:          25.2.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
-Date:                    2026-08-08T17:19:55Z
+Date:                    2026-08-09T09:07:51Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay" at "2026-08-08T17:19:55.943724Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay" at "2026-08-09T09:07:51.476324Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54076
+58654
 -licensingIpc
 LicenseClient-mcakay
 -job-worker-count
@@ -72,7 +72,13 @@ Successfully changed project path to: /Users/mcakay/Desktop/hackandslash
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8787553344]  Target information:
 
-Player connection [8787553344]  * "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 3387826150 [EditorId] 3387826150 [Version] 1048832 [Id] OSXEditor(0,Melihs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8787553344]  * "[IP] 127.0.2.2 [Port] 0 [Flags] 2 [Guid] 1430614956 [EditorId] 1430614956 [Version] 1048832 [Id] OSXEditor(0,Melihs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8787553344]  * "[IP] 127.0.2.3 [Port] 0 [Flags] 2 [Guid] 1430614956 [EditorId] 1430614956 [Version] 1048832 [Id] OSXEditor(0,Melihs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8787553344]  * "[IP] 192.168.1.6 [Port] 0 [Flags] 2 [Guid] 1430614956 [EditorId] 1430614956 [Version] 1048832 [Id] OSXEditor(0,Melihs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8787553344]  * "[IP] 172.16.0.2 [Port] 0 [Flags] 2 [Guid] 1430614956 [EditorId] 1430614956 [Version] 1048832 [Id] OSXEditor(0,Melihs-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8787553344] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8787553344] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -87,7 +93,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 10.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 29.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.17f1 (cf0352b38e81)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -104,29 +110,31 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Begin MonoManager ReloadAssembly
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-mcakay"
 [Licensing::IpcConnector] LicenseClient-mcakay channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay-6000.3.17" at "2026-08-08T17:19:56.726001Z"
-Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56863
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              65b31759f53c4081a6100c6fcc12d8c6
-  Correlation Id:          818a9d766f021bc6d8df16a52e0f3349
-  External correlation Id: 7001479829827864759
-  Machine Id:              mRaynfZ7ET1vX4fFkFpM3pgrn0w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mcakay-6000.3.17" (connect: 0.00s, validation: 0.01s, handshake: 0.62s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay-6000.3.17-notifications" at "2026-08-08T17:19:57.355501Z"
-[Licensing::Module] Licensing Background thread has ended after 1.41s
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay-6000.3.17" at "2026-08-09T09:07:52.846363Z"
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              3e93d8cf27e04bfeb4348d984e2dbc2e
+  Correlation Id:          140016e760d88173cd9cd231ac40f97f
+  External correlation Id: 5226966268254683191
+  Machine Id:              mRaynfZ7ET1vX4fFkFpM3pgrn0w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mcakay-6000.3.17" (connect: 0.00s, validation: 0.01s, handshake: 1.12s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mcakay-6000.3.17-notifications" at "2026-08-09T09:07:53.967945Z"
+[Licensing::Module] Licensing Background thread has ended after 2.49s
+[Licensing::Module] Licensing is initialized (took 0.87s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18967873608867-UnityPersXXXX
@@ -136,8 +144,8 @@ Register platform support module: /Applications/Unity/Hub/Editor/6000.3.17f1/Uni
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.17f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.17f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.004234 seconds.
-- Loaded All Assemblies, in  0.570 seconds
+Registered in 0.872477 seconds.
+- Loaded All Assemblies, in  1.473 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -150,34 +158,34 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.959 seconds
-Domain Reload Profiling: 1530ms
-	BeginReloadAssembly (209ms)
+- Finished resetting the current domain, in  0.652 seconds
+Domain Reload Profiling: 2126ms
+	BeginReloadAssembly (206ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (273ms)
-		LoadAssemblies (210ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (930ms)
+	LoadAllAssembliesAndSetupDomain (268ms)
+		LoadAssemblies (206ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (268ms)
-			TypeCache.Refresh (264ms)
-				TypeCache.ScanAssembly (221ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (253ms)
+				TypeCache.ScanAssembly (206ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (959ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (653ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (811ms)
+		SetupLoadedEditorAssemblies (566ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (404ms)
-			SetLoadedEditorAssemblies (24ms)
-			BeforeProcessingInitializeOnLoad (162ms)
-			ProcessInitializeOnLoadAttributes (127ms)
+			InitializePlatformSupportModulesInManaged (222ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (124ms)
 			ProcessInitializeOnLoadMethodAttributes (95ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -192,11 +200,11 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  1.097 seconds
+- Loaded All Assemblies, in  1.408 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.18 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.68 ms, found 2 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
@@ -210,42 +218,42 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.832 seconds
-Domain Reload Profiling: 1922ms
-	BeginReloadAssembly (136ms)
+- Finished resetting the current domain, in  1.254 seconds
+Domain Reload Profiling: 2655ms
+	BeginReloadAssembly (246ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (28ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (871ms)
-		LoadAssemblies (557ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (1077ms)
+		LoadAssemblies (723ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (384ms)
-			TypeCache.Refresh (298ms)
-				TypeCache.ScanAssembly (264ms)
-			BuildScriptInfoCaches (71ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (832ms)
+		AnalyzeDomain (470ms)
+			TypeCache.Refresh (345ms)
+				TypeCache.ScanAssembly (293ms)
+			BuildScriptInfoCaches (102ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1254ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (620ms)
+		SetupLoadedEditorAssemblies (895ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (136ms)
-			ProcessInitializeOnLoadAttributes (415ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (204ms)
+			ProcessInitializeOnLoadAttributes (559ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -253,47 +261,39 @@ WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wirefr
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.17f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7763 unused Assets / (6.2 MB). Loaded Objects now: 8589.
-Memory consumption went from 155.1 MB to 149.0 MB.
-Total: 12.943167 ms (FindLiveObjects: 1.420958 ms CreateObjectMapping: 0.332750 ms MarkObjects: 8.309041 ms  DeleteObjects: 2.880250 ms)
+Unloading 7764 unused Assets / (4.0 MB). Loaded Objects now: 8590.
+Memory consumption went from 155.1 MB to 151.1 MB.
+Total: 43.915542 ms (FindLiveObjects: 14.481583 ms CreateObjectMapping: 1.576375 ms MarkObjects: 19.078958 ms  DeleteObjects: 8.778458 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1928776.113302 seconds.
-  path: Assets/_Project/Data/Factories/Floating Damage Factory.asset
-  artifactKey: Guid(bbe3bfe3dfb73418a8058b98676ab94a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Data/Factories/Floating Damage Factory.asset using Guid(bbe3bfe3dfb73418a8058b98676ab94a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c54c4c1950a2895f88f4c0f2c7d5e52') in 0.085597791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/_Project/Data/Abilities/Greatsword Primary 3.asset
-  artifactKey: Guid(e0287ec87b9de414cb03645359368c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Data/Abilities/Greatsword Primary 3.asset using Guid(e0287ec87b9de414cb03645359368c1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8689152a31c251edda7b285d02dc901') in 0.049901333 seconds
+  Time since last request: 1953138.467730 seconds.
+  path: Assets/_Project/Data/Abilities/Greatsword Primary 1.asset
+  artifactKey: Guid(5dd5bb8c28f8b4e809a083637d876b7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Abilities/Greatsword Primary 1.asset using Guid(5dd5bb8c28f8b4e809a083637d876b7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd6a05a8fbddea0eb4f26de3422886aa') in 0.204834 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
+  Time since last request: 0.000088 seconds.
+  path: Assets/_Project/Scripts/Visuals/MaterialPropertyModifier.cs
+  artifactKey: Guid(5f944cd1001024d31a84af73d75a684e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Visuals/MaterialPropertyModifier.cs using Guid(5f944cd1001024d31a84af73d75a684e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '75ecd661a82518f958243fe4d8e287ad') in 0.02544075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
   path: Assets/_Project/Scenes/SampleScene.unity
   artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'abe1649024885e3d5a76ebcc01a5565f') in 0.007411916 seconds
+Start importing Assets/_Project/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c7cfe07ac0cffaf3f931c5d7262a464') in 0.080499709 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/_Project/Scripts/Visuals/Animators/CharacterAnimator.cs
-  artifactKey: Guid(c612c425a0c564e498e84b12a3ff3685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Visuals/Animators/CharacterAnimator.cs using Guid(c612c425a0c564e498e84b12a3ff3685) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80e683216cd81d7f09539cdbfa3eae1c') in 0.009321166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
 Received Prepare
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
@@ -301,22 +301,14 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (2.4 MB). Loaded Objects now: 8591.
-Memory consumption went from 149.8 MB to 147.4 MB.
-Total: 34.967625 ms (FindLiveObjects: 2.615083 ms CreateObjectMapping: 0.188917 ms MarkObjects: 30.740833 ms  DeleteObjects: 1.422333 ms)
+Unloading 20 unused Assets / (2.4 MB). Loaded Objects now: 8592.
+Memory consumption went from 149.5 MB to 147.1 MB.
+Total: 34.107917 ms (FindLiveObjects: 0.526541 ms CreateObjectMapping: 0.149167 ms MarkObjects: 32.493083 ms  DeleteObjects: 0.938542 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 57.138128 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9a20aa8ed058f03491e5694f130467d') in 0.02526925 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
 ========================================================================
 Received Prepare
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
@@ -327,12 +319,12 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (3.6 MB). Loaded Objects now: 8592.
-Memory consumption went from 153.6 MB to 150.0 MB.
-Total: 29.076916 ms (FindLiveObjects: 1.283375 ms CreateObjectMapping: 0.398584 ms MarkObjects: 25.567167 ms  DeleteObjects: 1.827417 ms)
+Unloading 7751 unused Assets / (5.5 MB). Loaded Objects now: 8592.
+Memory consumption went from 153.4 MB to 147.9 MB.
+Total: 77.914583 ms (FindLiveObjects: 1.362459 ms CreateObjectMapping: 0.253875 ms MarkObjects: 73.118334 ms  DeleteObjects: 3.176958 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
@@ -341,12 +333,12 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e0f3000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.459 seconds
+Thread 0x16fd07000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.791 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.84 ms, found 2 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
@@ -360,318 +352,40 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.631 seconds
-Domain Reload Profiling: 2095ms
-	BeginReloadAssembly (437ms)
+- Finished resetting the current domain, in  1.052 seconds
+Domain Reload Profiling: 3849ms
+	BeginReloadAssembly (1411ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
+		DisableScriptedObjects (75ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (135ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (968ms)
-		LoadAssemblies (936ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (420ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (1250ms)
+		LoadAssemblies (1451ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (205ms)
-			TypeCache.Refresh (31ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (159ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (631ms)
+		AnalyzeDomain (346ms)
+			TypeCache.Refresh (66ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (253ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1053ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (501ms)
+		SetupLoadedEditorAssemblies (815ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (137ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (508ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7761 unused Assets / (6.4 MB). Loaded Objects now: 8607.
-Memory consumption went from 176.2 MB to 169.9 MB.
-Total: 9.100375 ms (FindLiveObjects: 0.552375 ms CreateObjectMapping: 0.270792 ms MarkObjects: 5.804209 ms  DeleteObjects: 2.472375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.5 MB). Loaded Objects now: 8608.
-Memory consumption went from 160.4 MB to 156.0 MB.
-Total: 37.358708 ms (FindLiveObjects: 1.269417 ms CreateObjectMapping: 0.477291 ms MarkObjects: 32.342125 ms  DeleteObjects: 3.269042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e0f3000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.597 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 3.10 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.334 seconds
-Domain Reload Profiling: 2938ms
-	BeginReloadAssembly (433ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (87ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (1095ms)
-		LoadAssemblies (904ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (378ms)
-			TypeCache.Refresh (59ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (296ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1335ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1195ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (578ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (160ms)
-			ProcessInitializeOnLoadAttributes (395ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (4.9 MB). Loaded Objects now: 8611.
-Memory consumption went from 176.3 MB to 171.3 MB.
-Total: 15.259208 ms (FindLiveObjects: 2.304250 ms CreateObjectMapping: 1.398708 ms MarkObjects: 8.667916 ms  DeleteObjects: 2.887333 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.4 MB). Loaded Objects now: 8611.
-Memory consumption went from 160.4 MB to 156.1 MB.
-Total: 45.569250 ms (FindLiveObjects: 4.574375 ms CreateObjectMapping: 0.582542 ms MarkObjects: 38.571792 ms  DeleteObjects: 1.840042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e0f3000 may have been prematurely finalized
-- Loaded All Assemblies, in  2.488 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.695 seconds
-Domain Reload Profiling: 3191ms
-	BeginReloadAssembly (1181ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (33ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (233ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (1246ms)
-		LoadAssemblies (1778ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (268ms)
-			TypeCache.Refresh (44ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (187ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (696ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (568ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (137ms)
-			ProcessInitializeOnLoadAttributes (342ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (3.9 MB). Loaded Objects now: 8614.
-Memory consumption went from 176.3 MB to 172.4 MB.
-Total: 9.961875 ms (FindLiveObjects: 0.846750 ms CreateObjectMapping: 0.384709 ms MarkObjects: 6.243667 ms  DeleteObjects: 2.486250 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.0 MB). Loaded Objects now: 8614.
-Memory consumption went from 160.5 MB to 156.5 MB.
-Total: 33.692875 ms (FindLiveObjects: 4.705166 ms CreateObjectMapping: 0.508542 ms MarkObjects: 25.733416 ms  DeleteObjects: 2.744709 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-Thread 0x17720b000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.556 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.015 seconds
-Domain Reload Profiling: 2583ms
-	BeginReloadAssembly (304ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (84ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (1185ms)
-		LoadAssemblies (691ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (619ms)
-			TypeCache.Refresh (139ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (425ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1016ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (839ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (41ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (185ms)
-			ProcessInitializeOnLoadAttributes (529ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (3ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (10ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
@@ -680,492 +394,11 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (5.3 MB). Loaded Objects now: 8617.
-Memory consumption went from 176.4 MB to 171.1 MB.
-Total: 24.488417 ms (FindLiveObjects: 7.053416 ms CreateObjectMapping: 0.684875 ms MarkObjects: 9.580625 ms  DeleteObjects: 7.168417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 1530.489848 seconds.
-  path: Assets/_Project/Scripts/Physics/Configs/RagdollConfigSO.cs
-  artifactKey: Guid(845e65322b87a4d28beb57e030f7c5f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Physics/Configs/RagdollConfigSO.cs using Guid(845e65322b87a4d28beb57e030f7c5f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2e36b652182c0af71bd22f365d6e9f10') in 0.117976291 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000086 seconds.
-  path: Assets/_Project/Scripts/Physics/RagdollController.cs
-  artifactKey: Guid(1751f0a5c0eec4d8ebeb42b047aeff55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Physics/RagdollController.cs using Guid(1751f0a5c0eec4d8ebeb42b047aeff55) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fa91e4a93eefc9511f1e7eb7f416438') in 0.003732291 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Health/Events/DeathEvent.cs
-  artifactKey: Guid(432a885d676e04b21a7b3239dc7cbe72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Health/Events/DeathEvent.cs using Guid(432a885d676e04b21a7b3239dc7cbe72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32f2aad2119914f1be24e55f792a1b86') in 0.0032425 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/_Project/Scripts/Physics/Configs
-  artifactKey: Guid(8ace614d748b34f1e8c966e5b38259a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Physics/Configs using Guid(8ace614d748b34f1e8c966e5b38259a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a47fb631e3287c54f47048a15a533163') in 0.003309208 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.2 MB). Loaded Objects now: 8617.
-Memory consumption went from 160.6 MB to 156.4 MB.
-Total: 38.283792 ms (FindLiveObjects: 3.051708 ms CreateObjectMapping: 0.403667 ms MarkObjects: 31.950291 ms  DeleteObjects: 2.877583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e0f3000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.467 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 3.97 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.358 seconds
-Domain Reload Profiling: 2829ms
-	BeginReloadAssembly (364ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (85ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (1038ms)
-		LoadAssemblies (987ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (251ms)
-			TypeCache.Refresh (34ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (191ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1358ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1135ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (372ms)
-			SetLoadedEditorAssemblies (14ms)
-			BeforeProcessingInitializeOnLoad (257ms)
-			ProcessInitializeOnLoadAttributes (409ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (4.4 MB). Loaded Objects now: 8620.
-Memory consumption went from 176.3 MB to 171.9 MB.
-Total: 22.882958 ms (FindLiveObjects: 7.375542 ms CreateObjectMapping: 0.822625 ms MarkObjects: 9.678166 ms  DeleteObjects: 5.005583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.5 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.6 MB to 156.1 MB.
-Total: 169.012041 ms (FindLiveObjects: 1.809417 ms CreateObjectMapping: 0.537458 ms MarkObjects: 163.828042 ms  DeleteObjects: 2.835583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 3507.163671 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Health/HealthController.cs
-  artifactKey: Guid(e02ff840e53784b16a36830d50639e23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Health/HealthController.cs using Guid(e02ff840e53784b16a36830d50639e23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73c24adcfbc1038f3c7ca630cda0c336') in 0.375056958 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/AreaEffect.cs
-  artifactKey: Guid(2d0bdf0870cdc4366aa7fd0fe4dadef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/AreaEffect.cs using Guid(2d0bdf0870cdc4366aa7fd0fe4dadef7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b7fe1cbdde5582b75b13981630c0df8') in 0.005734292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/KnockbackEffect.cs
-  artifactKey: Guid(0547e5a7852c84448ab6e53f5f0aa041) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/KnockbackEffect.cs using Guid(0547e5a7852c84448ab6e53f5f0aa041) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a54a4afba366021b21380b58362cf753') in 0.003271709 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/DamageEffect.cs
-  artifactKey: Guid(c0f9fc41368534a20a0c7ed5e2ce63eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Mechanic/DamageEffect.cs using Guid(c0f9fc41368534a20a0c7ed5e2ce63eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b99e4851b55339ff72b64cd1919f5534') in 0.006414875 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/VignetteEffect.cs
-  artifactKey: Guid(f9014b76534294c2db5620d8b72cfe72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/VignetteEffect.cs using Guid(f9014b76534294c2db5620d8b72cfe72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f64e6b9946e21de2323d67d120273713') in 0.009627042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/SFXEffect.cs
-  artifactKey: Guid(225adc93ad5d34ca7a6041ddeb194b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/SFXEffect.cs using Guid(225adc93ad5d34ca7a6041ddeb194b7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f6bc941c70621dece9ecb9c688bacc8') in 0.003654041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/VFXEffect.cs
-  artifactKey: Guid(d4254f83a64ac45749743b64b6dfbdf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/VFXEffect.cs using Guid(d4254f83a64ac45749743b64b6dfbdf4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2abee1ed567fb8d722864db515618735') in 0.003292334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/AbilityEffect.cs
-  artifactKey: Guid(6662acb58c8b14389a361a4b760c6f7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/AbilityEffect.cs using Guid(6662acb58c8b14389a361a4b760c6f7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12f3644ab2d38df8050ae2af4ff1423d') in 0.00358775 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.1 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.7 MB to 156.6 MB.
-Total: 27.754792 ms (FindLiveObjects: 0.900625 ms CreateObjectMapping: 0.336125 ms MarkObjects: 23.700750 ms  DeleteObjects: 2.816208 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.4 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.6 MB to 156.3 MB.
-Total: 26.587833 ms (FindLiveObjects: 0.866083 ms CreateObjectMapping: 0.364583 ms MarkObjects: 23.602833 ms  DeleteObjects: 1.753875 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.4 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.6 MB to 156.2 MB.
-Total: 21.170209 ms (FindLiveObjects: 1.239625 ms CreateObjectMapping: 0.413417 ms MarkObjects: 17.761916 ms  DeleteObjects: 1.754458 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 125.224071 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/TimeScaleEffect.cs
-  artifactKey: Guid(9d31e263ad2b3450cbc20bcd4df64579) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/TimeScaleEffect.cs using Guid(9d31e263ad2b3450cbc20bcd4df64579) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e257126e1c72193c6a1551f5baf29b14') in 0.029192666 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/CameraImpulseEffect.cs
-  artifactKey: Guid(d9f62064de2594ae6a13ac573842c441) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/_Project/Scripts/Gameplay/Ability/Effects/Feedback/CameraImpulseEffect.cs using Guid(d9f62064de2594ae6a13ac573842c441) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a62fb6f8d823da59a5502f917d7e94d3') in 0.003950667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (4.9 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.7 MB to 155.8 MB.
-Total: 30.588250 ms (FindLiveObjects: 0.958541 ms CreateObjectMapping: 0.354459 ms MarkObjects: 26.371291 ms  DeleteObjects: 2.903042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (6.6 MB). Loaded Objects now: 8620.
-Memory consumption went from 160.6 MB to 154.1 MB.
-Total: 30.545625 ms (FindLiveObjects: 1.487625 ms CreateObjectMapping: 0.417000 ms MarkObjects: 25.257084 ms  DeleteObjects: 3.383541 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e0f3000 may have been prematurely finalized
-- Loaded All Assemblies, in  2.291 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.826 seconds
-Domain Reload Profiling: 3121ms
-	BeginReloadAssembly (1092ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (71ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (246ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (1127ms)
-		LoadAssemblies (1438ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (309ms)
-			TypeCache.Refresh (56ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (223ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (827ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (687ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (101ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (158ms)
-			ProcessInitializeOnLoadAttributes (373ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (8.0 MB). Loaded Objects now: 8623.
-Memory consumption went from 176.1 MB to 168.1 MB.
-Total: 18.624916 ms (FindLiveObjects: 6.031291 ms CreateObjectMapping: 0.475083 ms MarkObjects: 5.396500 ms  DeleteObjects: 6.721458 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7751 unused Assets / (3.4 MB). Loaded Objects now: 8623.
-Memory consumption went from 160.6 MB to 157.2 MB.
-Total: 235.300375 ms (FindLiveObjects: 7.165250 ms CreateObjectMapping: 0.595500 ms MarkObjects: 222.004583 ms  DeleteObjects: 5.526084 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16e17f000 may have been prematurely finalized
-- Loaded All Assemblies, in  2.509 seconds
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.901 seconds
-Domain Reload Profiling: 3417ms
-	BeginReloadAssembly (1372ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (75ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (482ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (1050ms)
-		LoadAssemblies (1340ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (275ms)
-			TypeCache.Refresh (49ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (205ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (903ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (769ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (170ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (208ms)
-			ProcessInitializeOnLoadAttributes (339ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7762 unused Assets / (6.6 MB). Loaded Objects now: 8626.
-Memory consumption went from 176.2 MB to 169.6 MB.
-Total: 15.725833 ms (FindLiveObjects: 4.150917 ms CreateObjectMapping: 0.854625 ms MarkObjects: 6.260125 ms  DeleteObjects: 4.459875 ms)
+Unloading 7762 unused Assets / (3.5 MB). Loaded Objects now: 8607.
+Memory consumption went from 176.3 MB to 172.7 MB.
+Total: 20.308000 ms (FindLiveObjects: 3.241667 ms CreateObjectMapping: 0.877125 ms MarkObjects: 8.984167 ms  DeleteObjects: 7.204250 ms)
 
 Prepare: number of updated asset objects reloaded= 0

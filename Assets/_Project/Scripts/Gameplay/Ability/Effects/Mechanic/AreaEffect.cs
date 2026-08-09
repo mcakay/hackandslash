@@ -32,7 +32,7 @@ public class AreaEffect : MechanicEffect
         {
             Collider hitCol = _hitResults[i];
 
-            if (hitCol.gameObject == caster) continue;
+            if (hitCol.gameObject == caster || hitCol.gameObject == target) continue;
 
             if (hitCol.TryGetComponent(out Hurtbox hurtbox))
             {
