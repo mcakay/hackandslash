@@ -24,6 +24,16 @@ public class VelocityMovement : MonoBehaviour
 		_direction = input;
 	}
 
+	public void Stop()
+	{
+		_direction = Vector2.zero;
+		if (_rigidbody == null)
+		{
+			return;
+		}
+		_rigidbody.linearVelocity = new Vector3(0f, _rigidbody.linearVelocity.y, 0f);
+	}
+
 	private void Move(Vector2 input)
 	{
 		if (input.sqrMagnitude < 0.01f)

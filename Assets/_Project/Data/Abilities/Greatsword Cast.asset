@@ -16,6 +16,11 @@ MonoBehaviour:
   AnimationTriggerName: Cast
   Clip: {fileID: -203655887218126122, guid: b4ea8c6cc43c1421db6b86a69c4cead9, type: 3}
   AnimationSpeed: 2.5
+  IsTargeted: 1
+  TargetingSettings:
+    Factory: {fileID: 11400000, guid: abe3c0eda6e404f0d83205b9971bb4cc, type: 2}
+    Range: 12
+    Size: 0.5
   ComboWindow: 1
   WindupPercentage: 0.66
   ExecutionPercentage: 0.34

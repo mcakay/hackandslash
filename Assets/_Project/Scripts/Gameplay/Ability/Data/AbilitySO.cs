@@ -19,6 +19,13 @@ public class AbilitySO : ScriptableObject
 	[Min(0.1f)]
 	public float AnimationSpeed = 1f;
 
+	[FoldoutGroup("Targeting")]
+	public bool IsTargeted;
+
+	[FoldoutGroup("Targeting")]
+	[ShowIf(nameof(IsTargeted))]
+	public TargetingSettings TargetingSettings;
+
 	[FoldoutGroup("Timing")]
 	public float ComboWindow = 1.0f;
 	public float Duration => (Clip != null ? Clip.length : 0f) / AnimationSpeed;

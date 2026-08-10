@@ -2,6 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(LocalEventChannel))]
+[SelectionBase]
 public class CharacterAnimator : MonoBehaviour
 {
 	[SerializeField] private float dampTime = 0.1f;
@@ -11,7 +12,6 @@ public class CharacterAnimator : MonoBehaviour
 	private int _velocityXHash;
 	private int _velocityZHash;
 	private int _hitHash;
-	private int _deathHash;
 
 	private Rigidbody _rigidbody;
 	private LocalEventChannel _channel;
@@ -25,7 +25,6 @@ public class CharacterAnimator : MonoBehaviour
 		_velocityZHash = Animator.StringToHash("VelocityZ");
 		_animSpeedHash = Animator.StringToHash("AnimationSpeed");
 		_hitHash = Animator.StringToHash("Hit");
-		_deathHash = Animator.StringToHash("Death");
 
 		animator.applyRootMotion = true;
 	}
@@ -77,7 +76,6 @@ public class CharacterAnimator : MonoBehaviour
 
 	private void OnDeath(DeathEvent e)
 	{
-		animator.SetTrigger(_deathHash);
 		_rigidbody.isKinematic = true;
 		this.enabled = false;
 	}

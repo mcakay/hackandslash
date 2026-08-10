@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileSO
   Speed: 30
-  Lifetime: 3
+  Lifetime: 0.4

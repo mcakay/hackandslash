@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(LocalEventChannel))]
 public class PlayerInputController : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerInputController : MonoBehaviour
 	[SerializeField] private VelocityRotation velocityRotation;
 
 	[SerializeField] private InputReaderSO _inputReader;
+	[SerializeField] private TargetingController _targetingController;
 
 	private LocalEventChannel _channel;
 
@@ -17,6 +19,10 @@ public class PlayerInputController : MonoBehaviour
 	private int _ultimateHash;
 
 	private bool _isCasting;
+	private bool _isAiming;
+	private int _aimingAbilityHash;
+
+	private Dictionary<int, TargetingSettings> _targetedAbilities = new();
 
 	private void Awake()
 	{
@@ -44,6 +50,7 @@ public class PlayerInputController : MonoBehaviour
 
 		_channel.Subscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 		_channel.Subscribe<AbilityCastEndedEvent>(OnAbilityCastEnded);
+		_channel.Subscribe<TargetingDataUpdatedEvent>(OnTargetingDataUpdated);
 	}
 
 	private void OnDisable()
@@ -61,6 +68,7 @@ public class PlayerInputController : MonoBehaviour
 
 		_channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 		_channel.Unsubscribe<AbilityCastEndedEvent>(OnAbilityCastEnded);
+		_channel.Unsubscribe<TargetingDataUpdatedEvent>(OnTargetingDataUpdated);
 	}
 
 	private void Update()
@@ -74,16 +82,40 @@ public class PlayerInputController : MonoBehaviour
 
 		velocityMovement.SetDirection(movementInput);
 		velocityRotation.SetDirection(movementInput);
+
+		if (_isAiming)
+		{
+			_targetingController.UpdateAim(_inputReader.PointerPosition);
+		}
+	}
+
+	private void OnTargetingDataUpdated(TargetingDataUpdatedEvent e)
+	{
+		_targetedAbilities = e.TargetedAbilities;
 	}
 
 	private void OnPrimary()
 	{
-		_channel.Publish(new AbilityCastRequestedEvent(_primaryHash));
+		if (_isAiming)
+		{
+			ExecuteAimingAbility();
+		}
+		else
+		{
+			ProcessAbilityRequest(_primaryHash);
+		}
 	}
 
 	private void OnSecondary()
 	{
-		_channel.Publish(new AbilityCastRequestedEvent(_secondaryHash));
+		if (_isAiming)
+		{
+			CancelAiming();
+		}
+		else
+		{
+			ProcessAbilityRequest(_secondaryHash);
+		}
 	}
 
 	private void OnDash()
@@ -93,23 +125,89 @@ public class PlayerInputController : MonoBehaviour
 
 	private void OnCast()
 	{
-		_channel.Publish(new AbilityCastRequestedEvent(_castHash));
+		ProcessAbilityRequest(_castHash);
 	}
 
 	private void OnUltimate()
 	{
-		_channel.Publish(new AbilityCastRequestedEvent(_ultimateHash));
+		ProcessAbilityRequest(_ultimateHash);
+	}
+
+	private void ProcessAbilityRequest(int hash)
+	{
+		if (_isAiming)
+		{
+			if (_aimingAbilityHash == hash)
+			{
+				CancelAiming();
+				return;
+			}
+			CancelAiming();
+		}
+
+		if (_targetedAbilities.TryGetValue(hash, out TargetingSettings settings))
+		{
+			StartTargeting(hash, settings);
+		}
+		else
+		{
+			_channel.Publish(new AbilityCastRequestedEvent(hash));
+		}
+	}
+
+	private void StartTargeting(int hash, TargetingSettings settings)
+	{
+		_isAiming = true;
+		_aimingAbilityHash = hash;
+
+		_targetingController.StartAiming(settings);
+
+		_targetingController.UpdateAim(_inputReader.PointerPosition);
+	}
+
+	private void ExecuteAimingAbility()
+	{
+		_targetingController.UpdateAim(_inputReader.PointerPosition);
+		Vector3 aimDir = _targetingController.AimDirection;
+
+		if (aimDir != Vector3.zero)
+		{
+			velocityRotation.SnapRotation(aimDir);
+		}
+
+		velocityMovement.Stop();
+		velocityRotation.Stop();
+
+		velocityMovement.enabled = false;
+		velocityRotation.enabled = false;
+
+		CancelAiming();
+
+		_channel.Publish(new AbilityCastRequestedEvent(_aimingAbilityHash));
+	}
+
+	private void CancelAiming()
+	{
+		_isAiming = false;
+		_targetingController.StopAiming();
 	}
 
 	private void OnAbilityCastStarted(AbilityCastStartedEvent e)
 	{
 		_isCasting = true;
-		velocityMovement.SetDirection(Vector2.zero);
-		velocityRotation.SetDirection(Vector2.zero);
+
+		velocityMovement.Stop();
+		velocityRotation.Stop();
+
+		velocityMovement.enabled = false;
+		velocityRotation.enabled = false;
 	}
 
 	private void OnAbilityCastEnded(AbilityCastEndedEvent e)
 	{
 		_isCasting = false;
+
+		velocityMovement.enabled = true;
+		velocityRotation.enabled = true;
 	}
 }

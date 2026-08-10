@@ -8,6 +8,7 @@ public class InputReaderSO : ScriptableObject, InputActions.IPlayerActions
 	private InputActions _inputActions;
 
 	public Vector2 MovementInput { get; private set; }
+	public Vector2 PointerPosition { get; private set; }
 
 	public event Action PrimaryPerformed;
 	public event Action SecondaryPerformed;
@@ -78,5 +79,10 @@ public class InputReaderSO : ScriptableObject, InputActions.IPlayerActions
 		{
 			UltimatePerformed?.Invoke();
 		}
+	}
+
+	public void OnPointer(InputAction.CallbackContext context)
+	{
+		PointerPosition = context.ReadValue<Vector2>();
 	}
 }

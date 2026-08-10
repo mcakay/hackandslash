@@ -24,6 +24,19 @@ public class VelocityRotation : MonoBehaviour
 		_direction = input;
 	}
 
+	public void Stop()
+	{
+		_direction = Vector2.zero;
+	}
+
+	public void SnapRotation(Vector3 direction)
+	{
+		if (direction != Vector3.zero)
+		{
+			_rigidbody.rotation = Quaternion.LookRotation(direction, Vector3.up);
+		}
+	}
+
 	private void Rotate(Vector2 input)
 	{
 		if (input.sqrMagnitude < 0.01f)
