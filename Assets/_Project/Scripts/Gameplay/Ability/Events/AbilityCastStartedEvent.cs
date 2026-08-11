@@ -1,9 +1,9 @@
 public readonly struct AbilityCastStartedEvent : ILocalEvent
 {
 	public readonly float Speed;
-	public readonly AbilitySO Ability;
+	public readonly Ability Ability;
 
-	public AbilityCastStartedEvent(AbilitySO ability, float speed)
+	public AbilityCastStartedEvent(Ability ability, float speed)
 	{
 		Ability = ability;
 		Speed = speed;

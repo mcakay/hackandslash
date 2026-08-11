@@ -1,5 +1,7 @@
 using UnityEngine;
+using System.Collections.Generic;
 
+[RequireComponent(typeof(LocalEventChannel))]
 public class TargetingController : MonoBehaviour
 {
 	[Header("Settings")]
@@ -7,14 +9,53 @@ public class TargetingController : MonoBehaviour
 
 	private Camera _camera;
 	private TargetingIndicator _activeIndicator;
-
 	private TargetingSettings _settings;
+	private LocalEventChannel _channel;
 
 	public Vector3 AimDirection { get; private set; }
+
+	private readonly Dictionary<int, TargetingSettings> _targetedAbilities = new();
 
 	private void Awake()
 	{
 		_camera = Camera.main;
+		_channel = GetComponent<LocalEventChannel>();
+	}
+
+	private void OnEnable()
+	{
+		_channel.Subscribe<MovesetUpdatedEvent>(OnMovesetUpdated);
+	}
+
+	private void OnDisable()
+	{
+		_channel.Unsubscribe<MovesetUpdatedEvent>(OnMovesetUpdated);
+	}
+
+	private void OnMovesetUpdated(MovesetUpdatedEvent e)
+	{
+		_targetedAbilities.Clear();
+
+		foreach (var kvp in e.Abilities)
+		{
+			int hashId = kvp.Key;
+			List<Ability> abilityList = kvp.Value;
+
+			if (abilityList != null && abilityList.Count > 0)
+			{
+				Ability firstAbility = abilityList[0];
+
+				if (firstAbility.Data.IsTargeted)
+				{
+					_targetedAbilities[hashId] = firstAbility.Data.TargetingSettings;
+				}
+			}
+		}
+	}
+
+	public bool TryGetTargetingSettings(int hash, out TargetingSettings settings)
+	{
+		return _targetedAbilities.TryGetValue(hash, out settings);
 	}
 
 	public void StartAiming(TargetingSettings settings)

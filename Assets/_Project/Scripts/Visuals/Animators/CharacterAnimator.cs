@@ -66,7 +66,7 @@ public class CharacterAnimator : MonoBehaviour
 	private void OnAbilityCastStarted(AbilityCastStartedEvent e)
 	{
 		animator.SetFloat(_animSpeedHash, e.Speed);
-		animator.SetTrigger(e.Ability.AnimationHash);
+		animator.SetTrigger(e.Ability.Data.AnimationHash);
 	}
 
 	private void OnHitReceived(HitReceivedEvent e)

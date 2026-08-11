@@ -6,9 +6,9 @@ public class PlayerInputController : MonoBehaviour
 {
 	[SerializeField] private VelocityMovement velocityMovement;
 	[SerializeField] private VelocityRotation velocityRotation;
-
-	[SerializeField] private InputReaderSO _inputReader;
+	[SerializeField] private AbilityController abilityController;
 	[SerializeField] private TargetingController _targetingController;
+	[SerializeField] private InputReaderSO _inputReader;
 
 	private LocalEventChannel _channel;
 
@@ -21,8 +21,6 @@ public class PlayerInputController : MonoBehaviour
 	private bool _isCasting;
 	private bool _isAiming;
 	private int _aimingAbilityHash;
-
-	private Dictionary<int, TargetingSettings> _targetedAbilities = new();
 
 	private void Awake()
 	{
@@ -40,7 +38,6 @@ public class PlayerInputController : MonoBehaviour
 		if (_inputReader != null)
 		{
 			_inputReader.EnableInput();
-
 			_inputReader.PrimaryPerformed += OnPrimary;
 			_inputReader.SecondaryPerformed += OnSecondary;
 			_inputReader.DashPerformed += OnDash;
@@ -50,7 +47,6 @@ public class PlayerInputController : MonoBehaviour
 
 		_channel.Subscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 		_channel.Subscribe<AbilityCastEndedEvent>(OnAbilityCastEnded);
-		_channel.Subscribe<TargetingDataUpdatedEvent>(OnTargetingDataUpdated);
 	}
 
 	private void OnDisable()
@@ -58,7 +54,6 @@ public class PlayerInputController : MonoBehaviour
 		if (_inputReader != null)
 		{
 			_inputReader.DisableInput();
-
 			_inputReader.PrimaryPerformed -= OnPrimary;
 			_inputReader.SecondaryPerformed -= OnSecondary;
 			_inputReader.DashPerformed -= OnDash;
@@ -68,7 +63,6 @@ public class PlayerInputController : MonoBehaviour
 
 		_channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityCastStarted);
 		_channel.Unsubscribe<AbilityCastEndedEvent>(OnAbilityCastEnded);
-		_channel.Unsubscribe<TargetingDataUpdatedEvent>(OnTargetingDataUpdated);
 	}
 
 	private void Update()
@@ -87,11 +81,6 @@ public class PlayerInputController : MonoBehaviour
 		{
 			_targetingController.UpdateAim(_inputReader.PointerPosition);
 		}
-	}
-
-	private void OnTargetingDataUpdated(TargetingDataUpdatedEvent e)
-	{
-		_targetedAbilities = e.TargetedAbilities;
 	}
 
 	private void OnPrimary()
@@ -118,20 +107,9 @@ public class PlayerInputController : MonoBehaviour
 		}
 	}
 
-	private void OnDash()
-	{
-		_channel.Publish(new AbilityCastRequestedEvent(_dashHash));
-	}
-
-	private void OnCast()
-	{
-		ProcessAbilityRequest(_castHash);
-	}
-
-	private void OnUltimate()
-	{
-		ProcessAbilityRequest(_ultimateHash);
-	}
+	private void OnDash() => ProcessAbilityRequest(_dashHash);
+	private void OnCast() => ProcessAbilityRequest(_castHash);
+	private void OnUltimate() => ProcessAbilityRequest(_ultimateHash);
 
 	private void ProcessAbilityRequest(int hash)
 	{
@@ -145,13 +123,18 @@ public class PlayerInputController : MonoBehaviour
 			CancelAiming();
 		}
 
-		if (_targetedAbilities.TryGetValue(hash, out TargetingSettings settings))
+		if (!abilityController.IsAbilityReady(hash))
+		{
+			return;
+		}
+
+		if (_targetingController.TryGetTargetingSettings(hash, out TargetingSettings settings))
 		{
 			StartTargeting(hash, settings);
 		}
 		else
 		{
-			_channel.Publish(new AbilityCastRequestedEvent(hash));
+			abilityController.RequestCast(hash);
 		}
 	}
 
@@ -161,7 +144,6 @@ public class PlayerInputController : MonoBehaviour
 		_aimingAbilityHash = hash;
 
 		_targetingController.StartAiming(settings);
-
 		_targetingController.UpdateAim(_inputReader.PointerPosition);
 	}
 
@@ -183,7 +165,7 @@ public class PlayerInputController : MonoBehaviour
 
 		CancelAiming();
 
-		_channel.Publish(new AbilityCastRequestedEvent(_aimingAbilityHash));
+		abilityController.RequestCast(_aimingAbilityHash);
 	}
 
 	private void CancelAiming()

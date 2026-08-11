@@ -5,13 +5,13 @@ public class InstantExecution : AbilityExecution
 {
     public override bool CanExecute => true;
 
-    public override void OnInputStarted(AbilityRunner runner, AbilitySO context)
+    public override void OnInputStarted(AbilityController controller, Ability ability)
     {
-		runner.StateMachine.ChangeState<WindupState>();
+		controller.StateMachine.ChangeState<WindupState>();
     }
 
-    public override void OnInputEnded(AbilityRunner runner, AbilitySO context)
+    public override void OnInputEnded(AbilityController controller, Ability ability)
     {
-		runner.StateMachine.ChangeState<ExecutionState>();
+		controller.StateMachine.ChangeState<ExecutionState>();
     }
 }

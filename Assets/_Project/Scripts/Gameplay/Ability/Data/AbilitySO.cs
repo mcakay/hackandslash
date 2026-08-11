@@ -19,6 +19,9 @@ public class AbilitySO : ScriptableObject
 	[Min(0.1f)]
 	public float AnimationSpeed = 1f;
 
+	[FoldoutGroup("Cooldown")]
+	public float Cooldown = 0f;
+
 	[FoldoutGroup("Targeting")]
 	public bool IsTargeted;
 

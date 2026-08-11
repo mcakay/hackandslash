@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class StateMachine
+public class StateMachine : IDisposable
 {
 	public IState CurrentState { get; private set; }
 
@@ -55,5 +55,16 @@ public class StateMachine
 	public void Tick(float deltaTime)
 	{
 		CurrentState?.OnUpdate(deltaTime);
+	}
+
+	public void Dispose()
+	{
+		foreach (var state in _states.Values)
+		{
+			if (state is IDisposable disposableState)
+			{
+				disposableState.Dispose();
+			}
+		}
 	}
 }

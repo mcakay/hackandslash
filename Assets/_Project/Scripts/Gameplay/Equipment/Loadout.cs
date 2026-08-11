@@ -48,7 +48,6 @@ public class Loadout : MonoBehaviour
 		}
 		var hitbox = _currentWeaponInstance.GetComponent<Hitbox>();
 
-		_channel.Publish(new MovesetUpdateRequestedEvent(_currentWeaponData.Moveset));
-		_channel.Publish(new HitboxRegisterRequestedEvent(hitbox));
+		_channel.Publish(new WeaponEquippedEvent(_currentWeaponData, hitbox));
 	}
 }

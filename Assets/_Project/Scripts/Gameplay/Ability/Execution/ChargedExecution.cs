@@ -9,17 +9,17 @@ public class ChargedExecution : AbilityExecution
     public float MaxChargeTime = 1.5f;
     private float _chargeStartTime;
 
-	public override void OnInputStarted(AbilityRunner runner, AbilitySO context)
+	public override void OnInputStarted(AbilityController controller, Ability ability)
     {
         _chargeStartTime = Time.time;
-        runner.StateMachine.ChangeState<WindupState>();
+        controller.StateMachine.ChangeState<WindupState>();
     }
 
-    public override void OnInputEnded(AbilityRunner runner, AbilitySO context)
+    public override void OnInputEnded(AbilityController controller, Ability ability)
     {
         float holdDuration = Time.time - _chargeStartTime;
         float chargeMultiplier = Mathf.Clamp01(holdDuration / MaxChargeTime);
 
-        runner.StateMachine.ChangeState<ExecutionState>();
+        controller.StateMachine.ChangeState<ExecutionState>();
     }
 }

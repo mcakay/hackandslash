@@ -3,25 +3,24 @@ using UnityEngine;
 
 public class AbilityTracker
 {
-	public AbilitySO CurrentAbility { get; private set; }
+	private readonly AbilityController _controller;
+
+	public Ability CurrentAbility { get; private set; }
 
 	private int _currentAbilityId;
 	private int _currentAbilityIndex;
 	private float _lastAbilityTime;
 
-	public void Advance(int id, MovesetSO moveset)
+	public AbilityTracker(AbilityController controller)
 	{
-		if (moveset == null)
-		{
-			return;
-		}
+		_controller = controller;
+	}
 
-		List<AbilitySO> abilities = moveset.GetAbilities(id);
+	public void Advance(int id)
+	{
+		List<Ability> abilities = _controller.Moveset.GetAbilities(id);
 
-		if (abilities == null || abilities.Count == 0)
-		{
-			return;
-		}
+		if (abilities == null || abilities.Count == 0) return;
 
 		if (_currentAbilityId != id)
 		{
@@ -41,17 +40,10 @@ public class AbilityTracker
 
 	public void Tick(bool isExecuting)
 	{
-		if (_currentAbilityIndex == 0 || CurrentAbility == null)
-		{
-			return;
-		}
+		if (_currentAbilityIndex == 0 || CurrentAbility == null) return;
+		if (isExecuting) return;
 
-		if (isExecuting)
-		{
-			return;
-		}
-
-		if (Time.time - _lastAbilityTime > CurrentAbility.ComboWindow)
+		if (Time.time - _lastAbilityTime > CurrentAbility.Data.ComboWindow)
 		{
 			Reset();
 		}

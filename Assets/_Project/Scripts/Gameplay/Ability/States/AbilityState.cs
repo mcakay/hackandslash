@@ -1,11 +1,13 @@
-public abstract class AbilityState : IState
+using System;
+
+public abstract class AbilityState : IState, IDisposable
 {
-	protected AbilityRunner _runner;
+	protected AbilityController _runner;
 	protected readonly Timer _timer = new();
 
-	public AbilityState(AbilityRunner runner)
+	public AbilityState(AbilityController controller)
 	{
-		_runner = runner;
+		_runner = controller;
 		_timer.TimerEnded += OnTimeUp;
 	}
 
@@ -13,4 +15,9 @@ public abstract class AbilityState : IState
 	public abstract void OnExit();
 	public abstract void OnUpdate(float deltaTime);
 	protected abstract void OnTimeUp();
+
+	public void Dispose()
+	{
+		_timer.TimerEnded -= OnTimeUp;
+	}
 }

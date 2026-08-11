@@ -4,28 +4,23 @@ using UnityEngine;
 [RequireComponent(typeof(LocalEventChannel))]
 public class HitboxController : MonoBehaviour
 {
-    private readonly Dictionary<string, Hitbox> _hitboxes = new();
-    private LocalEventChannel _channel;
+	private readonly Dictionary<string, Hitbox> _hitboxes = new();
+	private LocalEventChannel _channel;
 
-    private void Awake()
-    {
-        _channel = GetComponent<LocalEventChannel>();
-    }
+	private void Awake()
+	{
+		_channel = GetComponent<LocalEventChannel>();
+	}
 
-    private void OnEnable()
-    {
-        _channel.Subscribe<HitboxRegisterRequestedEvent>(OnHitboxRegisterRequested);
-    }
+	private void OnEnable()
+	{
+		_channel.Subscribe<WeaponEquippedEvent>(OnWeaponEquipped);
+	}
 
-    private void OnDisable()
-    {
-        _channel.Unsubscribe<HitboxRegisterRequestedEvent>(OnHitboxRegisterRequested);
-    }
-
-    private void OnHitboxRegisterRequested(HitboxRegisterRequestedEvent e)
-    {
-        _hitboxes[e.hitbox.Id] = e.hitbox;
-    }
+	private void OnDisable()
+	{
+		_channel.Unsubscribe<WeaponEquippedEvent>(OnWeaponEquipped);
+	}
 
 	public void EnableHitbox(string hitboxId, AbilityEffectPayload payload)
 	{
@@ -40,6 +35,19 @@ public class HitboxController : MonoBehaviour
 		if (_hitboxes.TryGetValue(hitboxId, out Hitbox hitbox))
 		{
 			hitbox.Disable();
+		}
+	}
+
+	private void OnWeaponEquipped(WeaponEquippedEvent e)
+	{
+		AddHitbox(e.Hitbox);
+	}
+
+	private void AddHitbox(Hitbox hitbox)
+	{
+		if (hitbox != null && !_hitboxes.ContainsKey(hitbox.Id))
+		{
+			_hitboxes[hitbox.Id] = hitbox;
 		}
 	}
 }

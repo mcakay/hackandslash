@@ -2,20 +2,19 @@ using UnityEngine;
 
 public class ExecutionState : AbilityState
 {
-	public ExecutionState(AbilityRunner runner) : base(runner)
+	public ExecutionState(AbilityController controller) : base(controller)
 	{
 	}
 
 	public override void OnEnter()
 	{
-		_timer.Start(_runner.Tracker.CurrentAbility.ExecutionDuration);
-		_runner.Tracker.CurrentAbility.StartExecute(_runner.gameObject);
-		Debug.Log($"ExecutionState: {_runner.Tracker.CurrentAbility.name} for {_runner.Tracker.CurrentAbility.ExecutionDuration} seconds");
+		_timer.Start(_runner.Tracker.CurrentAbility.Data.ExecutionDuration);
+		_runner.Tracker.CurrentAbility.Data.StartExecute(_runner.gameObject);
 	}
 
 	public override void OnExit()
 	{
-		_runner.Tracker.CurrentAbility.EndExecute(_runner.gameObject);
+		_runner.Tracker.CurrentAbility.Data.EndExecute(_runner.gameObject);
 	}
 
 	public override void OnUpdate(float deltaTime)

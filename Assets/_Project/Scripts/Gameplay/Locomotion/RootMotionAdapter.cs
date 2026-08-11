@@ -1,15 +1,20 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class RootMotionAdapter : MonoBehaviour
+public abstract class RootMotionAdapter : MonoBehaviour
 {
-	[SerializeField] private Rigidbody rb;
+	[SerializeField] protected Rigidbody rb;
 
-	private Animator _animator;
+	protected Animator _animator;
 
-	private void Awake()
+	protected virtual void Awake()
 	{
 		_animator = GetComponent<Animator>();
+	}
+
+	public void ToggleRootMotion(bool state)
+	{
+		_animator.applyRootMotion = state;
 	}
 
 	private void OnAnimatorMove()
@@ -24,5 +29,9 @@ public class RootMotionAdapter : MonoBehaviour
 
 		rb.MovePosition(newPosition);
 		rb.MoveRotation(newRotation);
+
+		OnRootMotionApplied(newPosition, newRotation);
 	}
+
+	protected virtual void OnRootMotionApplied(Vector3 newPosition, Quaternion newRotation) { }
 }

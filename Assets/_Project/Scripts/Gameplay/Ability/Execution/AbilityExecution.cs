@@ -2,6 +2,6 @@ public abstract class AbilityExecution
 {
 	public virtual bool CanExecute { get; protected set; }
 
-	public abstract void OnInputStarted(AbilityRunner runner, AbilitySO ability);
-	public abstract void OnInputEnded(AbilityRunner runner, AbilitySO ability);
+	public abstract void OnInputStarted(AbilityController controller, Ability ability);
+	public abstract void OnInputEnded(AbilityController controller, Ability ability);
 }

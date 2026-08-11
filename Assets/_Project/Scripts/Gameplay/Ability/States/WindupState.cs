@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class WindupState : AbilityState
 {
-	public WindupState(AbilityRunner runner) : base(runner) { }
+	public WindupState(AbilityController controller) : base(controller) { }
 
 	public override void OnEnter()
 	{
-		_runner.Channel.Publish(new AbilityCastStartedEvent(_runner.Tracker.CurrentAbility, _runner.Tracker.CurrentAbility.AnimationSpeed));
-		_timer.Start(_runner.Tracker.CurrentAbility.WindupDuration);
-		Debug.Log($"WindupState: {_runner.Tracker.CurrentAbility.name} for {_runner.Tracker.CurrentAbility.WindupDuration} seconds");
+		_runner.Channel.Publish(new AbilityCastStartedEvent(_runner.Tracker.CurrentAbility, _runner.Tracker.CurrentAbility.Data.AnimationSpeed));
+		_timer.Start(_runner.Tracker.CurrentAbility.Data.WindupDuration);
 	}
 
 	public override void OnExit()
