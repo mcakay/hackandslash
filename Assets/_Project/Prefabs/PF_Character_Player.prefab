@@ -1401,7 +1401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5288710636226589060}
   m_Layer: 0
-  m_Name: Weapon Socket
+  m_Name: Right Hand Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1927,7 +1927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2661707556408206837}
   m_Layer: 0
-  m_Name: Right Hand Socket
+  m_Name: Right Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

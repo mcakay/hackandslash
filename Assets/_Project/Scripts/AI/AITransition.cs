@@ -1,9 +1,10 @@
 using System;
+using UnityEngine;
 
 [Serializable]
-public struct AITransition
+public class AITransition
 {
-    public AIDecision decision;
-    public AIState trueState;
-    public AIState falseState;
+	[SerializeReference] public IDecision decision;
+	public AIState trueState;
+	public AIState falseState;
 }

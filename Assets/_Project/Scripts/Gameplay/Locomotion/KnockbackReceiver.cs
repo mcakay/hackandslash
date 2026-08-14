@@ -6,13 +6,11 @@ public class KnockbackReceiver : MonoBehaviour
 {
 	[SerializeField] private Animator animator;
 
-	private LocalEventChannel _channel;
 	private Rigidbody _rigidbody;
 	private Timer _knockbackTimer;
 
 	private void Awake()
 	{
-		_channel = GetComponent<LocalEventChannel>();
 		_rigidbody = GetComponent<Rigidbody>();
 		_knockbackTimer = new Timer();
 	}
@@ -38,7 +36,6 @@ public class KnockbackReceiver : MonoBehaviour
 	public void ApplyKnockback(Vector3 direction, float force, float duration)
 	{
 		animator.applyRootMotion = false;
-		_rigidbody.isKinematic = false;
 		_rigidbody.linearVelocity = Vector3.zero;
 
 		_rigidbody.AddForce(direction * force, ForceMode.Impulse);
@@ -49,6 +46,5 @@ public class KnockbackReceiver : MonoBehaviour
 	private void OnKnockbackFinished()
 	{
 		animator.applyRootMotion = true;
-		_rigidbody.isKinematic = true;
 	}
 }

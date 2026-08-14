@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hitbox : MonoBehaviour
 {
 	[SerializeField] private string id;
+	[SerializeField] private EntitySet validTargets;
 
 	public string Id => id;
 
@@ -44,6 +45,11 @@ public class Hitbox : MonoBehaviour
 	{
 		if (other.TryGetComponent(out Hurtbox hurtbox))
 		{
+			if (!validTargets.Items.Contains(hurtbox.Entity))
+			{
+				return;
+			}
+
 			if (!_hitHurtboxes.Add(hurtbox))
 			{
 				return;

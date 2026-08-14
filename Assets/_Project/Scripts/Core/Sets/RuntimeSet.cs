@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseRuntimeSet<T> : ScriptableObject
+public abstract class RuntimeSet<T> : ScriptableObject
 {
 	public List<T> Items = new();
 
@@ -19,8 +19,8 @@ public abstract class BaseRuntimeSet<T> : ScriptableObject
 
 	}
 
-	private void OnEnable()
-	{
-		Items.Clear();
-	}
+	private void OnDisable()
+    {
+        Items.Clear();
+    }
 }

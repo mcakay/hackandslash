@@ -1,11 +1,11 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 [RequireComponent(typeof(LocalEventChannel))]
 public class PlayerInputController : MonoBehaviour
 {
 	[SerializeField] private VelocityMovement velocityMovement;
 	[SerializeField] private VelocityRotation velocityRotation;
+	[SerializeField] private CharacterAnimator characterAnimator;
 	[SerializeField] private AbilityController abilityController;
 	[SerializeField] private TargetingController _targetingController;
 	[SerializeField] private InputReaderSO _inputReader;
@@ -76,6 +76,8 @@ public class PlayerInputController : MonoBehaviour
 
 		velocityMovement.SetDirection(movementInput);
 		velocityRotation.SetDirection(movementInput);
+
+		characterAnimator.UpdateLocomotion(movementInput.magnitude);
 
 		if (_isAiming)
 		{
@@ -180,6 +182,8 @@ public class PlayerInputController : MonoBehaviour
 
 		velocityMovement.Stop();
 		velocityRotation.Stop();
+
+		characterAnimator.UpdateLocomotion(0f);
 
 		velocityMovement.enabled = false;
 		velocityRotation.enabled = false;

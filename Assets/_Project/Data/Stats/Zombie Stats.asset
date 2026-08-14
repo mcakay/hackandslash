@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StatsSO
   InitialStats:
   - Type: 0
-    Value: 50
+    Value: 100

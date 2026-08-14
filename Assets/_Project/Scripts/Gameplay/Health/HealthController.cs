@@ -41,9 +41,11 @@ public class HealthController : MonoBehaviour, IDamageable
 
 		_currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
 
-		FloatingDamage popup = _floatingDamageFactory.Get(hitPosition + (Vector3.up * 1.5f), Quaternion.identity);
-
-		popup.Setup(damage);
+		if (_floatingDamageFactory)
+		{
+			FloatingDamage popup = _floatingDamageFactory.Get(hitPosition + (Vector3.up * 1.5f), Quaternion.identity);
+			popup.Setup(damage);
+		}
 
 		if (_currentHealth <= 0)
 		{

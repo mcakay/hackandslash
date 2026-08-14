@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529db89743945477abace6c4010aaf18, type: 3}
+  m_Name: Combat State
+  m_EditorClassIdentifier: Assembly-CSharp::AIState
+  actions:
+  - rid: 2362426340938874987
+  - rid: 2362426340938874988
+  transitions:
+  - rid: 2362426340938874992
+  references:
+    version: 2
+    RefIds:
+    - rid: 2362426340938874987
+      type: {class: EvaluateAction, ns: , asm: Assembly-CSharp}
+      data:
+        targetEntities: {fileID: 11400000, guid: 863c42ba70a404cc4a219ca4b33bc143, type: 2}
+        config: {fileID: 11400000, guid: 882d7e498cb0b4204924d0aece4a87dd, type: 2}
+    - rid: 2362426340938874988
+      type: {class: MoveToTargetAction, ns: , asm: Assembly-CSharp}
+      data:
+        stoppingDistanceBuffer: 0.5
+    - rid: 2362426340938874992
+      type: {class: AITransition, ns: , asm: Assembly-CSharp}
+      data:
+        decision:
+          rid: 2362426340938875002
+        trueState: {fileID: 11400000, guid: 79d5faad400bb464d865270c3bb77a26, type: 2}
+        falseState: {fileID: 0}
+    - rid: 2362426340938875002
+      type: {class: IsTargetInAbilityRangeDecision, ns: , asm: Assembly-CSharp}
+      data: 

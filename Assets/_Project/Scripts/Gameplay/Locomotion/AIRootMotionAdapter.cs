@@ -1,22 +1,33 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIRootMotionAdapter : RootMotionAdapter
+[RequireComponent(typeof(Animator))]
+public class AIRootMotionAdapter : MonoBehaviour
 {
-	[SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private NavMeshAgent agent;
 
-	protected override void Awake()
-	{
-		base.Awake();
+    private Animator _animator;
 
-		ToggleRootMotion(true);
-	}
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+        _animator.applyRootMotion = true;
+    }
 
-	protected override void OnRootMotionApplied(Vector3 newPosition, Quaternion newRotation)
-	{
-		if (_agent != null)
-		{
-			_agent.nextPosition = newPosition;
-		}
-	}
+    private void OnAnimatorMove()
+    {
+        if (_animator == null || rb == null) return;
+
+        Vector3 animVelocity = _animator.velocity;
+
+        animVelocity.y = rb.linearVelocity.y;
+
+        rb.linearVelocity = animVelocity;
+
+        if (agent != null)
+        {
+            agent.nextPosition = rb.position;
+        }
+    }
 }

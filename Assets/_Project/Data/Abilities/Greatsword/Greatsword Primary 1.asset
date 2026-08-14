@@ -10,15 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f60ab70c7fbd040a086c8e08e970d02a, type: 3}
-  m_Name: Greatsword Primary 2
+  m_Name: Greatsword Primary 1
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
-  Name: Greatsword Primary 2
-  AnimationTriggerName: Primary 2
-  Clip: {fileID: -4469183485442372851, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
-  AnimationSpeed: 2
-  ComboWindow: 1
-  WindupPercentage: 0.3
-  ExecutionPercentage: 0.5
+  Name: Greatsword Primary 1
+  Range: 1
+  AnimationTriggerName: Primary 1
+  Clip: {fileID: -203655887218126122, guid: 5146b338ae2b64961a12ca3fac9dbac8, type: 3}
+  AnimationSpeed: 1.5
+  IsTargeted: 0
+  TargetingSettings:
+    Factory: {fileID: 0}
+    Range: 0
+    Size: 0
+  Cooldown: 0
+  ComboWindow: 2
+  WindupPercentage: 0.4
+  ExecutionPercentage: 0.4
   RecoveryPercentage: 0.2
   StartActions:
   - rid: 4727006622480072968
@@ -27,21 +34,24 @@ MonoBehaviour:
   HasImpact: 1
   FirstImpactFeedbacks:
   - rid: 4727006622480072970
-  - rid: 4727006622480073003
-  - rid: 4727006752951763021
+  - rid: 4727006622480073002
+  - rid: 4727006752951763020
   EveryImpactMechanics:
-  - rid: 4727006622480072978
-  - rid: 2362426251831935053
+  - rid: 4727006622480072977
+  - rid: 2362426251831935052
   EveryImpactFeedbacks: []
   EndActions:
   - rid: 4727006622480072973
   EndFeedbacks: []
   Execution:
-    rid: 4727006752951763017
+    rid: 4727006752951763016
+  IsEvaluatedByAI: 1
+  UtilityScore: 1
+  Evaluators: []
   references:
     version: 2
     RefIds:
-    - rid: 2362426251831935053
+    - rid: 2362426251831935052
       type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
       data:
         ExcludeTags:
@@ -74,7 +84,7 @@ MonoBehaviour:
       data:
         IsActive: 0
         HitboxId: greatsword
-    - rid: 4727006622480072978
+    - rid: 4727006622480072977
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
         ExcludeTags: []
@@ -82,17 +92,17 @@ MonoBehaviour:
         Force: 3
         Duration: 0.2
         FlattenY: 1
-    - rid: 4727006622480073003
+    - rid: 4727006622480073002
       type: {class: CameraImpulseEffect, ns: , asm: Assembly-CSharp}
       data:
         Payload:
           Intensity: 0.3
           Duration: 0.2
         Channel: {fileID: 11400000, guid: 51a265d674af642048beb04af1b2f0ca, type: 2}
-    - rid: 4727006752951763017
+    - rid: 4727006752951763016
       type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
       data: 
-    - rid: 4727006752951763021
+    - rid: 4727006752951763020
       type: {class: SFXEffect, ns: , asm: Assembly-CSharp}
       data:
         Clips:

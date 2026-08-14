@@ -6,6 +6,7 @@ public class Moveset
 	public MovesetSO Data { get; private set; }
 
 	public List<Ability> AllAbilities { get; private set; } = new();
+	public Dictionary<int, List<Ability>> AbilityLookup => _abilityLookup;
 
 	private readonly Dictionary<int, List<Ability>> _abilityLookup = new();
 

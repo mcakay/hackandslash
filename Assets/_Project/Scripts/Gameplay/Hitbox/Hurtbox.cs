@@ -2,13 +2,17 @@ using UnityEngine;
 
 [RequireComponent(typeof(LocalEventChannel))]
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Entity))]
 public class Hurtbox : MonoBehaviour
 {
 	private LocalEventChannel _channel;
 
+	public Entity Entity { get; private set; }
+
 	private void Awake()
 	{
 		_channel = GetComponent<LocalEventChannel>();
+		Entity = GetComponent<Entity>();
 	}
 
 	private void OnEnable()

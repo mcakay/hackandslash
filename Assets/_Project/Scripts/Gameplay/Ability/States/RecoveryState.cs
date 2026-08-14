@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class RecoveryState : AbilityState
 {
 	public RecoveryState(AbilityController controller) : base(controller)

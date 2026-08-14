@@ -59,6 +59,8 @@ public class RagdollController : MonoBehaviour
 		if (_mainRigidbody != null) _mainRigidbody.isKinematic = true;
 		if (_mainCollider != null) _mainCollider.enabled = false;
 
+		gameObject.layer = _corpseLayer;
+
 		foreach (var col in _boneColliders)
 		{
 			if (col == _mainCollider) continue;

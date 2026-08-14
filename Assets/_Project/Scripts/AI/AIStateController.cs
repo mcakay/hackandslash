@@ -2,45 +2,60 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(Entity))]
+[RequireComponent(typeof(LocalEventChannel))]
 public class AIStateController : MonoBehaviour
 {
-    [Header("State Machine")]
-    [SerializeField] private AIState _currentState;
-    [SerializeField] private AIState _remainInState;
+	[Header("Core State")]
+	[SerializeField] private AIState currentState;
 
-    [Header("AI Settings & References")]
-    public Transform target;
-    public float sightRange = 10f;
+	public NavMeshAgent NavMeshAgent { get; private set; }
+	public AbilityController AbilityController { get; private set; }
+	public Entity Entity { get; private set; }
 
-    [HideInInspector] public NavMeshAgent navMeshAgent;
+	public Entity TargetEntity { get; set; }
+	public Ability SelectedAbility { get; set; }
+	public float NextThinkTime { get; set; }
 
-    private void Awake()
-    {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+	private LocalEventChannel _channel;
 
-		navMeshAgent.updatePosition = false;
-		navMeshAgent.updateRotation = false;
-    }
+	private void Awake()
+	{
+		NavMeshAgent = GetComponent<NavMeshAgent>();
+		AbilityController = GetComponent<AbilityController>();
+		Entity = GetComponent<Entity>();
 
-    private void Update()
-    {
-        if (_currentState != null)
-        {
-            _currentState.UpdateState(this);
-        }
-    }
+		_channel = GetComponent<LocalEventChannel>();
+	}
 
-    public void TransitionToState(AIState nextState)
-    {
-        if (nextState != null && nextState != _remainInState)
-        {
-            _currentState = nextState;
-        }
-    }
+	private void OnEnable()
+	{
+		_channel.Subscribe<DeathEvent>(OnDeath);
+	}
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
-    }
+	private void OnDisable()
+	{
+		_channel.Unsubscribe<DeathEvent>(OnDeath);
+	}
+
+	private void Update()
+	{
+		if (currentState != null)
+		{
+			currentState.UpdateState(this);
+		}
+	}
+
+	public void TransitionToState(AIState nextState)
+	{
+		if (nextState != currentState)
+		{
+			currentState = nextState;
+		}
+	}
+
+	private void OnDeath(DeathEvent e)
+	{
+		this.enabled = false;
+	}
 }

@@ -4,12 +4,19 @@ using UnityEngine;
 [RequireComponent(typeof(LocalEventChannel))]
 public class HitboxController : MonoBehaviour
 {
+	[SerializeField] private List<Hitbox> initialHitboxes = new();
+
 	private readonly Dictionary<string, Hitbox> _hitboxes = new();
 	private LocalEventChannel _channel;
 
 	private void Awake()
 	{
 		_channel = GetComponent<LocalEventChannel>();
+
+		foreach (var hitbox in initialHitboxes)
+        {
+            AddHitbox(hitbox);
+        }
 	}
 
 	private void OnEnable()

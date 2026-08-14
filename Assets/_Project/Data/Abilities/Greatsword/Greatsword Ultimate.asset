@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60ab70c7fbd040a086c8e08e970d02a, type: 3}
   m_Name: Greatsword Ultimate
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
-  Name: 
-  AnimationTriggerName: 
+  Name: Greatsword Ultimate
+  AnimationTriggerName: Ultimate
   Clip: {fileID: 0}
   AnimationSpeed: 1
-  Cooldown: 0
   IsTargeted: 0
   TargetingSettings:
     Factory: {fileID: 0}
     Range: 0
     Size: 0
+  Cooldown: 0
   ComboWindow: 1
   WindupPercentage: 0.2
   ExecutionPercentage: 0.3

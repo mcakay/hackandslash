@@ -1,28 +1,23 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(LocalEventChannel))]
 [SelectionBase]
 public class CharacterAnimator : MonoBehaviour
 {
-	[SerializeField] private float dampTime = 0.1f;
 	[SerializeField] private Animator animator;
+	[SerializeField] private float dampTime = 0.1f;
 
 	private int _animSpeedHash;
-	private int _velocityXHash;
-	private int _velocityZHash;
+	private int _speedHash;
 	private int _hitHash;
 
-	private Rigidbody _rigidbody;
 	private LocalEventChannel _channel;
 
 	private void Awake()
 	{
-		_rigidbody = GetComponent<Rigidbody>();
 		_channel = GetComponent<LocalEventChannel>();
 
-		_velocityXHash = Animator.StringToHash("VelocityX");
-		_velocityZHash = Animator.StringToHash("VelocityZ");
+		_speedHash = Animator.StringToHash("Speed");
 		_animSpeedHash = Animator.StringToHash("AnimationSpeed");
 		_hitHash = Animator.StringToHash("Hit");
 
@@ -43,24 +38,9 @@ public class CharacterAnimator : MonoBehaviour
 		_channel.Unsubscribe<DeathEvent>(OnDeath);
 	}
 
-	private void Update()
+	public void UpdateLocomotion(float currentSpeed)
 	{
-		Vector3 worldVelocity = _rigidbody.linearVelocity;
-		Vector3 localVelocity = transform.InverseTransformDirection(worldVelocity);
-
-		Vector2 planarVelocity = new(localVelocity.x, localVelocity.z);
-
-		if (planarVelocity.magnitude > 0.1f)
-		{
-			Vector2 normalizedDir = planarVelocity.normalized;
-			animator.SetFloat(_velocityXHash, normalizedDir.x, dampTime, Time.deltaTime);
-			animator.SetFloat(_velocityZHash, normalizedDir.y, dampTime, Time.deltaTime);
-		}
-		else
-		{
-			animator.SetFloat(_velocityXHash, 0f, dampTime, Time.deltaTime);
-			animator.SetFloat(_velocityZHash, 0f, dampTime, Time.deltaTime);
-		}
+		animator.SetFloat(_speedHash, currentSpeed, dampTime, Time.deltaTime);
 	}
 
 	private void OnAbilityCastStarted(AbilityCastStartedEvent e)
@@ -76,7 +56,6 @@ public class CharacterAnimator : MonoBehaviour
 
 	private void OnDeath(DeathEvent e)
 	{
-		_rigidbody.isKinematic = true;
 		this.enabled = false;
 	}
 }

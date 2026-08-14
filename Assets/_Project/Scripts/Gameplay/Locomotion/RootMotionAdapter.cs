@@ -1,15 +1,29 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public abstract class RootMotionAdapter : MonoBehaviour
+public class RootMotionAdapter : MonoBehaviour
 {
-	[SerializeField] protected Rigidbody rb;
+	[SerializeField] private Rigidbody rb;
+	[SerializeField] private LocalEventChannel channel;
 
-	protected Animator _animator;
+	private Animator _animator;
 
-	protected virtual void Awake()
+	private void Awake()
 	{
 		_animator = GetComponent<Animator>();
+		_animator.applyRootMotion = false;
+	}
+
+	private void OnEnable()
+	{
+		channel.Subscribe<AbilityCastStartedEvent>(OnAbilityStarted);
+		channel.Subscribe<AbilityCastEndedEvent>(OnAbilityEnded);
+	}
+
+	private void OnDisable()
+	{
+		channel.Unsubscribe<AbilityCastStartedEvent>(OnAbilityStarted);
+		channel.Unsubscribe<AbilityCastEndedEvent>(OnAbilityEnded);
 	}
 
 	public void ToggleRootMotion(bool state)
@@ -29,9 +43,8 @@ public abstract class RootMotionAdapter : MonoBehaviour
 
 		rb.MovePosition(newPosition);
 		rb.MoveRotation(newRotation);
-
-		OnRootMotionApplied(newPosition, newRotation);
 	}
 
-	protected virtual void OnRootMotionApplied(Vector3 newPosition, Quaternion newRotation) { }
+	private void OnAbilityStarted(AbilityCastStartedEvent e) => _animator.applyRootMotion = true;
+	private void OnAbilityEnded(AbilityCastEndedEvent e) => _animator.applyRootMotion = false;
 }

@@ -7,7 +7,7 @@ public class ToggleHitboxAction : AbilityAction
 	public bool IsActive;
 	public string HitboxId;
 
-	public override void Execute(GameObject caster, AbilitySO context)
+	public override void Execute(GameObject caster, Ability ability)
 	{
 		if (!caster.TryGetComponent(out HitboxController controller))
 		{
@@ -16,7 +16,7 @@ public class ToggleHitboxAction : AbilityAction
 
 		if (IsActive)
 		{
-			controller.EnableHitbox(HitboxId, context.CreateEffectPayload(caster));
+			controller.EnableHitbox(HitboxId, ability.CreateEffectPayload(caster));
 		}
 		else
 		{

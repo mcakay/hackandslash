@@ -1,10 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "AI State", menuName = "Data/AI/State")]
 public class AIState : ScriptableObject
 {
-	public AIAction[] actions;
-	public AITransition[] transitions;
+	[SerializeReference] public List<IAction> actions = new();
+	[SerializeReference] public List<AITransition> transitions = new();
 
 	public void UpdateState(AIStateController controller)
 	{
@@ -14,7 +15,7 @@ public class AIState : ScriptableObject
 
 	private void DoActions(AIStateController controller)
 	{
-		for (int i = 0; i < actions.Length; i++)
+		for (int i = 0; i < actions.Count; i++)
 		{
 			actions[i].Act(controller);
 		}
@@ -22,17 +23,18 @@ public class AIState : ScriptableObject
 
 	private void CheckTransitions(AIStateController controller)
 	{
-		for (var i = 0; i < transitions.Length; i++)
+		for (var i = 0; i < transitions.Count; i++)
 		{
+			if (transitions[i].decision == null) continue;
+
 			bool decisionSucceeded = transitions[i].decision.Decide(controller);
 
-			if (decisionSucceeded)
+			AIState nextState = decisionSucceeded ? transitions[i].trueState : transitions[i].falseState;
+
+			if (nextState != null && nextState != this)
 			{
-				controller.TransitionToState(transitions[i].trueState);
-			}
-			else
-			{
-				controller.TransitionToState(transitions[i].falseState);
+				controller.TransitionToState(nextState);
+				break;
 			}
 		}
 	}

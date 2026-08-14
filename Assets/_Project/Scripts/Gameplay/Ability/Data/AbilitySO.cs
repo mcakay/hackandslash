@@ -7,6 +7,7 @@ public class AbilitySO : ScriptableObject
 {
 	[FoldoutGroup("Identity")]
 	public string Name;
+	public float Range = 1f;
 
 	[FoldoutGroup("Animation")]
 	public string AnimationTriggerName;
@@ -19,9 +20,6 @@ public class AbilitySO : ScriptableObject
 	[Min(0.1f)]
 	public float AnimationSpeed = 1f;
 
-	[FoldoutGroup("Cooldown")]
-	public float Cooldown = 0f;
-
 	[FoldoutGroup("Targeting")]
 	public bool IsTargeted;
 
@@ -30,6 +28,7 @@ public class AbilitySO : ScriptableObject
 	public TargetingSettings TargetingSettings;
 
 	[FoldoutGroup("Timing")]
+	public float Cooldown = 0f;
 	public float ComboWindow = 1.0f;
 	public float Duration => (Clip != null ? Clip.length : 0f) / AnimationSpeed;
 
@@ -81,43 +80,20 @@ public class AbilitySO : ScriptableObject
 	[LabelText("Execution Strategy")]
 	[SerializeReference] public AbilityExecution Execution;
 
+	[FoldoutGroup("AI Evaluation")]
+	[LabelText("AI Evaluation Settings")]
+	public bool IsEvaluatedByAI = true;
+
+	[FoldoutGroup("AI Evaluation")]
+	[ShowIf(nameof(IsEvaluatedByAI))]
+	[LabelText("Utility Score")]
+	public float UtilityScore = 1f;
+
+	[FoldoutGroup("AI Evaluation")]
+	[ShowIf(nameof(IsEvaluatedByAI))]
+	[SerializeReference] public List<IEvaluator> Evaluators = new();
+
 	public float WindupDuration => Duration * WindupPercentage;
 	public float ExecutionDuration => Duration * ExecutionPercentage;
 	public float RecoveryDuration => Duration * RecoveryPercentage;
-
-	public AbilityEffectPayload CreateEffectPayload(GameObject caster)
-	{
-		return new AbilityEffectPayload(
-			caster,
-			FirstImpactFeedbacks,
-			EveryImpactMechanics,
-			EveryImpactFeedbacks
-		);
-	}
-
-	public void StartExecute(GameObject caster)
-	{
-		foreach (var action in StartActions)
-		{
-			action.Execute(caster, this);
-		}
-
-		foreach (var feedback in StartFeedbacks)
-		{
-			feedback.Execute(caster, caster, caster, caster.transform.position);
-		}
-	}
-
-	public void EndExecute(GameObject caster)
-	{
-		foreach (var action in EndActions)
-		{
-			action.Execute(caster, this);
-		}
-
-		foreach (var feedback in EndFeedbacks)
-		{
-			feedback.Execute(caster, caster, caster, caster.transform.position);
-		}
-	}
 }
