@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a3c8b61f5b034e62a3fbeb701978e1a
+guid: 866577703dad94258b653eb57c974f96
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Anim_Zombie_Walk_01
+      name: Anim_Zombie_Walk_Drunk_04
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 242
+      lastFrame: 167
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -49,7 +49,7 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1
       keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 1
+      keepOriginalPositionXZ: 0
       heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000

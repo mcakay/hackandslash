@@ -1336,3 +1336,2102 @@ Received Import Request.
 Start importing Assets/_Project/Art/Animators/AC_Player.controller using Guid(9491c62d82aab468fbf061d471f88bab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ce03b5dee2523b04081f63b8d282ae47') in 0.012838083 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
 
+========================================================================
+Received Import Request.
+  Time since last request: 1012.644519 seconds.
+  path: Assets/_Project/Art/Animators/AC_Player.controller
+  artifactKey: Guid(9491c62d82aab468fbf061d471f88bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animators/AC_Player.controller using Guid(9491c62d82aab468fbf061d471f88bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5c2cc92eddec61e5c095422c9505694') in 0.039148708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.858415 seconds.
+  path: Assets/_Project/Art/Animators/AC_Player.controller
+  artifactKey: Guid(9491c62d82aab468fbf061d471f88bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animators/AC_Player.controller using Guid(9491c62d82aab468fbf061d471f88bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b3e48f371143559f8e9709e3bc63639') in 0.008445792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.146107 seconds.
+  path: Assets/_Project/Data/Stats/Player Stats.asset
+  artifactKey: Guid(35ed0a01307114732a8dedb21d78e26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Stats/Player Stats.asset using Guid(35ed0a01307114732a8dedb21d78e26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb514cfc415feea15dbca108195792af') in 0.006013417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.482638 seconds.
+  path: Assets/_Project/Art/Animators/AC_Player.controller
+  artifactKey: Guid(9491c62d82aab468fbf061d471f88bab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animators/AC_Player.controller using Guid(9491c62d82aab468fbf061d471f88bab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7024558f8da752ebec0737958a5ea713') in 0.023488375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 56292.651985 seconds.
+  path: Assets/_Project/Art/Models/FBX_Character_02.zip
+  artifactKey: Guid(0fce862f96eed424da1b5e50f6c2fc0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/FBX_Character_02.zip using Guid(0fce862f96eed424da1b5e50f6c2fc0a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b6ff0799f63ccf330ee330313ce34da') in 0.140108125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.364940 seconds.
+  path: Assets/_Project/Art/Models/FBX_Character_02.zip
+  artifactKey: Guid(0fce862f96eed424da1b5e50f6c2fc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/FBX_Character_02.zip using Guid(0fce862f96eed424da1b5e50f6c2fc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42cb59c697bfc1ab9d33c76bd5efe570') in 0.036485917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.721992 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_Normal.png
+  artifactKey: Guid(04be2a30f0fea49e5883853aa72150dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_Normal.png using Guid(04be2a30f0fea49e5883853aa72150dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+ -> (artifact id: 'a94314386f9f7c7b4415dbe89a917066') in 0.375183292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_lambert1_Metallic.png
+  artifactKey: Guid(b1e50c0adf7434648bf5e0f96ddff4dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_lambert1_Metallic.png using Guid(b1e50c0adf7434648bf5e0f96ddff4dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2230e50c3f26b37dc4abeb438ab1c1b') in 0.014741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_pants_normal_BaseColor.png
+  artifactKey: Guid(f782a8307502c47838ba360adba58de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_pants_normal_BaseColor.png using Guid(f782a8307502c47838ba360adba58de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '726ccc4c2dd69921558aa9a3cd40e06c') in 0.009475625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_lambert1_Roughness.png
+  artifactKey: Guid(ed1672a6845304877b218622379f3fff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_lambert1_Roughness.png using Guid(ed1672a6845304877b218622379f3fff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b887dc1bf17fdbb693c0a5bb6c5911af') in 0.006932666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_pants_normal_Metallic.png
+  artifactKey: Guid(f6f732d7fa584425289903c72c024ade) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_pants_normal_Metallic.png using Guid(f6f732d7fa584425289903c72c024ade) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12d1eecf41f634aae4a999f6296eee16') in 0.009444708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_lambert1_Normal.png
+  artifactKey: Guid(309fbd3d91db5465887d14bd61f19de0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_lambert1_Normal.png using Guid(309fbd3d91db5465887d14bd61f19de0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8644c57f1c8258d3d7977656af816cce') in 0.015904375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_BaseColor.png
+  artifactKey: Guid(8a146bda2a0ae4b8c8fd37e371d64afd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_BaseColor.png using Guid(8a146bda2a0ae4b8c8fd37e371d64afd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3d6d7a97a78d65b9f3131cc8c42bfd2') in 0.007225583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_pants_normal_Roughness.png
+  artifactKey: Guid(4772f4f40f56a4da6a76fa4f275005ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_pants_normal_Roughness.png using Guid(4772f4f40f56a4da6a76fa4f275005ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bfa9b08ea3e381e05ff199a386b248c8') in 0.010115375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_Metallic.png
+  artifactKey: Guid(3cc540b1cb17a4538969f4695872b59b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_Metallic.png using Guid(3cc540b1cb17a4538969f4695872b59b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ea3e5bddfca5cd9e73bf6230db6bd913') in 0.00669075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_Roughness.png
+  artifactKey: Guid(ec28baf9bafa3479e94f07d97503a9e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_Roughness.png using Guid(ec28baf9bafa3479e94f07d97503a9e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b923d109796a30b9ed6ce494aa717cb') in 0.015678666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_pants_normal_Normal.png
+  artifactKey: Guid(69736b6fda4864b59a6617f4ab35f18a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Textures/knight_sub_pants_normal_Normal.png using Guid(69736b6fda4864b59a6617f4ab35f18a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fc9b0d7b06d560ab426b0bc80f93aea8') in 0.006883042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.286462 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e70a25e02839083d58ad17dea5c4d6f7') in 1.813078917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.568181 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79084be31bcf4d4bdc6e06defdf8c302') in 0.091331334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.459142 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6e8430f937a9ddb09a4037bc832c6df') in 0.077088208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.553136 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '027ac84bb71e444183915270f65662ac') in 0.170376334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.740482 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9dd7740abfaeb68856cd5566445ee61b') in 0.019506792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.728675 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a94ac6e78f11e9b1b76c65d731d7c8e1') in 0.0332765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 121.391210 seconds.
+  path: Assets/_Project/Data/Stats/Player Stats.asset
+  artifactKey: Guid(35ed0a01307114732a8dedb21d78e26b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Stats/Player Stats.asset using Guid(35ed0a01307114732a8dedb21d78e26b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f3f1c069e6b8b328717de50cc693f585') in 0.020066542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.171482 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01a36063af0de574a016910f2b48bba1') in 0.107147 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 156
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.208250 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9d0ebca29b5bfd34007d1bb5633fbf6') in 0.126982333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 154
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.737886 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0db5318c9ef0bfb7335941e64994b3bb') in 0.030791167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 155
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.251796 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca1efe424a84838242ecc9b996f822ff') in 0.122757125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 158
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.791237 seconds.
+  path: Assets/_Project/Art/Models/knight_sketch_03.fbx
+  artifactKey: Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Models/knight_sketch_03.fbx using Guid(2ca4843e207d94b29bdae6e7608fe2b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ff13111f5d613aaa7fe67a99ad935ef') in 0.031412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 158
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.144601 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_Roughness.png
+  artifactKey: Guid(ec28baf9bafa3479e94f07d97503a9e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_Roughness.png using Guid(ec28baf9bafa3479e94f07d97503a9e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5492998e4649a7b29107bdd7c3622733') in 0.05938925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.887643 seconds.
+  path: Assets/_Project/Art/Textures/knight_sub_sword_Normal.png
+  artifactKey: Guid(04be2a30f0fea49e5883853aa72150dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Textures/knight_sub_sword_Normal.png using Guid(04be2a30f0fea49e5883853aa72150dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6aa06537a161540045df4a5433eeb723') in 0.012007084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 911.936910 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '984e84603ce2529f07194ea69b52e017') in 0.06281125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c899a7c7bb1cc77f92547efbc5124b5') in 0.012836125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.952134 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f312ae8906f95f9b8dea139052152f1b') in 0.010868083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.848108 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf5004c64da74ccd68775e8df863c1ef') in 0.008871584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.575062 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d8fc538556d681b42a22e136614e2bc') in 0.003996042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.941674 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c550c1312286eaa1a8c98d6ee1c62ca') in 0.028101291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.895863 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28e0032a891897b17332ec9f9ab66d5f') in 0.017588666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '608bad34abaa49ca44815113998dca58') in 0.008018041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.353439 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e0dd19b76bd4cfaafb69d2d05773eb5') in 0.003562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 5797.473566 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b22873d17dd00e71bc6f6e25553e48ef') in 0.178563291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.430820 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ffdda4e31b30cf5571e50b8bb103ca2') in 0.118427583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.380816 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9158cd8ccfd82f05313ce98a1d0dee0') in 0.029400125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.857265 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '438419b3747ee420d5832327de61b089') in 0.0574365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.526740 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a073aff7a5b019db613211534a59cf8') in 0.028226541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.888328 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9442cbc9e301d1dfb007550ef0dfab35') in 0.020354541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.314445 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13c6db40e4338e92d43de36d680bb8dd') in 0.01902525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.307236 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3eb776a97a698f6c32914d4d46d950c7') in 0.032005792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.399043 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b068d51250b609a0b7ed90bacf4ffdcb') in 0.005193792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.921416 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9110d86e4692253b508cfcebb6c2bad7') in 0.021993292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.080065 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e681ab630915b0e0e8f02544bc7028c9') in 0.005354833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.910407 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '99af4b1be787babf1f0d62c654cc2925') in 0.008160917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.636183 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4636639e58fc9ab97c5ba7d1e056c7d') in 0.003134042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.884264 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx
+  artifactKey: Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_02.fbx using Guid(d3bb379717b764e7c8e8795c05b28caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7fb7349643d9d62a66590bf71fe34374') in 0.012013958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.331909 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ff62fb87c03f5136c473f809b28111d') in 0.00502575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.892058 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx
+  artifactKey: Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_03.fbx using Guid(72e3e9795fc12465ba8d529705009dbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec2eb6493694854c1f108aab8cc2856f') in 0.018791584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.147200 seconds.
+  path: Assets/_Project/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e37b4f35d0c773c79393c6d04987b01b') in 0.040036791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.301428 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd081839b256ef93a8fac9c271155ea66') in 0.008256875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.931440 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '07925c94ce04ca755faab71b376f6bee') in 0.013379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 6.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7777 unused Assets / (2.6 MB). Loaded Objects now: 8807.
+Memory consumption went from 176.2 MB to 173.6 MB.
+Total: 429.687625 ms (FindLiveObjects: 13.751583 ms CreateObjectMapping: 0.697875 ms MarkObjects: 384.170042 ms  DeleteObjects: 31.049916 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 168.959880 seconds.
+  path: Assets/_Project/Scripts/Visuals/Data/AnimationVariantData.cs
+  artifactKey: Guid(319e5ac8ffddd439ba005175a11f1ad3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Visuals/Data/AnimationVariantData.cs using Guid(319e5ac8ffddd439ba005175a11f1ad3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a74005ede03a4cc5890c5d250b462dd7') in 0.04160825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7777 unused Assets / (2.7 MB). Loaded Objects now: 8808.
+Memory consumption went from 176.2 MB to 173.5 MB.
+Total: 59.190333 ms (FindLiveObjects: 2.902041 ms CreateObjectMapping: 2.695875 ms MarkObjects: 48.840417 ms  DeleteObjects: 4.751292 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 68.771097 seconds.
+  path: Assets/_Project/Scripts/Visuals/Animation/AnimationVariantData.cs
+  artifactKey: Guid(319e5ac8ffddd439ba005175a11f1ad3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Visuals/Animation/AnimationVariantData.cs using Guid(319e5ac8ffddd439ba005175a11f1ad3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4bec1a42215066e755b033e14d86932d') in 0.035592708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/_Project/Scripts/Visuals/Animation
+  artifactKey: Guid(35d6683c1aa00430eae08d2d04355f8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Visuals/Animation using Guid(35d6683c1aa00430eae08d2d04355f8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e750bbe7232dd959308377936f3b4d3e') in 0.021365333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x17010b000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.914 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.858 seconds
+Domain Reload Profiling: 3778ms
+	BeginReloadAssembly (1715ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (191ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (583ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (1125ms)
+		LoadAssemblies (1472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (50ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (205ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (858ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (703ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (80ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (397ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7788 unused Assets / (10.1 MB). Loaded Objects now: 8719.
+Memory consumption went from 185.8 MB to 175.7 MB.
+Total: 18.439500 ms (FindLiveObjects: 5.179833 ms CreateObjectMapping: 0.577709 ms MarkObjects: 6.439833 ms  DeleteObjects: 6.241750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 5.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7778 unused Assets / (2.6 MB). Loaded Objects now: 8720.
+Memory consumption went from 170.5 MB to 167.9 MB.
+Total: 153.715667 ms (FindLiveObjects: 2.641917 ms CreateObjectMapping: 0.361000 ms MarkObjects: 143.478333 ms  DeleteObjects: 7.233625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x17010b000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.139 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.653 seconds
+Domain Reload Profiling: 2797ms
+	BeginReloadAssembly (1061ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (52ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (165ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (1010ms)
+		LoadAssemblies (1469ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (31ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (179ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (653ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (535ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (313ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7789 unused Assets / (7.8 MB). Loaded Objects now: 8723.
+Memory consumption went from 185.3 MB to 177.4 MB.
+Total: 10.809458 ms (FindLiveObjects: 0.647250 ms CreateObjectMapping: 0.297042 ms MarkObjects: 5.362291 ms  DeleteObjects: 4.502750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7779 unused Assets / (9.6 MB). Loaded Objects now: 8724.
+Memory consumption went from 170.5 MB to 160.9 MB.
+Total: 147.885291 ms (FindLiveObjects: 2.365292 ms CreateObjectMapping: 0.273958 ms MarkObjects: 140.207292 ms  DeleteObjects: 5.038458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x17010b000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.064 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.785 seconds
+Domain Reload Profiling: 2854ms
+	BeginReloadAssembly (1064ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (56ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (213ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (917ms)
+		LoadAssemblies (1230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (241ms)
+			TypeCache.Refresh (33ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (189ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (785ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (659ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (153ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (140ms)
+			ProcessInitializeOnLoadAttributes (314ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7790 unused Assets / (7.8 MB). Loaded Objects now: 8727.
+Memory consumption went from 185.3 MB to 177.5 MB.
+Total: 9.497125 ms (FindLiveObjects: 0.661750 ms CreateObjectMapping: 0.239167 ms MarkObjects: 5.012958 ms  DeleteObjects: 3.582958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 1.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7779 unused Assets / (6.5 MB). Loaded Objects now: 8727.
+Memory consumption went from 170.6 MB to 164.1 MB.
+Total: 34.993625 ms (FindLiveObjects: 0.887584 ms CreateObjectMapping: 0.366250 ms MarkObjects: 27.679083 ms  DeleteObjects: 6.059375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x16fa7b000 may have been prematurely finalized
+- Loaded All Assemblies, in  1.563 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 3.47 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.913 seconds
+Domain Reload Profiling: 2481ms
+	BeginReloadAssembly (413ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (100ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (1066ms)
+		LoadAssemblies (913ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (341ms)
+			TypeCache.Refresh (69ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (253ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (913ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (781ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (257ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (327ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7790 unused Assets / (10.4 MB). Loaded Objects now: 8730.
+Memory consumption went from 185.3 MB to 174.9 MB.
+Total: 12.023958 ms (FindLiveObjects: 0.568791 ms CreateObjectMapping: 0.203542 ms MarkObjects: 5.498041 ms  DeleteObjects: 5.753208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 5.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7779 unused Assets / (8.1 MB). Loaded Objects now: 8730.
+Memory consumption went from 170.6 MB to 162.5 MB.
+Total: 30.904000 ms (FindLiveObjects: 1.193625 ms CreateObjectMapping: 0.332167 ms MarkObjects: 24.449541 ms  DeleteObjects: 4.924084 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16fb07000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.189 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.51 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.701 seconds
+Domain Reload Profiling: 2897ms
+	BeginReloadAssembly (1052ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (57ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (257ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (1040ms)
+		LoadAssemblies (1337ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (33ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (179ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (701ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (533ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (312ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7790 unused Assets / (8.7 MB). Loaded Objects now: 8733.
+Memory consumption went from 185.4 MB to 176.7 MB.
+Total: 10.490333 ms (FindLiveObjects: 0.629666 ms CreateObjectMapping: 0.276500 ms MarkObjects: 5.465083 ms  DeleteObjects: 4.118541 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7778 unused Assets / (9.0 MB). Loaded Objects now: 8732.
+Memory consumption went from 170.7 MB to 161.7 MB.
+Total: 223.054125 ms (FindLiveObjects: 2.854250 ms CreateObjectMapping: 0.294667 ms MarkObjects: 214.177708 ms  DeleteObjects: 5.727000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16fa7b000 may have been prematurely finalized
+- Loaded All Assemblies, in  2.231 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.74 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.145 seconds
+Domain Reload Profiling: 3383ms
+	BeginReloadAssembly (955ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (180ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (1184ms)
+		LoadAssemblies (1452ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (314ms)
+			TypeCache.Refresh (49ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (242ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1146ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (992ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (356ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (378ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7789 unused Assets / (8.1 MB). Loaded Objects now: 8735.
+Memory consumption went from 185.4 MB to 177.4 MB.
+Total: 30.042125 ms (FindLiveObjects: 9.020042 ms CreateObjectMapping: 0.340417 ms MarkObjects: 15.140500 ms  DeleteObjects: 5.540833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 9853.185555 seconds.
+  path: Assets/_Project/Scripts/Visuals/Animation/AnimationVariant.cs
+  artifactKey: Guid(9234e7d3ca45d48b4a1b02a570321ddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Visuals/Animation/AnimationVariant.cs using Guid(9234e7d3ca45d48b4a1b02a570321ddf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df0b24ddc86b18037cb34ad4ceaf09c9') in 0.170818083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/_Project/Scripts/Gameplay/Stat/StatController.cs
+  artifactKey: Guid(5ebe407477d164bab8b7118ec7858830) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scripts/Gameplay/Stat/StatController.cs using Guid(5ebe407477d164bab8b7118ec7858830) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '894db5f95c6b18753b38cd4623a49243') in 0.002544708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.211522 seconds.
+  path: Assets/_Project/Data/Entities
+  artifactKey: Guid(7bf76825f2bdd4b3b8e359ec80f56b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities using Guid(7bf76825f2bdd4b3b8e359ec80f56b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81c1e551d58ebaa061000da0c58dd347') in 0.006580166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.867866 seconds.
+  path: Assets/_Project/Data/Entities
+  artifactKey: Guid(7bf76825f2bdd4b3b8e359ec80f56b97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities using Guid(7bf76825f2bdd4b3b8e359ec80f56b97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '421236781b852d8246278f79a797e0db') in 0.012921833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.477739 seconds.
+  path: Assets/_Project/Data/Configs
+  artifactKey: Guid(0ba5223a30b3b4273943b2e2d21abe8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Configs using Guid(0ba5223a30b3b4273943b2e2d21abe8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6a7c6e2b1e1ed23bd0c5cab54253629') in 0.000658875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.447750 seconds.
+  path: Assets/_Project/Data/Equipments
+  artifactKey: Guid(00498be0d6ebf486fbf3ccfdf53d39a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Equipments using Guid(00498be0d6ebf486fbf3ccfdf53d39a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45a0fd2ddffb7097a70a38eab86b618e') in 0.00045675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.088642 seconds.
+  path: Assets/_Project/Data/Entities/Player Entity.asset
+  artifactKey: Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Player Entity.asset using Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4388302a58883e98d5f3f2f8c482da87') in 0.086185208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.512157 seconds.
+  path: Assets/_Project/Data/Entities/Player Entity.asset
+  artifactKey: Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities/Player Entity.asset using Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e541c044505c649ad38039462a5cd15a') in 0.018229333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.839490 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70f01f4bbe0e617b5597cc94dd99b523') in 0.008050458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.946640 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cee4331a491567ebf20f9487133ec8d5') in 0.016941167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.944061 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8ec191a73cc3c64cf3193c950db2459') in 0.010943292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.838777 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5d73e011341717c63e1d12659c4337b') in 0.01531475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.196446 seconds.
+  path: Assets/_Project/Data/Entities/Player Entity.asset
+  artifactKey: Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Player Entity.asset using Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ef6cb009a93cfd521665d58119760d2') in 0.004405375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.877988 seconds.
+  path: Assets/_Project/Data/Entities/Player Entity.asset
+  artifactKey: Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities/Player Entity.asset using Guid(7b36c85ba124249c6a39fee43f6d460e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c681caa8d646ee4bdecceed09f62d5d') in 0.022033708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.731508 seconds.
+  path: Assets/_Project/Art/Animators/AC_Zombie.controller
+  artifactKey: Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animators/AC_Zombie.controller using Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59d111163d46ea6d0eaf11ca76eea4e0') in 0.03025275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 5098.376025 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ac9c64738a4db2cdc844f7ebf78e13f') in 0.394815958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.311156 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx
+  artifactKey: Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_04.fbx using Guid(8b9af52b08eaf47fca311068cd4f7e40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f169aae49867a51eb12e5727f37e8ad') in 0.251540917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 2319.221777 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_05.fbx
+  artifactKey: Guid(84e4bee2764fc4516af43ca4b1cfd9b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_05.fbx using Guid(84e4bee2764fc4516af43ca4b1cfd9b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40ca3f7157fcb0792e4d2fdf209a4f02') in 0.177149917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 939.807553 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ad674d7016161959cde59e3e5f0a338') in 0.035679916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '53b1d18b1f1b50d03f4881eb4d41fdbb') in 0.010370459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx
+  artifactKey: Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx using Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '617ff622367580fa2e491fafbaf428ad') in 0.008612916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11604d18f58b0ded9c1404a1057f59f2') in 0.011251083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'be4836cbbba0ae99de7713124595a383') in 0.009418125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd6766679c93e5873753c85e07a5e9a36') in 0.007740333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd586a0f52bda8140ddb3a9b258a8938a') in 0.008153625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e81f084a068154ab36eb9c753dda8b2') in 0.009802583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.920713 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87b30aa4e70f76493db641a84883bd27') in 0.071067875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.857120 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd210739af6640d269dfe28114b7700d') in 0.032505625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.702897 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6bf28d1804260e937f74a63b215108f') in 0.020233542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.875985 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '811fac6ca92fcbcccce3304677d14d2c') in 0.008606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.911471 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b30370206c283b4b2b799e6b968c79b9') in 0.010499084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.659834 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7e894954c5dd76a038c76ca8e0875ec') in 0.008632584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.892907 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx
+  artifactKey: Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx using Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f3572873e0387aaad4e3819d78bb798') in 0.011026042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.271973 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea1bc42bafdf42ad546fc24e4b45409d') in 0.032823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.849164 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbea1793f93e487f202a50553c859247') in 0.017167542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.106621 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx
+  artifactKey: Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx using Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b673aa47552e60de8b24c3d98a229059') in 0.010167542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.898267 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx
+  artifactKey: Guid(2745072011bbf4690808f9774232a11a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx using Guid(2745072011bbf4690808f9774232a11a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '93262906ae88c85dfc85900f459acd7e') in 0.010144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.356968 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx
+  artifactKey: Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx using Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '604ecf9b010155b48272b8030966df87') in 0.021285834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.846402 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5106251b204d74cde86d1c02ae1780bd') in 0.012901375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/_Project/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cfb99890880f5cf1e0c2317ea1d40d0') in 0.05626625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146491 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx
+  artifactKey: Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx using Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2c5d87c31855e4df58275e412387e16') in 0.004823666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.348744 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97e2cfa95bf9020d53b8c868cb6415f0') in 0.025626959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.779309 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx
+  artifactKey: Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx using Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1362507eae66d266d0ce09ef563f5a97') in 0.01030375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.663562 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32a2eda9f29e05d896fa893db8abeabf') in 0.003779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.901461 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88a93a02f945aefd9858a5fac2598117') in 0.010742917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.887143 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8e1d457fc51a4c5f752adfc6fb6c25f') in 0.011246375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883122 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47d7a337d6b1a24639bc8d3e54270414') in 0.016206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.346761 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e781e4ed2e068dbc976e076d736622f3') in 0.034726375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.769698 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4fd0ea6503f92336213a80cfd12e62ca') in 0.011466791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.659532 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '580361d77d0cad68a8899e910ac167ea') in 0.024535875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.821927 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95d2ab3d3c854d95b2385326fb04a100') in 0.00904125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.174539 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx
+  artifactKey: Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx using Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0696df7debfaa3b5853c13a632fdbfad') in 0.041312292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.566996 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx
+  artifactKey: Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx using Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c78e382ac05c5b0250cd4b551e5b32bf') in 0.0135775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.507505 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2486c8def51599d309613a6179e12a5') in 0.018757833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.850143 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a33d119ec8359db4d1245cc5fda92b0') in 0.012098333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.220384 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx
+  artifactKey: Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx using Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db85bddebd909c1280e2bf6a6c5b1217') in 0.036149708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.788305 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd40c49acd0a47f41ca76ced583928c3c') in 0.019323417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a95c3f22236305c57b09d1a3b441ebb') in 0.009433459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '175a66e2b7ebb75d9df361ae582b5d2d') in 0.007667291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47da6d44caf958bc93137d315252477e') in 0.011306125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '86353a29704d8f78a3fa953a6ada57ab') in 0.008601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd58ee7ee3b7c36e296e5738b34af78d7') in 0.00789925 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '810c7087d8ea94e18d5cda02f4358dd4') in 0.006502458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.961777 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx
+  artifactKey: Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx using Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0481b392a0bbfdf985f0d8790b76eb9f') in 0.007291667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 423.213571 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx
+  artifactKey: Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx using Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e5ee0eee2ad36230ba1d7f6b1ed1b4c') in 0.019058167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.786776 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ce7f26a9c21e4480c800eeed76b9a9e') in 0.004690041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.426963 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86ad85153c458a84f776bf8ec8a769dd') in 0.070372459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.000658 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3109c269f74360a23a66d5bc2883c1e6') in 0.0281565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.800648 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx
+  artifactKey: Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_01.fbx using Guid(d45ee1c44b2384068a725a240ef8d2eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70ec926f6581aae52bb2b371b9dc5c90') in 0.015478875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.719523 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b63e5b533d8d1239823fd6316ff8812') in 0.038342167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.795363 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '664a49332d9a2a5fc05197c357b40892') in 0.014867458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.392125 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21fbffb244071733c95310009de4de96') in 0.00328525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.920952 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx
+  artifactKey: Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_02.fbx using Guid(7a76129267cb546118fca32d7e1e79a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0026d893586b9ebb0baa51939d49d08') in 0.014576625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.423240 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx
+  artifactKey: Guid(408f1782399354b78b7d6e5abf452a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx using Guid(408f1782399354b78b7d6e5abf452a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b96c71f7a7f51b4809d614fa058b8dd') in 0.01835525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.881058 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx
+  artifactKey: Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_03.fbx using Guid(408f1782399354b78b7d6e5abf452a4e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31778c8df460d9c1273ac40642683669') in 0.0172445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.368365 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01671412893ad4fe31a035baca60720c') in 0.003127083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.938427 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx
+  artifactKey: Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx using Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '980c4418bf5eb940695680a10ba8bbb6') in 0.003406083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx
+  artifactKey: Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_04.fbx using Guid(866577703dad94258b653eb57c974f96) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aa96c43e62d01cadd08d005410882b21') in 0.00838775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.925680 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx
+  artifactKey: Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx using Guid(2745072011bbf4690808f9774232a11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f040bd8eb30523fd0920bbb55bdf3c7') in 0.008635083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.938671 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx
+  artifactKey: Guid(2745072011bbf4690808f9774232a11a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_05.fbx using Guid(2745072011bbf4690808f9774232a11a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '939a9942103405ffdfdcc4b020e42be8') in 0.008055083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.338513 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx
+  artifactKey: Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx using Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6ffcbae8fff25bd9a468a4e77dc4b25') in 0.007460958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.934785 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx
+  artifactKey: Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Drunk_06.fbx using Guid(4015d3e859aba44ac996ef8ce11f4583) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7fd60c23ca17efcd49331260136f1363') in 0.014586666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.103470 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx
+  artifactKey: Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx using Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2179534dd66d2cce43f599a877018fc') in 0.027295708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.982127 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx
+  artifactKey: Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_01.fbx using Guid(7084b8dc6ae2a4b108294db0adc13304) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08884ed196657865aafcd0ae6a24e3df') in 0.014391125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.994649 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1342e234b467555c5ffe95b4f741049e') in 0.017079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.273694 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95e3efda0c407225eec19ea2a4c5a90c') in 0.009597208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.858234 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx
+  artifactKey: Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_02.fbx using Guid(e3c85bb9d02784da9ac2225ed540da66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '009b50a77be93a86c02f5d4db12600c5') in 0.016816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.914389 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '704b27a8978bbc31c704b8fa6b58d9a9') in 0.004205125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.737148 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60503c8cd63ca4d84e93ac6e8bf816b3') in 0.019610791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.888851 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx
+  artifactKey: Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Injured_03.fbx using Guid(07c828bc286544761bb4e6ee6f52ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5fa1e9cd48189a0b99173b86d260defc') in 0.014615792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.499133 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b8ff83e6ee699ac0c929494131ef5dc') in 0.004119959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.801339 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '263a76efa7446ed6f45bad1dcdf4fdfe') in 0.028973292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883503 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx
+  artifactKey: Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_01.fbx using Guid(bfdd9a2ffcb0b42abb87dd4bc723e48f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45f1e038eb916385270d5f034b6ba804') in 0.010496584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.978525 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4a14f6e9448cb3d10d7d75f08b5ac5f') in 0.003721625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.418493 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0461dc15776b5370e337cd39f1d7f3e') in 0.021429875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.825624 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx
+  artifactKey: Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_02.fbx using Guid(327befeacd0844474bff547e856cfee8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9ae76068c2a99b0b8d9f2d8eefa75813') in 0.014643875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.217183 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx
+  artifactKey: Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx using Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb1bcaac8bd79456eacb6edf5337e889') in 0.017520625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.913601 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx
+  artifactKey: Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Posture_03.fbx using Guid(63565cd4912ef4df1b6e342f0497d6a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70b33171ff04c559c431a2e88c51bc24') in 0.013276417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.698534 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78777671cdfc247d7042087ea4404ff7') in 0.00342325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.416871 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '568628a89a8fbf5f4a0022db51df35cd') in 0.030828542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 135
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.892883 seconds.
+  path: Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx
+  artifactKey: Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animations/Zombie/FBX_Zombie_Walk_Sad_01.fbx using Guid(0d872c9997b744acc8c94cf060ab797c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6d81d4826fbc9378f34285186dbff3a') in 0.014749625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
+
+========================================================================
+Received Import Request.
+  Time since last request: 273.126376 seconds.
+  path: Assets/_Project/Art/Animators/AC_Zombie.controller
+  artifactKey: Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Project/Art/Animators/AC_Zombie.controller using Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23b15a876765de992f998fc8548283d7') in 0.126083167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.694670 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f2b5835296b66ade30f7ac704bc244c') in 0.016989375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.902703 seconds.
+  path: Assets/_Project/Art/Animators/AC_Zombie.controller
+  artifactKey: Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Art/Animators/AC_Zombie.controller using Guid(cf405da050fc84c09b7af3734a4df7cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fc2e833ee0dea6684c4f9317816fe91') in 0.032861416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7778 unused Assets / (5.3 MB). Loaded Objects now: 8735.
+Memory consumption went from 171.1 MB to 165.7 MB.
+Total: 157.629125 ms (FindLiveObjects: 4.583916 ms CreateObjectMapping: 0.335084 ms MarkObjects: 146.981833 ms  DeleteObjects: 5.727542 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16ffcf000 may have been prematurely finalized
+- Loaded All Assemblies, in  3.530 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.044 seconds
+Domain Reload Profiling: 4580ms
+	BeginReloadAssembly (1895ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (186ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (657ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (1524ms)
+		LoadAssemblies (2004ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (283ms)
+			TypeCache.Refresh (50ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (204ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1045ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (889ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (331ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (340ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7789 unused Assets / (6.4 MB). Loaded Objects now: 8738.
+Memory consumption went from 185.3 MB to 179.0 MB.
+Total: 21.567416 ms (FindLiveObjects: 5.465208 ms CreateObjectMapping: 0.564834 ms MarkObjects: 9.523750 ms  DeleteObjects: 6.012958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 285.205738 seconds.
+  path: Assets/_Project/Data/Entities/Zombie Entity.asset
+  artifactKey: Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Project/Data/Entities/Zombie Entity.asset using Guid(0a9f17a260b77467e9cd430cf87350d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1b829e67b70c55cbd9f5615edc6f7c6') in 0.050473709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7778 unused Assets / (3.1 MB). Loaded Objects now: 8738.
+Memory consumption went from 170.8 MB to 167.7 MB.
+Total: 41.932000 ms (FindLiveObjects: 2.815166 ms CreateObjectMapping: 0.526625 ms MarkObjects: 32.657833 ms  DeleteObjects: 5.931250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x16fb07000 may have been prematurely finalized
+- Loaded All Assemblies, in  1.166 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 12.53 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.062 seconds
+Domain Reload Profiling: 2234ms
+	BeginReloadAssembly (376ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (147ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (700ms)
+		LoadAssemblies (533ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (294ms)
+			TypeCache.Refresh (45ms)
+				TypeCache.ScanAssembly (6ms)
+			BuildScriptInfoCaches (228ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1062ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (855ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (240ms)
+			ProcessInitializeOnLoadAttributes (459ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7789 unused Assets / (5.5 MB). Loaded Objects now: 8741.
+Memory consumption went from 185.3 MB to 179.8 MB.
+Total: 25.056375 ms (FindLiveObjects: 3.812708 ms CreateObjectMapping: 0.592542 ms MarkObjects: 11.874166 ms  DeleteObjects: 8.776000 ms)
+
+Prepare: number of updated asset objects reloaded= 0

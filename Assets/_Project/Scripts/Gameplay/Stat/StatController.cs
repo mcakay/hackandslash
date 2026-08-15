@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class StatController : MonoBehaviour
 {
-	[SerializeField] private StatsSO _initialStats;
+	[SerializeField] private EntityData entityData;
 
 	private readonly Dictionary<StatType, float> _currentStats = new();
 
@@ -24,12 +24,12 @@ public class StatController : MonoBehaviour
 
 	private void Initialize()
 	{
-		if (_initialStats == null)
+		if (entityData == null)
 		{
 			return;
 		}
 
-		foreach (var stat in _initialStats.InitialStats)
+		foreach (var stat in entityData.InitialStats)
 		{
 			_currentStats[stat.Type] = stat.Value;
 		}
