@@ -7,6 +7,7 @@ public class AbilitySO : ScriptableObject
 {
 	[FoldoutGroup("Identity")]
 	public string Name;
+	public Sprite Icon;
 	public float Range = 1f;
 
 	[FoldoutGroup("Animation")]

@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Style src="HUD.uss" />
+    <ui:VisualElement name="HUD-Container" class="hud-container">
+        <ui:VisualElement name="Bottom-Bar" class="bottom-bar">
+
+            <ui:VisualElement name="Left-Panel" class="left-panel">
+                <ui:VisualElement name="Abilities-Row" class="abilities-row">
+                    <ui:VisualElement name="Ability-Primary" class="ability-icon">
+                        <ui:VisualElement class="cooldown-overlay" />
+                        <ui:Label text="" class="cooldown-text" />
+                        <ui:Label text="LMB" class="keybind-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="Ability-Secondary" class="ability-icon">
+                        <ui:VisualElement class="cooldown-overlay" />
+                        <ui:Label text="" class="cooldown-text" />
+                        <ui:Label text="RMB" class="keybind-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="Ability-Dash" class="ability-icon">
+                        <ui:VisualElement class="cooldown-overlay" />
+                        <ui:Label text="" class="cooldown-text" />
+                        <ui:Label text="SH" class="keybind-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="Ability-Cast" class="ability-icon">
+                        <ui:VisualElement class="cooldown-overlay" />
+                        <ui:Label text="" class="cooldown-text" />
+                        <ui:Label text="E" class="keybind-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="Ability-Ultimate" class="ability-icon">
+                        <ui:VisualElement class="cooldown-overlay" />
+                        <ui:Label text="" class="cooldown-text" />
+                        <ui:Label text="R" class="keybind-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <!-- CAN BARI VE TEXT -->
+                <ui:VisualElement name="Health-Container" class="health-container">
+                    <ui:VisualElement name="Health-Bar-BG" class="health-bar-bg">
+                        <ui:VisualElement name="Health-Bar-Fill" class="health-bar-fill" />
+                    </ui:VisualElement>
+                    <ui:Label name="Health-Text" text="100 / 100" class="health-text" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

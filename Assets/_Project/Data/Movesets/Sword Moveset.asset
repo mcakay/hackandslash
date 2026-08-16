@@ -27,3 +27,6 @@ MonoBehaviour:
   - Name: Ultimate
     Abilities:
     - {fileID: 11400000, guid: 0a3250af0fae241f6b37b4f4477ca394, type: 2}
+  - Name: Dash
+    Abilities:
+    - {fileID: 11400000, guid: 09b87bc7399db46e587d704150a64f62, type: 2}

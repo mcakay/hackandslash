@@ -23,7 +23,10 @@ public class Ability : IDisposable
 
 	public void StartCooldown()
 	{
-		_cooldownTimer.Start(Data.Cooldown);
+		if (Data.Cooldown > 0f)
+		{
+			_cooldownTimer.Start(Data.Cooldown);
+		}
 	}
 
 	public void Dispose()

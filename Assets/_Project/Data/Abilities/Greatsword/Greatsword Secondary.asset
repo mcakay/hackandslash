@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: Greatsword Secondary
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   Name: Greatsword Secondary
+  Icon: {fileID: 21300000, guid: e443a94203fa75c488576aef3f07c127, type: 3}
+  Range: 1
   AnimationTriggerName: Secondary
   Clip: {fileID: -203655887218126122, guid: 4a1c4cc1084424b9aa5b397bf8a671c9, type: 3}
   AnimationSpeed: 3
+  IsTargeted: 0
+  TargetingSettings:
+    Factory: {fileID: 0}
+    Range: 0
+    Size: 0
+  Cooldown: 0
   ComboWindow: 1
   WindupPercentage: 0.8
   ExecutionPercentage: 0.1
@@ -33,6 +41,9 @@ MonoBehaviour:
   EndFeedbacks: []
   Execution:
     rid: 4727006752951763019
+  IsEvaluatedByAI: 1
+  UtilityScore: 1
+  Evaluators: []
   references:
     version: 2
     RefIds:
@@ -46,6 +57,8 @@ MonoBehaviour:
     - rid: 4727006622480072978
       type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
+        ExcludeTags: []
+        IncludeTags: []
         Force: 3
         Duration: 0.2
         FlattenY: 1

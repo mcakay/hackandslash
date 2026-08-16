@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Greatsword Ultimate
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   Name: Greatsword Ultimate
+  Icon: {fileID: 21300000, guid: 85f7d0dba6d6c014fa89255df393541b, type: 3}
+  Range: 1
   AnimationTriggerName: Ultimate
   Clip: {fileID: 0}
   AnimationSpeed: 1
@@ -36,6 +38,9 @@ MonoBehaviour:
   EndFeedbacks: []
   Execution:
     rid: -2
+  IsEvaluatedByAI: 1
+  UtilityScore: 1
+  Evaluators: []
   references:
     version: 2
     RefIds:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Greatsword Cast
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   Name: Greatsword Cast
+  Icon: {fileID: 21300000, guid: 69e45f85bcdd5804eb5dc34b5e807058, type: 3}
   Range: 1
   AnimationTriggerName: Cast
   Clip: {fileID: -203655887218126122, guid: b4ea8c6cc43c1421db6b86a69c4cead9, type: 3}
