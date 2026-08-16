@@ -32,7 +32,7 @@ MonoBehaviour:
     - 2
     - 3
     - 4
-    TransitionSpeed: 0.25
+    TransitionSpeed: 0
     AutoChangeOverTime: 0
     MinTime: 5
     MaxTime: 8

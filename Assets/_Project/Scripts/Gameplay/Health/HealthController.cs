@@ -27,6 +27,8 @@ public class HealthController : MonoBehaviour, IDamageable
 	{
 		_maxHealth = _statController.GetStat(StatType.MaxHealth);
 		_currentHealth = _maxHealth;
+
+		_channel.Publish(new HealthChangedEvent(_currentHealth, _maxHealth));
 	}
 
 	public void TakeDamage(float damage, Vector3 hitPosition, Vector3 hitDirection)
@@ -46,6 +48,8 @@ public class HealthController : MonoBehaviour, IDamageable
 			FloatingDamage popup = _floatingDamageFactory.Get(hitPosition + (Vector3.up * 1.5f), Quaternion.identity);
 			popup.Setup(damage);
 		}
+
+		_channel.Publish(new HealthChangedEvent(_currentHealth, _maxHealth));
 
 		if (_currentHealth <= 0)
 		{
