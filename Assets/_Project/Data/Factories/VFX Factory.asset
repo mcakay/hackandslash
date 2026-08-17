@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386c823dbeb5d41e6a66d48d8c93c977, type: 3}
   m_Name: VFX Factory
   m_EditorClassIdentifier: Assembly-CSharp::VFXFactorySO
-  _prefab: {fileID: 8844044134216117076, guid: 222e1a803a2c34dda854d06cb5aaf5d9, type: 3}
-  _defaultCapacity: 10
-  _maxSize: 100
+  factoryName: VFX
+  prefab: {fileID: 0}
+  defaultCapacity: 10
+  maxSize: 100

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe961cbe5f2d349c8855823ab9fb8add, type: 3}
   m_Name: Floating Damage Factory
   m_EditorClassIdentifier: Assembly-CSharp::FloatingDamageFactorySO
-  _prefab: {fileID: 8739417885311278297, guid: 793e6a8108b3f4f649b49d2527343580, type: 3}
-  _defaultCapacity: 10
-  _maxSize: 100
+  factoryName: Floating Damage
+  prefab: {fileID: 0}
+  defaultCapacity: 10
+  maxSize: 100

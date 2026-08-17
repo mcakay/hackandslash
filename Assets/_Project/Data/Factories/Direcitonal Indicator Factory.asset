@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af44a0ddc0ff8436f9396c5535f6f11a, type: 3}
   m_Name: Direcitonal Indicator Factory
   m_EditorClassIdentifier: Assembly-CSharp::TargetingIndicatorFactorySO
-  _prefab: {fileID: 5170110744366706851, guid: 88c59ecf452064a3881aecaae7f32bbf, type: 3}
-  _defaultCapacity: 10
-  _maxSize: 100
+  factoryName: Directional Indicator
+  prefab: {fileID: 0}
+  defaultCapacity: 10
+  maxSize: 100

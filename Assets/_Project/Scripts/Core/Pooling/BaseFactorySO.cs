@@ -3,14 +3,17 @@ using UnityEngine.Pool;
 
 public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T : MonoBehaviour, IPooledObject<T>
 {
-	[SerializeField] private T _prefab;
-	[SerializeField] private int _defaultCapacity = 10;
-	[SerializeField] private int _maxSize = 100;
+	[SerializeField] private string factoryName;
+	[SerializeField] private T prefab;
+	[SerializeField] private int defaultCapacity = 10;
+	[SerializeField] private int maxSize = 100;
 
 	private IObjectPool<T> _pool;
 
 	private Vector3 _requestPosition;
 	private Quaternion _requestRotation;
+
+	private Transform _poolParent;
 
 	public IObjectPool<T> Pool
 	{
@@ -24,8 +27,8 @@ public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T 
 					ReleaseSetup,
 					DestroySetup,
 					true,
-					_defaultCapacity,
-					_maxSize
+					defaultCapacity,
+					maxSize
 				);
 			}
 			return _pool;
@@ -47,23 +50,23 @@ public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T 
 	}
 
 	public void Prewarm()
-    {
-        T[] prewarmedObjects = new T[_defaultCapacity];
+	{
+		T[] prewarmedObjects = new T[defaultCapacity];
 
-        for (var i = 0; i < _defaultCapacity; i++)
-        {
-            prewarmedObjects[i] = Get(Vector3.zero, Quaternion.identity);
-        }
+		for (var i = 0; i < defaultCapacity; i++)
+		{
+			prewarmedObjects[i] = Get(Vector3.zero, Quaternion.identity);
+		}
 
-        for (var i = 0; i < _defaultCapacity; i++)
-        {
-            Pool.Release(prewarmedObjects[i]);
-        }
-    }
+		for (var i = 0; i < defaultCapacity; i++)
+		{
+			Pool.Release(prewarmedObjects[i]);
+		}
+	}
 
 	private T CreateSetup()
 	{
-		T obj = Instantiate(_prefab, _requestPosition, _requestRotation);
+		T obj = Instantiate(prefab, _requestPosition, _requestRotation, GetPoolParent());
 
 		obj.SetPool(Pool);
 		return obj;
@@ -79,6 +82,11 @@ public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T 
 			return;
 
 		obj.gameObject.SetActive(false);
+
+		if (obj.transform.parent != GetPoolParent())
+		{
+			obj.transform.SetParent(GetPoolParent());
+		}
 	}
 
 	private void DestroySetup(T obj)
@@ -93,5 +101,25 @@ public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T 
 	{
 		_pool?.Clear();
 		_pool = null;
+	}
+
+	private Transform GetPoolParent()
+	{
+		if (_poolParent == null)
+		{
+			GameObject masterParent = GameObject.Find("Pools");
+
+			if (masterParent == null)
+			{
+				masterParent = new GameObject("Pools");
+			}
+
+			GameObject poolContainer = new($"{factoryName} Pool");
+
+			poolContainer.transform.SetParent(masterParent.transform);
+
+			_poolParent = poolContainer.transform;
+		}
+		return _poolParent;
 	}
 }

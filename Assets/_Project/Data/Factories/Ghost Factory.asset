@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0438ec5edbb4bd7ae78ec024575664, type: 3}
   m_Name: Ghost Factory
   m_EditorClassIdentifier: Assembly-CSharp::GhostFactorySO
-  _prefab: {fileID: 189301833851162845, guid: 81215a723e283457994c316a10daf58a, type: 3}
-  _defaultCapacity: 10
-  _maxSize: 100
+  factoryName: Ghost
+  prefab: {fileID: 0}
+  defaultCapacity: 10
+  maxSize: 100
