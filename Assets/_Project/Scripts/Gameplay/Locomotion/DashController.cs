@@ -38,12 +38,12 @@ public class DashController : MonoBehaviour
 
         _rb.useGravity = false;
 
-        _ghostFactory = settings.GhostFactory;
-        _ghostMaterial = settings.GhostMaterial;
+        _ghostFactory = settings.Factory;
+        _ghostMaterial = settings.Material;
         _ghostFadeDuration = settings.FadeDuration;
 
-        _maxGhosts = settings.GhostCount;
-        _sqrDistanceBetweenGhosts = settings.DistanceBetweenGhosts * settings.DistanceBetweenGhosts;
+        _maxGhosts = settings.Count;
+        _sqrDistanceBetweenGhosts = settings.DistanceBetween * settings.DistanceBetween;
         _spawnedGhosts = 0;
 
         _dashTimer.Start(settings.Duration);

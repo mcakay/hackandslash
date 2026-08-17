@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
+using Cysharp.Text; // ZString eklendi
 
 [RequireComponent(typeof(UIDocument))]
 public class HUDAbility : MonoBehaviour
@@ -16,6 +17,8 @@ public class HUDAbility : MonoBehaviour
     private readonly int _rHash = Animator.StringToHash("Ultimate");
 
     private Dictionary<int, AbilityUISlot> _slots;
+
+    private readonly Dictionary<int, int> _lastDisplayedTenths = new();
 
     private void Awake()
     {
@@ -72,6 +75,8 @@ public class HUDAbility : MonoBehaviour
 
                 if (slot.CooldownOverlay != null) slot.CooldownOverlay.style.height = Length.Percent(0);
                 if (slot.CooldownText != null) slot.CooldownText.text = string.Empty;
+
+                _lastDisplayedTenths[hash] = -1;
             }
         }
     }
@@ -80,8 +85,11 @@ public class HUDAbility : MonoBehaviour
     {
         if (_slots == null) return;
 
-        foreach (var slot in _slots.Values)
+        foreach (var kvp in _slots)
         {
+            int hash = kvp.Key;
+            AbilityUISlot slot = kvp.Value;
+
             if (slot.TrackedAbility == null) continue;
 
             if (!slot.TrackedAbility.IsReady)
@@ -96,7 +104,14 @@ public class HUDAbility : MonoBehaviour
 
                 if (slot.CooldownText != null)
                 {
-                    slot.CooldownText.text = remaining.ToString("F1");
+                    int currentTenth = Mathf.CeilToInt(remaining * 10f);
+
+                    if (!_lastDisplayedTenths.TryGetValue(hash, out int lastTenth) || lastTenth != currentTenth)
+                    {
+                        _lastDisplayedTenths[hash] = currentTenth;
+
+                        slot.CooldownText.text = ZString.Format("{0:F1}", remaining);
+                    }
                 }
             }
             else
@@ -109,6 +124,7 @@ public class HUDAbility : MonoBehaviour
                 if (slot.CooldownText != null && slot.CooldownText.text != string.Empty)
                 {
                     slot.CooldownText.text = string.Empty;
+                    _lastDisplayedTenths[hash] = -1;
                 }
             }
         }

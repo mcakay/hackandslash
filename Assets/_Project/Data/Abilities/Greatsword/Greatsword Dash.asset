@@ -48,14 +48,15 @@ MonoBehaviour:
     - rid: 2362426459112079436
       type: {class: DashAction, ns: , asm: Assembly-CSharp}
       data:
-        DashSpeed: 30
-        DashDuration: 0.2
-        GhostFactory: {fileID: 11400000, guid: a037a15a29c3a4b2e9e18ab36dbe887f, type: 2}
-        GhostMaterial: {fileID: 2100000, guid: 777ac5e57811e45b5856561409663216, type: 2}
-        GhostCount: 3
-        DistanceBetweenGhosts: 0.3
-        GhostSpawnDelay: 0.15
-        GhostFadeDuration: 0.2
+        Settings:
+          Speed: 30
+          Duration: 0.2
+          Factory: {fileID: 11400000, guid: a037a15a29c3a4b2e9e18ab36dbe887f, type: 2}
+          Material: {fileID: 2100000, guid: 777ac5e57811e45b5856561409663216, type: 2}
+          Count: 3
+          DistanceBetween: 0.3
+          SpawnDelay: 0.15
+          FadeDuration: 0.2
     - rid: 2362426459112079439
       type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
       data: 

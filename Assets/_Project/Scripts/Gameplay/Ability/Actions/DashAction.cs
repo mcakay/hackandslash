@@ -9,11 +9,11 @@ public struct DashSettings
     public float Duration;
 
     [Header("Ghost Trail Visuals")]
-    public GhostFactorySO GhostFactory;
-    public Material GhostMaterial;
+    public GhostFactorySO Factory;
+    public Material Material;
 
-    [Range(1, 10)] public int GhostCount;
-    [Range(0.1f, 2f)] public float DistanceBetweenGhosts;
+    [Range(1, 10)] public int Count;
+    [Range(0.1f, 2f)] public float DistanceBetween;
     [Range(0f, 0.5f)] public float SpawnDelay;
 
     public float FadeDuration;

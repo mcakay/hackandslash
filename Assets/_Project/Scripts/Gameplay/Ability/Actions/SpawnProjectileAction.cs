@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnProjectileAction : AbilityAction
 {
 	public string Id;
-	public ProjectileFactorySO ProjectileFactory;
+	public ProjectileFactorySO Factory;
 
 	public override void Execute(GameObject caster, Ability ability)
 	{
@@ -14,7 +14,7 @@ public class SpawnProjectileAction : AbilityAction
             Transform spawnPoint = controller.GetSpawnPoint(Id);
             AbilityEffectPayload payload = ability.CreateEffectPayload(caster);
 
-            Projectile proj = ProjectileFactory.Get(spawnPoint.position, spawnPoint.rotation);
+            Projectile proj = Factory.Get(spawnPoint.position, spawnPoint.rotation);
 
             proj.Fire(caster, payload);
         }

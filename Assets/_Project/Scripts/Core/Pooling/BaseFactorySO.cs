@@ -1,65 +1,87 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-public abstract class BaseFactorySO<T> : ScriptableObject where T : MonoBehaviour, IPooledObject<T>
+public abstract class BaseFactorySO<T> : ScriptableObject, IPoolFactory where T : MonoBehaviour, IPooledObject<T>
 {
-    [SerializeField] private T _prefab;
-    [SerializeField] private int _defaultCapacity = 10;
-    [SerializeField] private int _maxSize = 100;
+	[SerializeField] private T _prefab;
+	[SerializeField] private int _defaultCapacity = 10;
+	[SerializeField] private int _maxSize = 100;
 
-    private IObjectPool<T> _pool;
+	private IObjectPool<T> _pool;
 
-    private Vector3 _requestPosition;
-    private Quaternion _requestRotation;
+	private Vector3 _requestPosition;
+	private Quaternion _requestRotation;
 
-    public IObjectPool<T> Pool
+	public IObjectPool<T> Pool
+	{
+		get
+		{
+			if (_pool == null)
+			{
+				_pool = new ObjectPool<T>(
+					CreateSetup,
+					GetSetup,
+					ReleaseSetup,
+					DestroySetup,
+					true,
+					_defaultCapacity,
+					_maxSize
+				);
+			}
+			return _pool;
+		}
+	}
+
+	public T Get(Vector3 position, Quaternion rotation)
+	{
+		_requestPosition = position;
+		_requestRotation = rotation;
+
+		T obj = Pool.Get();
+
+		obj.transform.SetPositionAndRotation(position, rotation);
+
+		obj.gameObject.SetActive(true);
+
+		return obj;
+	}
+
+	public void Prewarm()
     {
-        get
+        T[] prewarmedObjects = new T[_defaultCapacity];
+
+        for (var i = 0; i < _defaultCapacity; i++)
         {
-            if (_pool == null)
-            {
-                _pool = new ObjectPool<T>(
-                    CreateSetup,
-                    GetSetup,
-                    ReleaseSetup,
-                    DestroySetup,
-                    true,
-                    _defaultCapacity,
-                    _maxSize
-                );
-            }
-            return _pool;
+            prewarmedObjects[i] = Get(Vector3.zero, Quaternion.identity);
+        }
+
+        for (var i = 0; i < _defaultCapacity; i++)
+        {
+            Pool.Release(prewarmedObjects[i]);
         }
     }
 
-    public T Get(Vector3 position, Quaternion rotation)
-    {
-        _requestPosition = position;
-        _requestRotation = rotation;
+	private T CreateSetup()
+	{
+		T obj = Instantiate(_prefab, _requestPosition, _requestRotation);
 
-        T obj = Pool.Get();
+		obj.SetPool(Pool);
+		return obj;
+	}
 
-        obj.transform.SetPositionAndRotation(position, rotation);
+	private void GetSetup(T obj)
+	{
+	}
 
-        obj.gameObject.SetActive(true);
+	private void ReleaseSetup(T obj)
+	{
+		if (!obj.gameObject.activeSelf)
+			return;
 
-        return obj;
-    }
+		obj.gameObject.SetActive(false);
+	}
 
-    private T CreateSetup()
-    {
-        T obj = Instantiate(_prefab, _requestPosition, _requestRotation);
-
-        obj.SetPool(Pool);
-        return obj;
-    }
-
-    private void GetSetup(T obj)
-    {
-    }
-
-    private void ReleaseSetup(T obj) => obj.gameObject.SetActive(false);
-    private void DestroySetup(T obj)
+	private void DestroySetup(T obj)
 	{
 		if (obj != null)
 		{
@@ -67,9 +89,9 @@ public abstract class BaseFactorySO<T> : ScriptableObject where T : MonoBehaviou
 		}
 	}
 
-    private void OnDisable()
-    {
-        _pool?.Clear();
-        _pool = null;
-    }
+	private void OnDisable()
+	{
+		_pool?.Clear();
+		_pool = null;
+	}
 }
