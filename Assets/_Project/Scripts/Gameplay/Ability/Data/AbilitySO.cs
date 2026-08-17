@@ -18,7 +18,6 @@ public class AbilitySO : ScriptableObject
 	public AnimationClip Clip;
 
 	[FoldoutGroup("Animation")]
-	[Min(0.1f)]
 	public float AnimationSpeed = 1f;
 
 	[FoldoutGroup("Targeting")]

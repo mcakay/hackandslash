@@ -12,23 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60ab70c7fbd040a086c8e08e970d02a, type: 3}
   m_Name: Greatsword Dash
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
-  Name: 
+  Name: Greatsword Dash
   Icon: {fileID: 21300000, guid: 4c2d00409c0b3494f9802468f35fd9b5, type: 3}
   Range: 1
-  AnimationTriggerName: 
-  Clip: {fileID: 0}
+  AnimationTriggerName: Dash
+  Clip: {fileID: 7400000, guid: d80a4b55b7b2b4b5099a51d95ab9acca, type: 2}
   AnimationSpeed: 1
   IsTargeted: 0
   TargetingSettings:
     Factory: {fileID: 0}
     Range: 0
     Size: 0
-  Cooldown: 0
+  Cooldown: 0.4
   ComboWindow: 1
   WindupPercentage: 0.2
   ExecutionPercentage: 0.3
   RecoveryPercentage: 0.5
-  StartActions: []
+  StartActions:
+  - rid: 2362426459112079436
   StartFeedbacks: []
   HasImpact: 0
   FirstImpactFeedbacks: []
@@ -37,12 +38,24 @@ MonoBehaviour:
   EndActions: []
   EndFeedbacks: []
   Execution:
-    rid: -2
-  IsEvaluatedByAI: 1
+    rid: 2362426459112079439
+  IsEvaluatedByAI: 0
   UtilityScore: 1
   Evaluators: []
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 2362426459112079436
+      type: {class: DashAction, ns: , asm: Assembly-CSharp}
+      data:
+        DashSpeed: 30
+        DashDuration: 0.2
+        GhostFactory: {fileID: 11400000, guid: a037a15a29c3a4b2e9e18ab36dbe887f, type: 2}
+        GhostMaterial: {fileID: 2100000, guid: 777ac5e57811e45b5856561409663216, type: 2}
+        GhostCount: 3
+        DistanceBetweenGhosts: 0.3
+        GhostSpawnDelay: 0.15
+        GhostFadeDuration: 0.2
+    - rid: 2362426459112079439
+      type: {class: InstantExecution, ns: , asm: Assembly-CSharp}
+      data: 
